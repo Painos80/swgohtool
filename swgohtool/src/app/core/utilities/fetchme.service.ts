@@ -156,7 +156,7 @@ export class FetchmeService {
   
   private _hidecompleted = new BehaviorSubject<any>([]);
   hidecompleted = this._hidecompleted.asObservable();
-  hidecompletedValue = true;
+  hidecompletedValue = false;
   changeHideCompleted(newData:any){
     this.hidecompletedValue = newData;
     this._hidecompleted.next(newData);
@@ -164,7 +164,7 @@ export class FetchmeService {
   
   private _hidecompletedItems = new BehaviorSubject<any>([]);
   hidecompletedItems = this._hidecompletedItems.asObservable();
-  hidecompletedItemsValue = true;
+  hidecompletedItemsValue = false;
   changeHideCompletedItems(newData:any){
     this.hidecompletedItemsValue = newData;
     this._hidecompletedItems.next(newData);

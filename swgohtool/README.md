@@ -17,6 +17,11 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v1.9
+    Added Cal Kestis event
+    Hide completed > false by default
+    Changed Malak minimum reqs to 17500
+    Added Leviathan
 v1.8
     Completed farm list
 v1.7

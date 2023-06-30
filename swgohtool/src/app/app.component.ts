@@ -49,7 +49,7 @@ export class AppComponent {
 
   //Form
   inputForm:FormGroup = this.formBuilder.group({
-    hidecompleted: true
+    hidecompleted: false
   });
 
 
