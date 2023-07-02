@@ -23,14 +23,15 @@ export class TabviewComponent {
   guild$:Observable<any>= this.fetch.guild;
   goodteams$:Observable<any>= this.fetch.goodteams;
   goodteamslw$:Observable<any>= this.fetch.goodteamslw;
-  cpit$:Observable<any>= this.fetch.cpit;
-  cpitlw$:Observable<any>= this.fetch.cpitlw;
+  krayt$:Observable<any>= this.fetch.krayt;
+  //cpit$:Observable<any>= this.fetch.cpit;
+  //cpitlw$:Observable<any>= this.fetch.cpitlw;
   error$:Observable<any>= this.fetch.error;
-  cpitready$:Observable<any>= this.fetch.cpitready;
+  /*cpitready$:Observable<any>= this.fetch.cpitready;
   cpitready_counter$:Observable<any>= this.fetch.cpitready_counter;
   cpitreadyclose$:Observable<any>= this.fetch.cpitreadyclose;
   cpitready_counterclose$:Observable<any>= this.fetch.cpitready_counterclose;
-
+*/
   frmHigh$:Observable<any>= this.fetch.frmHigh;
   frmMedium$:Observable<any>= this.fetch.frmMedium;
   frmLow$:Observable<any>= this.fetch.frmLow;

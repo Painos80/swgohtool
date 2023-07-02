@@ -17,6 +17,10 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v1.10
+    Added Krayt raid
+    Removed cpit
+    Every farm inside Krayt, is sorted by power.
 v1.9
     Added Cal Kestis event
     Hide completed > false by default

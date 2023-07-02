@@ -119,7 +119,7 @@ export class FetchmeService {
     this._goodteamslw.next(newData);
   }
   
-  private _cpit = new BehaviorSubject<any>([]);
+  /*private _cpit = new BehaviorSubject<any>([]);
   cpit = this._cpit.asObservable();
   changeCpit(newData:any){
     this._cpit.next(newData);
@@ -152,8 +152,14 @@ export class FetchmeService {
   cpitready_counterclose = this._cpitready_counterclose.asObservable();
   changeCpitReadyCounterClose(newData:any){
     this._cpitready_counterclose.next(newData);
+  }*/
+
+  private _krayt = new BehaviorSubject<any>([]);
+  krayt = this._krayt.asObservable();
+  changeKrayt(newData:any){
+    this._krayt.next(newData);
   }
-  
+
   private _hidecompleted = new BehaviorSubject<any>([]);
   hidecompleted = this._hidecompleted.asObservable();
   hidecompletedValue = false;
@@ -444,11 +450,14 @@ members.
       cats.eventslow.farms.sort(this.objectComparisonCallback_OK);
       this.Loop(cats.goodteams, player);
 
-      this.Loop(cats.cpit, player);
-      this.changeCpit(cats.cpit.farms);
-      let cpitlw = cats.cpit.farms.filter(x => x.ok);
-      this.changeCpitLW(cpitlw);
+      //this.Loop(cats.cpit, player);
+      //this.changeCpit(cats.cpit.farms);
+      //let cpitlw = cats.cpit.farms.filter(x => x.ok);
+      //this.changeCpitLW(cpitlw);
 
+      this.Loop(cats.krayt,player);
+      cats.krayt.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
+      this.changeKrayt(cats.krayt.farms);
 
       let events = cats.events.farms.filter(x => x.ok);
       this.changeEvnts(events);
@@ -679,6 +688,8 @@ members.
   }
 
   populateCpitReady(player:any){
+    return;
+    /*
     try {
       let relicunits_cpitready = player.units.filter((x: { data: any; }) => (x.data.relic_tier-2) >= 5);
       let relicunits_cpitready_sorted = relicunits_cpitready.sort(this.objectComparisonCallback_Power);
@@ -736,10 +747,12 @@ members.
       this.changeCpitReadyCounter(relicunits_cpitready_sorted.length);
     } catch (e) {
       console.error(e);
-    }
+    }*/
   }
 
   populateCpitReadyClose(player:any){
+    return;
+    /*
     try {
       let relicunits_cpitready = player.units.filter((x: { data: any; }) => (x.data.relic_tier-2) >= 1 && (x.data.relic_tier-2) < 5);
       let relicunits_cpitready_sorted = relicunits_cpitready.sort(this.objectComparisonCallback_Power);
@@ -797,7 +810,7 @@ members.
       this.changeCpitReadyCounterClose(relicunits_cpitready_sorted.length);
     } catch (e) {
       console.error(e);
-    }
+    } */
   }
 
 
