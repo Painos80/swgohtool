@@ -58,6 +58,34 @@ export class EventsCls {
                     new FarmUnit('Imperial TIE Fighter', 7),],
                 ),
                 new Farm(
+                    'Leviathan',
+                    'event',
+                    'dark',
+                    [
+                        new FarmUnit('Darth Revan', 7, 13, 9),
+                        new FarmUnit('Darth Malak', 7, 13, 9),
+                        new FarmUnit('Sith Empire Trooper', 7, 13, 7),
+                        new FarmUnit('Sith Trooper', 7, 13, 7),
+                        new FarmUnit('Darth Maul', 7, 13, 7),
+                        new FarmUnit('HK-47', 7, 13, 7),
+                        new FarmUnit('Bastila Shan', 7, 13, 7),
+                        new FarmUnit('Sith Assassin', 7, 13, 5),
+                        new FarmUnit('50R-T', 7, 13, 5),
+                        // spacer,
+
+                    ],
+                    [
+                        new FarmUnit('Fury-class Interceptor', 4),
+                        new FarmUnit('Mark VI Interceptor', 4),
+                        new FarmUnit('TIE Dagger', 4),
+                        new FarmUnit('B-28 Extinction-class Bomber', 4),
+                        new FarmUnit('Scimitar', 4),
+                        new FarmUnit('Sith Fighter', 4),
+                        new FarmUnit('Ebon Hawk', 4),
+ 
+                ],
+                ),
+                new Farm(
                     'Doctor Aphra',
                     'event',
                     'dark',
@@ -148,21 +176,35 @@ export class EventsCls {
                     'event',
                     'dark',
                     [
-                        new FarmUnit('Bastila Shan', 7, undefined, undefined, 17700),
-                        new FarmUnit('Jolee Bindo', 7, undefined, undefined, 17700),
-                        new FarmUnit('Mission Vao', 7, undefined, undefined, 17700),
-                        new FarmUnit('T3-M4', 7, undefined, undefined, 17700),
-                        new FarmUnit('Zaalbar', 7, undefined, undefined, 17700),
-                        new FarmUnit('Jedi Knight Revan', 7, undefined, undefined, 17700),
+                        new FarmUnit('Bastila Shan', 7, undefined, undefined, 17500),
+                        new FarmUnit('Jolee Bindo', 7, undefined, undefined, 17500),
+                        new FarmUnit('Mission Vao', 7, undefined, undefined, 17500),
+                        new FarmUnit('T3-M4', 7, undefined, undefined, 17500),
+                        new FarmUnit('Zaalbar', 7, undefined, undefined, 17500),
+                        new FarmUnit('Jedi Knight Revan', 7, undefined, undefined, 17500),
                         //spacer,
-                        new FarmUnit('Bastila Shan (Fallen)', 7, undefined, undefined, 17700),
-                        new FarmUnit('Carth Onasi', 7, undefined, undefined, 17700),
-                        new FarmUnit('Canderous Ordo', 7, undefined, undefined, 17700),
-                        new FarmUnit('HK-47', 7, undefined, undefined, 17700),
-                        new FarmUnit('Juhani', 7, undefined, undefined, 17700),
-                        new FarmUnit('Darth Revan', 7, undefined, undefined, 17700),
+                        new FarmUnit('Bastila Shan (Fallen)', 7, undefined, undefined, 17500),
+                        new FarmUnit('Carth Onasi', 7, undefined, undefined, 17500),
+                        new FarmUnit('Canderous Ordo', 7, undefined, undefined, 17500),
+                        new FarmUnit('HK-47', 7, undefined, undefined, 17500),
+                        new FarmUnit('Juhani', 7, undefined, undefined, 17500),
+                        new FarmUnit('Darth Revan', 7, undefined, undefined, 17500),
                     ],
                     [], null, true
+                ),
+                new Farm(
+                    'Jedi Knight Cal Kestis',
+                    'event',
+                    'dark',
+                    [
+                        new FarmUnit('Cal Kestis', 7, 12),
+                        new FarmUnit('Cere Junda', 7, 12),
+                        new FarmUnit('Merrin', 7, 12),
+                        new FarmUnit('Tarfful', 7, 12),
+                        new FarmUnit('Saw Gerrera', 7,12),
+                        
+                    ],
+                    []
                 )
             ]
         )

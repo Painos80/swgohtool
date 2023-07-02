@@ -4,13 +4,14 @@ import { Eventslow } from "./eventslow";
 import { Goodteams } from "./goodteams";
 import { Cpit } from "./cpit";
 import { Farmguild } from './farmguild';
+import { Krayt } from './krayt';
 
 export class categories {
     legends = new Gls().renew();
     events = new EventsCls().renew();
     eventslow = new Eventslow().renew();
     goodteams = new Goodteams().renew();
-    cpit = new Cpit().renew();
+    //cpit = new Cpit().renew();
     player: any;
 
     farmHigh = new Farmguild().renewHigh();
@@ -30,14 +31,15 @@ export class categories {
     lowKeySquads= new Farmguild().renewlowKeySquads();
     lowKeyShips= new Farmguild().renewlowKeyShips();
     lowKeyCharsCapitalShipsShips= new Farmguild().renewlowKeyCharsCapitalShipsShips();
-
+    krayt = new Krayt().renew();
     
     renew() {
         this.legends = new Gls().renew();
         this.events = new EventsCls().renew();
         this.eventslow = new Eventslow().renew();
         this.goodteams = new Goodteams().renew();
-        this.cpit = new Cpit().renew();
+        //this.cpit = new Cpit().renew();
+        this.krayt = new Krayt().renew();
         this.player = null;
         this.farmHigh = new Farmguild().renewHigh();
         this.farmMedium = new Farmguild().renewMedium();
