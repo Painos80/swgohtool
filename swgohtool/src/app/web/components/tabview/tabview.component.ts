@@ -24,6 +24,7 @@ export class TabviewComponent {
   goodteams$:Observable<any>= this.fetch.goodteams;
   goodteamslw$:Observable<any>= this.fetch.goodteamslw;
   krayt$:Observable<any>= this.fetch.krayt;
+  sbp$:Observable<any>= this.fetch.sbp;
   //cpit$:Observable<any>= this.fetch.cpit;
   //cpitlw$:Observable<any>= this.fetch.cpitlw;
   error$:Observable<any>= this.fetch.error;
@@ -55,6 +56,7 @@ export class TabviewComponent {
   tab1_active:boolean=false;
   tab2_active:boolean=false;
   tab3_active:boolean=false;
+  tab4_active:boolean=false;
 
   public constructor(
     private fetch: FetchmeService
@@ -67,7 +69,8 @@ export class TabviewComponent {
     this.getStatic();
     if(!this.tab1_active &&
       !this.tab2_active &&
-      !this.tab3_active){
+      !this.tab3_active &&
+      !this.tab4_active){
         this.tab1_active=true;
       }
       this.updateStatic();
@@ -77,6 +80,7 @@ export class TabviewComponent {
     this.tab1_active = true;
     this.tab2_active = false;
     this.tab3_active = false;
+    this.tab4_active = false;
     this.updateStatic();
   }
 
@@ -84,6 +88,7 @@ export class TabviewComponent {
     this.tab1_active = false;
     this.tab2_active = true;
     this.tab3_active = false;
+    this.tab4_active = false;
     this.updateStatic();
   }
 
@@ -91,18 +96,27 @@ export class TabviewComponent {
     this.tab1_active = false;
     this.tab2_active = false;
     this.tab3_active =true ;
+    this.tab4_active = false;
     this.updateStatic();
   }
-
+  tab4(){
+    this.tab1_active = false;
+    this.tab2_active = false;
+    this.tab3_active =false;
+    this.tab4_active = true;
+    this.updateStatic();
+  }
   updateStatic(){
     ClsFrm.tab1_active= this.tab1_active  ;
     ClsFrm.tab2_active=this.tab2_active  ;
     ClsFrm.tab3_active=this.tab3_active  ;
+    ClsFrm.tab4_active=this.tab4_active  ;
   }
 
   getStatic(){
     this.tab1_active = ClsFrm.tab1_active;
     this.tab2_active = ClsFrm.tab2_active;
     this.tab3_active = ClsFrm.tab3_active;
+    this.tab4_active = ClsFrm.tab4_active;
   }
 }

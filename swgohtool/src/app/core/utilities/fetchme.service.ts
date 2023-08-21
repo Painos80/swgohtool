@@ -160,6 +160,12 @@ export class FetchmeService {
     this._krayt.next(newData);
   }
 
+  private _sbp = new BehaviorSubject<any>([]);
+  sbp = this._sbp.asObservable();
+  changeSbp(newData:any){
+    this._sbp.next(newData);
+  }
+
   private _hidecompleted = new BehaviorSubject<any>([]);
   hidecompleted = this._hidecompleted.asObservable();
   hidecompletedValue = false;
@@ -458,6 +464,12 @@ members.
       this.Loop(cats.krayt,player);
       cats.krayt.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
       this.changeKrayt(cats.krayt.farms);
+
+      this.Loop(cats.sbp,player);
+      cats.sbp.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
+      this.changeSbp(cats.sbp.farms);
+
+
 
       let events = cats.events.farms.filter(x => x.ok);
       this.changeEvnts(events);

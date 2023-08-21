@@ -5,6 +5,7 @@ import { Goodteams } from "./goodteams";
 import { Cpit } from "./cpit";
 import { Farmguild } from './farmguild';
 import { Krayt } from './krayt';
+import { Sbp } from './sbp';
 
 export class categories {
     legends = new Gls().renew();
@@ -32,6 +33,7 @@ export class categories {
     lowKeyShips= new Farmguild().renewlowKeyShips();
     lowKeyCharsCapitalShipsShips= new Farmguild().renewlowKeyCharsCapitalShipsShips();
     krayt = new Krayt().renew();
+    sbp = new Sbp().renew();
     
     renew() {
         this.legends = new Gls().renew();
@@ -40,6 +42,7 @@ export class categories {
         this.goodteams = new Goodteams().renew();
         //this.cpit = new Cpit().renew();
         this.krayt = new Krayt().renew();
+        this.sbp = new Sbp().renew();
         this.player = null;
         this.farmHigh = new Farmguild().renewHigh();
         this.farmMedium = new Farmguild().renewMedium();

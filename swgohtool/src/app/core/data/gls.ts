@@ -175,6 +175,30 @@ export class Gls {
                         new FarmUnit('Raddus', 5),
                     ],
                 ),
+                new Farm(
+                    'Leia Organa',
+                    'legend',
+                    'light',
+                    [
+                        new FarmUnit('Captain Rex', 7, 13, 7),
+                        new FarmUnit('Princess Kneesaa', 7, 13, 7),
+                        new FarmUnit('Wicket', 7, 13, 3),
+                        new FarmUnit('Lando Calrissian', 7, 13, 5),
+                        new FarmUnit('Admiral Ackbar', 7, 13, 3),
+                        new FarmUnit('Scout Trooper', 7, 13, 7),
+                        new FarmUnit('R2-D2', 7, 13, 8),
+                        new FarmUnit('Captain Han Solo', 7, 13, 5),
+                        new FarmUnit('Rebel Officer Leia Organa', 7, 13, 5),
+                        new FarmUnit('Chief Chirpa', 7, 13, 3),
+                        new FarmUnit('Captain Drogan', 7, 13, 7),
+                        new FarmUnit('Commander Luke Skywalker', 7, 13, 7),
+                        new FarmUnit('Boushh (Leia Organa)', 7, 13, 5),
+                        new FarmUnit('Threepio & Chewie', 7, 13, 5),
+                        new FarmUnit('Lobot', 7, 13, 3)
+                    ],
+                    [
+                    ],
+                ),
             ]);
         return this.pkfarm;
     }

@@ -4,6 +4,7 @@ export class ClsFrm{
   static tab1_active:boolean=false;
   static tab2_active:boolean=false;
   static tab3_active:boolean=false;
+  static tab4_active:boolean=false;
 
 }
 
