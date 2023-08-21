@@ -17,6 +17,9 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v1.11
+    Added GL Leia
+    Added new Raid toons
 v1.10
     Added Krayt raid
     Removed cpit

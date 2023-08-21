@@ -21,6 +21,11 @@
                 <h5>Krayt</h5>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active':tab4_active}" data-bs-toggle="pill" href="#sbp" (click)="tab4()">
+                <h5>Sbp</h5>
+            </a>
+        </li>
     </ul>
 
     <!-- Tab panes -->
@@ -115,6 +120,23 @@
             <div class="accordion">
                 <app-accordeon [title] = "'Factions'"  >
                     <app-generalcategory [list]="krayt$"></app-generalcategory>
+                </app-accordeon>
+               <!--   <app-accordeon [title] = "'Cpit'"  >
+                    <app-generalcategory [list]="cpit$"></app-generalcategory>
+                </app-accordeon>
+              <app-accordeon [title] = "'Cpit ready (' + (cpitready_counter$ | async) + ')'"  >
+                    <app-generalcategory *ngIf="(cpitready_counter$ | async) > 0" [list]="cpitready$"></app-generalcategory>
+                </app-accordeon>
+                <app-accordeon [title] = "'Cpit ready Close (' + (cpitready_counterclose$ | async) + ')'"  >
+                    <app-generalcategory *ngIf="(cpitready_counterclose$ | async) > 0" [list]="cpitreadyclose$"></app-generalcategory>
+                </app-accordeon>
+                -->
+            </div>
+        </div>
+        <div class="tab-pane  " id="sbp" [ngClass]="{'active':tab4_active }">
+            <div class="accordion">
+                <app-accordeon [title] = "'Factions'"  >
+                    <app-generalcategory [list]="sbp$"></app-generalcategory>
                 </app-accordeon>
                <!--   <app-accordeon [title] = "'Cpit'"  >
                     <app-generalcategory [list]="cpit$"></app-generalcategory>
