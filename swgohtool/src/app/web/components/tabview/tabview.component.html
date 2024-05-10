@@ -26,6 +26,11 @@
                 <h5>Sbp</h5>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active':tab5_active}" data-bs-toggle="pill" href="#guild" (click)="tab5()">
+                <h5>Guild</h5>
+            </a>
+        </li>
     </ul>
 
     <!-- Tab panes -->
@@ -149,6 +154,11 @@
                 </app-accordeon>
                 -->
             </div>
+        </div>
+        <div class="tab-pane  " id="guild" [ngClass]="{'active':tab5_active }">
+            <button *ngIf="!isLoading" class="btn btn-primary" (click)="generate_Guild()">Generate</button>
+            <app-loading class="bg-dark" *ngIf="isLoading"></app-loading>
+            <div class="bg-light" *ngIf="!isLoading && (guild_total$ | async)">{{(guild_total$ | async)}}</div>
         </div>
     </div>
 </div>

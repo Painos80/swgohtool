@@ -7,6 +7,7 @@ import { FormBuilder } from '@angular/forms';
 import { FormGroup, FormControl, Validators }  from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
+import { Globals } from './core/globals';
 
 @Component({
   selector: 'app-root',
@@ -37,10 +38,14 @@ export class AppComponent {
   //cpit$:Observable<any>= this.fetch.cpit;
   //cpitlw$:Observable<any>= this.fetch.cpitlw;
   error$:Observable<any>= this.fetch.error;
+
+  guild1$:Observable<any> = this.fetch.guild1;
   //cpitready$:Observable<any>= this.fetch.cpitready;
   //cpitready_counter$:Observable<any>= this.fetch.cpitready_counter;
   //cpitreadyclose$:Observable<any>= this.fetch.cpitreadyclose;
   //cpitready_counterclose$:Observable<any>= this.fetch.cpitready_counterclose;
+
+ isFeddy = Globals.isFeddy;
 
   //Form
   checkoutForm:FormGroup = this.formBuilder.group({
@@ -61,6 +66,15 @@ export class AppComponent {
     private formBuilder: FormBuilder, 
     private route: ActivatedRoute, 
     private router: Router) {
+      if(Globals.isFeddy){
+        Globals.guild = Globals.feddy;
+      }
+      if(Globals.isDianogas){
+        Globals.guild = Globals.dianogas;
+      }
+      if(Globals.isRooms){
+        Globals.guild = Globals.rooms;
+      }
       this.inputForm.patchValue({
         hideCompleted: this.fetch.hidecompletedValue
         

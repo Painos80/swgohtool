@@ -124,6 +124,30 @@ export class EventsCls {
                     [],
                 ),
                 new Farm(
+                    'Jar Jar Binks',
+                    'event',
+                    'dark',
+                    [
+                        new FarmUnit('Boss Nass', 7, 13, 5),
+                        new FarmUnit('Captain Tarpals', 7, 13, 5),
+                        new FarmUnit('Gungan Boomadier', 7, 13, 5),
+                        new FarmUnit('Gungan Phalanx', 7, 13, 5),
+                    ],
+                    [],
+                ),
+                new Farm(
+                    "Bo-Katan (Mand'alor)",
+                    'event',
+                    'dark',
+                    [
+                        new FarmUnit('Kelleran Beq', 7, 13, 7),
+                        new FarmUnit('Paz Vizsla', 7, 13, 7),
+                        new FarmUnit('IG-12 & Grogu', 7, 13, 7),
+                        new FarmUnit('The Mandalorian (Beskar Armor)', 7, 13, 7),
+                    ],
+                    [],
+                ),
+                new Farm(
                     'Jedi Knight Luke Skywalker',
                     'event',
                     'light',

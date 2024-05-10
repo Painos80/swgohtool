@@ -733,7 +733,22 @@ export class Farmguild {
 
                 ],
                     null, false, false
-                )
+                ),
+                new Farm(
+                    'Third Sister',
+                    'event',
+                    'light',
+                    [
+                        new FarmUnit('Grand Inquisitor', 7,13,7),
+                        new FarmUnit('Second Sister', 7, 13, 7),
+                        new FarmUnit('Ninth Sister', 7, 13, 7),
+                        new FarmUnit('Seventh Sister', 7, 13, 7),
+                        new FarmUnit('Eighth Brother', 7, 13, 7),
+                        new FarmUnit('Fifth Brother', 7, 13, 7),
+                                        
+                    ],
+                    [],null,false,false
+                ),
             ]
         )
 
