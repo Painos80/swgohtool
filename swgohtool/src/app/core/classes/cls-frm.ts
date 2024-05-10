@@ -5,6 +5,7 @@ export class ClsFrm{
   static tab2_active:boolean=false;
   static tab3_active:boolean=false;
   static tab4_active:boolean=false;
+  static tab5_active:boolean=false;
 
 }
 
@@ -137,9 +138,17 @@ TW: TERRITORY_WAR_BATTLE
 TB: TERRITORY_TOURNAMENT_BATTLE
 */
 
+
+
     if (item_orig && item_orig.hasOwnProperty('image') && item_orig.image) {
       this.image = item_orig.image;
       
+    }
+    if(!item){
+      if(item_orig && item_orig.hasOwnProperty('url') && item_orig.url){
+        this.url = `${item_orig.url}`;
+      }
+      return;
     }
     if(item && item.hasOwnProperty('data') && item.data && item.data.hasOwnProperty('url') && item.data.url){
       this.url = `https://swgoh.gg${item.data.url}`;

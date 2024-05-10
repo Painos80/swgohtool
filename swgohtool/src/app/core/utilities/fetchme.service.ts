@@ -6,6 +6,7 @@ import { HttpHeaders } from '@angular/common/http';
 import { categories } from '../data/cats';
 import { Cpit } from '../data/cpit';
 import { Farm, FarmUnit } from '../classes/cls-frm';
+import { Globals } from '../globals';
 //import legends from '../../core/data/gls'; 
 //import  categories from '../../core/data/cats'; 
 
@@ -119,6 +120,22 @@ export class FetchmeService {
     this._goodteamslw.next(newData);
   }
   
+  private _guild1 = new BehaviorSubject<any>([]);
+  guild1 = this._guild1.asObservable();
+  _guildobj1 :any;
+  changeGuild1(newData:any){
+    this._guildobj1 = newData;
+    this._guild1.next(newData);
+  }
+
+  private _guild_total = new BehaviorSubject<any>([]);
+  guild_total = this._guild_total.asObservable();
+  _guildobj_total :any;
+  changeGuild_total(newData:any){
+    this._guildobj_total = newData;
+    this._guild_total.next(newData);
+  }
+
   /*private _cpit = new BehaviorSubject<any>([]);
   cpit = this._cpit.asObservable();
   changeCpit(newData:any){
@@ -284,8 +301,9 @@ export class FetchmeService {
    }
 
    async getDataForGuild(){
-    //http://api.swgoh.gg/guild-profile/7skNKIClReOBSq8jfL_F0g
-    const url__in = `${this.proxy_cors}http://api.swgoh.gg/guild-profile/7skNKIClReOBSq8jfL_F0g/`;
+    //Feddy: http://api.swgoh.gg/guild-profile/7skNKIClReOBSq8jfL_F0g
+    //Dianogas: IbRkVS2bTM-tJ92t92I-Gg
+    const url__in = `${this.proxy_cors}http://api.swgoh.gg/guild-profile/${Globals.guild}/`;
     const headers= new HttpHeaders()
   .set('content-type', 'application/json')
   .set('Access-Control-Allow-Origin', '*');
@@ -406,6 +424,19 @@ members.
 */
      let ddt = guild.data.members.sort(this.objectComparisonCallback);
     this.changeGuild(ddt);
+    this.changeGuild1(guild.data.name);
+    
+   }
+
+   async generateGuildReport(){
+    let ddt = JSON.parse(JSON.stringify( this._guildobj));
+    for(let i=0;i<= ddt.length-1;i++){
+      let itm = ddt[i];
+      let data = await this.populatePlayer_Only(itm.ally_code);
+      itm.data = data;
+      ddt[i] = itm;
+    }
+    this.changeGuild_total(ddt);
    }
 
   //Populate player from given id
@@ -556,6 +587,156 @@ members.
     }
   }
 
+
+ //Populate player from given id
+ async populatePlayer_Only(pid: string) {
+  try {
+    if (!pid) {
+      return;
+    }
+    if (!this.shipsobj) {
+      await this.populateShips();
+    }
+    if (!this.unitsobj) {
+      await this.populateUnits();
+    }
+    if (!this.abilitiesobj) {
+      await this.populateAbilities();
+    }
+
+    let data = await this.getDataForPlayer(pid);
+
+    let jsonstr = JSON.stringify(data);
+    let player = JSON.parse(jsonstr);
+    let gls_with_ultimate = player.units.filter((x: { data: any; }) => x.data.is_galactic_legend);
+
+   
+
+    //this.changeGls(gls_with_ultimate);
+
+    let cats = new categories();
+    cats.renew();
+    
+    this.populateCpitReady(player);
+    this.populateCpitReadyClose(player);
+
+    cats.player = player.data;
+    this.Loop(cats.legends, player, true, gls_with_ultimate);
+
+     cats.legends.farms.sort(this.objectComparisonCallback_OK);
+
+
+    this.Loop(cats.events, player);
+    cats.events.farms.sort(this.objectComparisonCallback_OK);
+
+
+    this.Loop(cats.eventslow, player);
+    cats.eventslow.farms.sort(this.objectComparisonCallback_OK);
+    this.Loop(cats.goodteams, player);
+
+    //this.Loop(cats.cpit, player);
+    //this.changeCpit(cats.cpit.farms);
+    //let cpitlw = cats.cpit.farms.filter(x => x.ok);
+    //this.changeCpitLW(cpitlw);
+
+    this.Loop(cats.krayt,player);
+    cats.krayt.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
+    //this.changeKrayt(cats.krayt.farms);
+
+    this.Loop(cats.sbp,player);
+    cats.sbp.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
+    //this.changeSbp(cats.sbp.farms);
+
+
+
+    let events = cats.events.farms.filter(x => x.ok);
+    //this.changeEvnts(events);
+   // this.changeEventsLow(cats.eventslow.farms);
+    let eventslw = cats.eventslow.farms.filter(x => x.ok);
+    //this.changeEvntsLW(eventslw);
+
+    //this.changeGoodTeams(cats.goodteams.farms);
+    let gtlw = cats.goodteams.farms.filter(x => x.ok);
+    //this.changeGoodTeamsLW(gtlw);
+
+    try {
+      var d1 = new Date(cats.player.last_updated);
+      var d2 = new Date();
+      cats.player.last_update_sub = (Math.abs(d2.getTime() - d1.getTime()) / 3600000).toFixed(0);
+    } catch (e) {
+      console.error(e);
+    }
+   // this.changePlayerData(cats.player);
+    //this.changeEvents(cats.events.farms);
+    //this.changeLegends(cats.legends.farms);
+    
+    this.Loop(cats.farmHigh, player);
+    this.loopFarmText(cats.farmHigh, player);
+   // this.changefrmHigh(cats.farmHigh.farms);
+ 
+    this.Loop(cats.farmTWSquads, player);
+    this.loopFarmText(cats.farmTWSquads, player);
+    //this.changefarmTWSquads(cats.farmTWSquads.farms);
+
+    this.Loop(cats.farmTBSquads, player);
+    this.loopFarmText(cats.farmTBSquads, player);
+    //this.changefarmTBSquads(cats.farmTBSquads.farms);
+
+    this.Loop(cats.farmGLSquads, player);
+    this.loopFarmText(cats.farmGLSquads, player);
+    //this.change_farmGLSquads(cats.farmGLSquads.farms);
+
+    this.Loop(cats.farmGLShips, player);
+    this.loopFarmText(cats.farmGLShips, player);
+    //this.change_farmGLShips(cats.farmGLShips.farms);
+
+    this.Loop(cats.farmKeySquads, player);
+    this.loopFarmText(cats.farmKeySquads, player);
+    //this.change_farmKeySquads(cats.farmKeySquads.farms);
+
+
+    this.Loop(cats.farmCapitalShips, player);
+    this.loopFarmText(cats.farmCapitalShips, player);
+   // this.change_farmCapitalShips(cats.farmCapitalShips.farms);
+    
+    this.Loop(cats.farmKeyFleets, player);
+    this.loopFarmText(cats.farmKeyFleets, player);
+    //this.change_farmKeyFleets(cats.farmKeyFleets.farms);
+
+    this.Loop(cats.lowKeyCharsCapitalShipsShips, player);
+    this.loopFarmText(cats.lowKeyCharsCapitalShipsShips, player);
+    //this.change_lowKeyCharsCapitalShipsShips(cats.lowKeyCharsCapitalShipsShips.farms);
+
+    this.Loop(cats.lowKeyShips, player);
+    this.loopFarmText(cats.lowKeyShips, player);
+    //this.change_lowKeyShips(cats.lowKeyShips.farms);
+
+    this.Loop(cats.lowKeySquads, player);
+    this.loopFarmText(cats.lowKeySquads, player);
+    //this.change_lowKeySquads(cats.lowKeySquads.farms);
+
+    this.Loop(cats.lowOmis, player);
+    this.loopFarmText(cats.lowOmis, player);
+    //this.change_lowOmis(cats.lowOmis.farms);
+
+    this.Loop(cats.farmMedium, player);
+    //this.changefrmMedium(cats.farmMedium.farms);
+    this.Loop(cats.farmLow, player);
+    //this.changefrmLow(cats.farmLow.farms);
+
+    //this.changeLoaded(true);
+    return {"player": player, "cats":cats};
+  } catch (e) {
+    //this.changeLoaded(true);
+    console.error(e);
+    //this.changeError(e);
+    return null;
+  }
+}
+
+
+
+
   private loopFarmText(eventslow: any, player: any){
     for (let i = 0; i <= eventslow.farms.length - 1; i++) {
       let frm:Farm = eventslow.farms[i];
@@ -601,6 +782,7 @@ members.
       //Try and get the image
       try {
         frm.image = this.unitsobj.find((x: { name: any; }) => x.name == frm.name).image;
+      
       } catch (e) {
         try{
           frm.image = this.shipsobj.find((x: { name: any; }) => x.name == frm.name).image;
@@ -611,7 +793,7 @@ members.
 
       //Is ok?
       frm.ok = player.units.find((x: { data: { name: string; }; }) => x.data.name == frm.name) != null;
-
+    
       //Fing in the unit lists
       let found = player.units.find((x: { data: { name: string; }; }) => x.data.name == frm.name);
       if (found) {
@@ -642,6 +824,7 @@ members.
       //Check units
       for (let j = 0; j <= frm.units.length - 1; j++) {
         let unt = frm.units[j];
+     
         let itm = player.units.find((x: { data: any; }) => x.data.name == unt.name);
         let itm_all = null;
         try {

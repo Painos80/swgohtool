@@ -11,12 +11,18 @@ https://panosweb.se/feddy/?player=357182769
 ng build swgohtool --configuration production
 
 ng build swgohtool --configuration production --base-href="/feddytool/" --output-path=dist\feddytool
-
+ng build swgohtool --configuration production --base-href="/dianogas/" --output-path=dist\dianogas
+ng build swgohtool --configuration production --base-href="/rooms/" --output-path=dist\rooms
 
 cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v1.12
+    Added third sister
+    Added jar jar
+    Added Bo-katan
+    Fixed a bug where the icon wasn't showing for units that the user does not have
 v1.11
     Added GL Leia
     Added new Raid toons
