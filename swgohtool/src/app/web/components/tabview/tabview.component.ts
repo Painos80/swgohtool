@@ -25,6 +25,7 @@ export class TabviewComponent {
   goodteamslw$:Observable<any>= this.fetch.goodteamslw;
   krayt$:Observable<any>= this.fetch.krayt;
   sbp$:Observable<any>= this.fetch.sbp; 
+  naboo$:Observable<any>= this.fetch.naboo; 
   //cpit$:Observable<any>= this.fetch.cpit;
   //cpitlw$:Observable<any>= this.fetch.cpitlw;
   error$:Observable<any>= this.fetch.error;
@@ -61,6 +62,7 @@ export class TabviewComponent {
   tab3_active:boolean=false;
   tab4_active:boolean=false;
   tab5_active:boolean=false;
+  tab6_active:boolean=false;
 
   public constructor(
     private fetch: FetchmeService
@@ -75,6 +77,7 @@ export class TabviewComponent {
       !this.tab2_active &&
       !this.tab3_active &&
       !this.tab4_active&&
+      !this.tab6_active&&
       !this.tab5_active){
         this.tab1_active=true;
       }
@@ -87,6 +90,7 @@ export class TabviewComponent {
     this.tab3_active = false;
     this.tab4_active = false;
     this.tab5_active = false;
+    this.tab6_active = false;
     this.updateStatic();
   }
 
@@ -96,6 +100,7 @@ export class TabviewComponent {
     this.tab3_active = false;
     this.tab4_active = false;
     this.tab5_active = false;
+    this.tab6_active = false;
     this.updateStatic();
   }
 
@@ -105,6 +110,7 @@ export class TabviewComponent {
     this.tab3_active =true ;
     this.tab4_active = false;
     this.tab5_active = false;
+    this.tab6_active = false;
     this.updateStatic();
   }
   tab4(){
@@ -113,6 +119,7 @@ export class TabviewComponent {
     this.tab3_active =false;
     this.tab4_active = true;
     this.tab5_active = false;
+    this.tab6_active = false;
     this.updateStatic();
   }
   tab5(){
@@ -121,6 +128,16 @@ export class TabviewComponent {
     this.tab3_active =false;
     this.tab4_active = false;
     this.tab5_active = true ;
+    this.tab6_active = false;
+    this.updateStatic();
+  }
+  tab6(){
+    this.tab1_active = false;
+    this.tab2_active = false;
+    this.tab3_active =false; 
+    this.tab4_active = false;
+    this.tab5_active =false;
+    this.tab6_active = true;
     this.updateStatic();
   }
 
@@ -130,6 +147,7 @@ export class TabviewComponent {
     ClsFrm.tab3_active=this.tab3_active  ;
     ClsFrm.tab4_active=this.tab4_active  ;
     ClsFrm.tab5_active=this.tab5_active  ;
+    ClsFrm.tab6_active=this.tab6_active  ;
   }
 
   getStatic(){
@@ -138,6 +156,7 @@ export class TabviewComponent {
     this.tab3_active = ClsFrm.tab3_active;
     this.tab4_active = ClsFrm.tab4_active;
     this.tab5_active =  ClsFrm.tab5_active;
+    this.tab6_active =  ClsFrm.tab6_active;
   }
 
   isLoading:boolean = false;

@@ -716,6 +716,8 @@ export class Farmguild {
                         new FarmUnit('Rey', 7, 13, 8),
                         new FarmUnit('Sith Eternal Emperor', 7, 13, 8),
                         new FarmUnit('Lord Vader', 7, 13, 8),
+                        new FarmUnit('Leia Organa', 7, 13, 8),
+                        
                     ],
                     [],
                     null, false, false
@@ -729,6 +731,7 @@ export class Farmguild {
                     [], [
                     new FarmUnit('Executor', 7),
                     new FarmUnit('Profundity', 7),
+                    new FarmUnit('Leviathan', 7),
 
 
                 ],

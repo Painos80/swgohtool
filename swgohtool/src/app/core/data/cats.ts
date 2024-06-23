@@ -6,6 +6,7 @@ import { Cpit } from "./cpit";
 import { Farmguild } from './farmguild';
 import { Krayt } from './krayt';
 import { Sbp } from './sbp';
+import { Naboo } from './naboo';
 
 export class categories {
     legends = new Gls().renew();
@@ -34,6 +35,7 @@ export class categories {
     lowKeyCharsCapitalShipsShips= new Farmguild().renewlowKeyCharsCapitalShipsShips();
     krayt = new Krayt().renew();
     sbp = new Sbp().renew();
+    naboo = new Naboo().renew();
     
     renew() {
         this.legends = new Gls().renew();
@@ -43,6 +45,7 @@ export class categories {
         //this.cpit = new Cpit().renew();
         this.krayt = new Krayt().renew();
         this.sbp = new Sbp().renew();
+        this.naboo = new Naboo().renew();
         this.player = null;
         this.farmHigh = new Farmguild().renewHigh();
         this.farmMedium = new Farmguild().renewMedium();

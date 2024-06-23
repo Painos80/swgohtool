@@ -193,7 +193,7 @@ export class Gls {
                         new FarmUnit('Captain Drogan', 7, 13, 7),
                         new FarmUnit('Commander Luke Skywalker', 7, 13, 7),
                         new FarmUnit('Boushh (Leia Organa)', 7, 13, 5),
-                        new FarmUnit('Threepio & Chewie', 7, 13, 5),
+                        new FarmUnit('Threepio & Chewie', 7, 13, 7),
                         new FarmUnit('Lobot', 7, 13, 3)
                     ],
                     [

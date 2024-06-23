@@ -6,6 +6,7 @@ export class ClsFrm{
   static tab3_active:boolean=false;
   static tab4_active:boolean=false;
   static tab5_active:boolean=false;
+  static tab6_active:boolean=false;
 
 }
 

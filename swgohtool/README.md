@@ -18,7 +18,12 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
-v1.12
+v1.13
+    Changed the api path 
+    Fixed chewpo relic for Leia
+    Updated farming list
+    Added battle for Nabbo reqs
+v1.13
     Added third sister
     Added jar jar
     Added Bo-katan

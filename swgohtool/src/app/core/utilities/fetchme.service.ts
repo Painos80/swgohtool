@@ -18,7 +18,7 @@ export class FetchmeService {
 
   //proxy_cors = "https://corsproxy.io/?";
   proxy_cors = "https://panosweb.se/px/proxy.php?url=";
-  //              https://panosweb.se/proxy/proxy.php?url=http://api.swgoh.gg/ships/
+  //              https://panosweb.se/proxy/proxy.php?url=https://swgoh.gg/api/ships/
 
   private _ships = new BehaviorSubject<any>([]);
   ships = this._ships.asObservable();
@@ -170,6 +170,12 @@ export class FetchmeService {
   changeCpitReadyCounterClose(newData:any){
     this._cpitready_counterclose.next(newData);
   }*/
+  private _naboo = new BehaviorSubject<any>([]);
+  naboo = this._naboo.asObservable();
+  changeNaboo(newData:any){
+    this._naboo.next(newData);
+  }
+
 
   private _krayt = new BehaviorSubject<any>([]);
   krayt = this._krayt.asObservable();
@@ -292,7 +298,7 @@ export class FetchmeService {
     return this.http.get(url__in, {headers:headers});
    }
    getDataForPlayerSub(pid:string){
-    const url__in = `${this.proxy_cors}http://api.swgoh.gg/player/${pid}/`;
+    const url__in = `${this.proxy_cors}https://swgoh.gg/api/player/${pid}/`;
     const headers= new HttpHeaders()
   .set('content-type', 'application/json')
   .set('Access-Control-Allow-Origin', '*');
@@ -301,9 +307,9 @@ export class FetchmeService {
    }
 
    async getDataForGuild(){
-    //Feddy: http://api.swgoh.gg/guild-profile/7skNKIClReOBSq8jfL_F0g
+    //Feddy: https://swgoh.gg/api/guild-profile/7skNKIClReOBSq8jfL_F0g
     //Dianogas: IbRkVS2bTM-tJ92t92I-Gg
-    const url__in = `${this.proxy_cors}http://api.swgoh.gg/guild-profile/${Globals.guild}/`;
+    const url__in = `${this.proxy_cors}https://swgoh.gg/api/guild-profile/${Globals.guild}/`;
     const headers= new HttpHeaders()
   .set('content-type', 'application/json')
   .set('Access-Control-Allow-Origin', '*');
@@ -312,7 +318,7 @@ export class FetchmeService {
    }
 
    async getDataForPlayer(pid:string){
-    const url__in = `${this.proxy_cors}http://api.swgoh.gg/player/${pid}/`;
+    const url__in = `${this.proxy_cors}https://swgoh.gg/api/player/${pid}/`;
     const headers= new HttpHeaders()
   .set('content-type', 'application/json')
   .set('Access-Control-Allow-Origin', '*');
@@ -500,6 +506,10 @@ members.
       cats.sbp.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
       this.changeSbp(cats.sbp.farms);
 
+      this.Loop(cats.naboo,player);
+      cats.naboo.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
+      this.changeNaboo(cats.naboo.farms);
+
 
 
       let events = cats.events.farms.filter(x => x.ok);
@@ -647,6 +657,8 @@ members.
     cats.sbp.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
     //this.changeSbp(cats.sbp.farms);
 
+    this.Loop(cats.naboo,player);
+    cats.naboo.farms.forEach(x=>x.units.sort((a,b)=>b.power-a.power));
 
 
     let events = cats.events.farms.filter(x => x.ok);
@@ -852,7 +864,7 @@ members.
 
   //Fetch data for ships and units
   async getDataFor(option: string) {
-    const url__in = `${this.proxy_cors}http://api.swgoh.gg/${option}/`;
+    const url__in = `${this.proxy_cors}https://swgoh.gg/api/${option}/`;
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*');
