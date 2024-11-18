@@ -33,9 +33,9 @@ export class Cpit {
                     'dark',
                     [
                         new FarmUnit('Jedi Master Kenobi', 7, 13, 7),
-                        new FarmUnit('Commander Ahsoka Tano', 7, 13, 5),
+                        new FarmUnit('Commander Ahsoka Tano (Snips)', 7, 13, 5),
                         new FarmUnit('C-3PO', 7, 13, 5),
-                        new FarmUnit('Ahsoka Tano', 7, 13, 5),
+                        new FarmUnit('Ahsoka Tano (Snips)', 7, 13, 5),
                         new FarmUnit('General Kenobi', 7, 13, 5),
 
 
@@ -99,7 +99,7 @@ export class Cpit {
                         new FarmUnit('Jedi Master Kenobi', 7, 13, 7),
                         new FarmUnit('Commander Ahsoka Tano', 7, 13, 5),
                         new FarmUnit('Ki-Adi-Mundi', 7, 13, 5),
-                        new FarmUnit('Ahsoka Tano', 7, 13, 5),
+                        new FarmUnit('Ahsoka Tano (Snips)', 7, 13, 5),
                         new FarmUnit('General Kenobi', 7, 13, 5),
 
 

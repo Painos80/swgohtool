@@ -78,6 +78,9 @@ export class AppComponent {
       if(Globals.isRooms){
         Globals.guild = Globals.rooms;
       }
+      if(Globals.isScarberia){
+        Globals.guild = Globals.scarberia;
+      }
       this.inputForm.patchValue({
         hideCompleted: this.fetch.hidecompletedValue
         

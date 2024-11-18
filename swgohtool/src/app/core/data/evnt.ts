@@ -172,7 +172,7 @@ export class EventsCls {
                     'event',
                     'light',
                     [
-                        new FarmUnit('Ahsoka Tano', 7, 12, undefined, 17700),
+                        new FarmUnit('Ahsoka Tano (Snips)', 7, 12, undefined, 17700),
                         new FarmUnit('C-3PO', 7, 12, undefined, 17700),
                         new FarmUnit('General Kenobi', 7, 12, undefined, 17700),
                         new FarmUnit('Padmé Amidala', 7, 12, undefined, 17700),

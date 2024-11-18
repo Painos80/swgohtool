@@ -447,7 +447,7 @@ export class Farmguild {
                         new FarmUnit('Commander Ahsoka Tano', 7,13,5),
                         new FarmUnit('General Kenobi', 7,13,8),
                         new FarmUnit('General Skywalker', 7,13,8),
-                        new FarmUnit('Ahsoka Tano', 7,13,5),                      
+                        new FarmUnit('Ahsoka Tano (Snips)', 7,13,5),                      
                     ],
                     [],null,false,false
                 ),
@@ -557,7 +557,7 @@ export class Farmguild {
                         new FarmUnit('C-3PO', 7, 13, 7),
                         new FarmUnit('Mace Windu', 7,13,5, undefined,undefined,["uniqueskill_MACEWINDU02"]),
                         new FarmUnit('Jedi Knight Anakin', 7, 13, 7),
-                        new FarmUnit('Ahsoka Tano', 7, 13, 5),
+                        new FarmUnit('Ahsoka Tano (Snips)', 7, 13, 5),
                       
                     ],
                     [],null,false,false

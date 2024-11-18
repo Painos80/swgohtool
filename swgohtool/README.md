@@ -18,7 +18,7 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
-v2.0.0
+v2.0
     List all characters in order of power (GLs, GLs ships, Journeys etc from api/characters)
     Use json files to generate the priority lists
     When clicking on a character it should open the farming list (Journey guides)

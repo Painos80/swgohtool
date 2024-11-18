@@ -15,6 +15,8 @@ import { FooterComponent } from './web/main/footer/footer.component';
 import { TabviewComponent } from './web/components/tabview/tabview.component';
 import { AccordeonComponent } from './web/components/accordeon/accordeon.component';
 import { OmicronComponent } from './web/components/omicron/omicron.component';
+import { ModscoreComponent } from './web/components/new/modscore/modscore.component';
+import { GuildsComponent } from './web/components/new/guilds/guilds.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { OmicronComponent } from './web/components/omicron/omicron.component';
     TabviewComponent,
     AccordeonComponent,
     OmicronComponent,
+    ModscoreComponent,
+    GuildsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<div class="d-flex" *ngIf="(datavalues_obs$ | async)">
+    <!--<span class="text-white" *ngIf="(datavalues_obs$ | async).guilds">
+        <span class="text-white" *ngFor="let item of (datavalues_obs$ | async).guilds.values ; index as i">
+
+            <span><span *ngIf="i > 0">, </span>{{item.name}}: {{item.id}}</span>
+        </span>
+    </span> -->
+    <div *ngFor="let item of guilds">
+      <!--  {{item | json}}-->
+        
+        <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">{{item.data.name}}</button>
+        <ul class="dropdown-menu">
+          <li *ngFor="let lnd of item.members; index as i" [ngClass]="{'activeli':lnd.ally_code == ally_code}"><button class="dropdown-item" (click)="changeplayer(lnd)">{{lnd.player_name}}(GP:{{lnd.galactic_power}})</button>
+           
+          </li> 
+        </ul>
+        
+    </div>
+
+</div>

@@ -41,7 +41,18 @@ export class Fetchnewservice {
     _datavaluesobj: any;
     changeData(newData: any) {
         this._datavaluesobj = newData;
+        if(newData && newData.hasOwnProperty('lists')){
+            this.changeDataLists(newData.lists);
+        }
         this._datavalues.next(newData);
+    }
+
+    private _datavaluesList = new BehaviorSubject<any>([]);
+    _datavaluesList_obs$ = this._datavaluesList.asObservable();
+    _datavaluesListobj: any;
+    changeDataLists(newData: any) {
+        this._datavaluesListobj = newData;
+        this._datavaluesList.next(newData);
     }
 
     private _guild = new BehaviorSubject<any>([]);
@@ -150,6 +161,58 @@ export class Fetchnewservice {
             let json_copy = JSON.stringify(this._datavaluesobj);
             let item_json = JSON.parse(json_copy);
 
+            let mods_1519 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 150000 && y.value <= 190000)));
+            let mods_2024 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 200000 && y.value <= 240000)));
+            let mods_25 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 250000)));
+
+            let modscore = ((mods_1519.length * 0.8) + (mods_2024.length) + (mods_25.length * 1.6))/ (player.data.character_galactic_power / 100000); 
+            let hotutils = Math.round((modscore + Number.EPSILON) * 100) / 100;
+/*
+*Mod Quality: ((# of 15-19 Speed * 0.8) + (# of 20-24 Speed) + (# of 25+ Speed * 1.6)) / (squadGP / 100,000)
+*Gear Quality: (Number of G12+ + G13 + Relic Score) / (Total GP / 100000) | Relic score: 1 + (0.2 bonus per relic tier) (ex: r0 = 1, r1 = 1.2, ..., r8 = 2.8, r9 = 3.2)
+*Total Quality: Mod Quality + Gear Quality
+*/
+let mods_1519_2 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 150000 )));
+let modscore2 = (mods_1519_2.length)/ (player.data.character_galactic_power / 100000); 
+let omega = Math.round((modscore2 + Number.EPSILON) * 100) / 100;
+
+let g12 = player.units.filter((x: { data: { gear_level: number; }; })=> x.data.gear_level == 12).length;
+let g13 = player.units.filter((x: { data: { gear_level: number; }; })=> x.data.gear_level == 13).length;
+let b0 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 0+2).length;
+let b1 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 1+2).length * 1.2;
+let b2 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 2+2).length * 1.4;
+let b3 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 3+2).length * 1.6;
+let b4 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 4+2).length * 1.8;
+let b5 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 5+2).length * 2;
+let b6 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 6+2).length * 2.2;
+let b7 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 7+2).length * 2.4;
+let b8 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 8+2).length * 2.8;
+let b9 = player.units.filter((x: { data: { gear_level: number; relic_tier: number; }; })=> x.data.gear_level == 13 && x.data.relic_tier == 9+2).length * 3.2;
+let relic_score = 1 + b0 + b1+b2+b3+b4+b5+b6+b7+b8+b9;
+let gear_score = (g12+g13+ relic_score)/ (player.data.galactic_power  / 100000); 
+let g_score = Math.round((gear_score + Number.EPSILON) * 100) / 100;
+//
+
+
+/*
+Mod Quality: Number of +15 Speeds / (squad GP / 100000)
+  Gear Quality: (Number of G12+ + G13 Bonus Score) / (Total GP / 100000)
+  G13 Bonus score: 1 + (0.2 bonus per relic tier) (ex: r0 = 1, r1 = 1.2, ..., r7 = 2.4)
+  Total Quality: Mod Quality + Gear Quality
+*/
+item_json.modscores.values[0].value = hotutils;
+item_json.modscores.values[1].value = omega;
+item_json.modscores.values[2].value = g_score;
+item_json.modscores.values[3].value = hotutils + g_score;
+item_json.modscores.values[4].value = omega + g_score;
+/*"modscores":{
+    "description": "Mod scores",
+    "values":[
+        {"hotutilities": ""},
+        {"omega": ""}
+    ]
+}*/
+
             for (let i = 0; i <= item_json.lists.length - 1; i++) {
                 let dt = item_json.lists[i];
                 //dt.player_item = player.units.find((x: { data: { name: any; }; } )=>x.data.name == dt.name);
@@ -190,8 +253,23 @@ export class Fetchnewservice {
         let ddt = guild.data.members.sort(this.objectComparisonCallback);
         this.changeGuild(ddt);
         this.changeGuild1(guild.data.name);
-
     }
+
+    async generateGuild(guid: string){
+        let data = await this.getDataForGuild(guid);
+        let jsonstr = JSON.stringify(data);
+        let guild = JSON.parse(jsonstr);
+        /*
+    members.
+      player_name
+      ally_code
+      galactic_power
+    */
+        let ddt = guild.data.members.sort(this.objectComparisonCallback);
+        guild.members = ddt;
+        return guild;
+    }
+
     generateItemFromGG(list_in: any, list: Array<ClsDefault>) {
         for (let i = 0; i <= list_in.length - 1; i++) {
             let char_name = list_in[i].name;

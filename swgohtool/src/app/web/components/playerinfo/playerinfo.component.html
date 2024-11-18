@@ -5,7 +5,19 @@
     <a  href="https://swgoh.gg{{(playerdata$ | async).guild_url}}" class="link-warning " target="_blank">{{(playerdata$ | async).guild_name}}</a>
     <span class="px-1">-</span>
     <span  >GP: {{(playerdata$ | async).galactic_power}}  
-      <span class="d-block text-muted h6" *ngIf="(playerdata$ | async).last_update_sub">last updated {{(playerdata$ | async).last_update_sub}} hours ago</span></span>
+      <span class="d-block text-muted h6" *ngIf="(datavalues_obs$ | async)">
+        <span class="text-white" *ngIf="(datavalues_obs$ | async).modscores">
+           <!-- {{(datavalues_obs$ | async).modscores.description}}-->
+            <span class="text-white" *ngFor="let item of (datavalues_obs$ | async).modscores.values ; index as i"  >
+               
+                <span><span *ngIf="i > 0">, </span>{{item.name}}: {{item.value}}</span>        
+            </span>
+        </span>
+       
+    </span>
+    
+      <span class="d-block text-muted h6" *ngIf="(playerdata$ | async).last_update_sub">last updated {{(playerdata$ | async).last_update_sub}} hours ago</span>
+    </span>
     
     
   </h3>
