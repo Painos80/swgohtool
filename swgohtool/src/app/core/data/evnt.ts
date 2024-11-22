@@ -97,6 +97,19 @@ export class EventsCls {
                     ],
                     [],
                 ),
+                new Farm(
+                    'Baylan Skoll',
+                    'event',
+                    'dark',
+                    [
+                        new FarmUnit('Shin Hati', 7, 13, 7),
+                        new FarmUnit('Marrok', 7, 13, 7),
+                        new FarmUnit('Morgan Elsbeth', 7, 13, 7),
+                        new FarmUnit('Great Mothers', 7, 13, 7),
+                        new FarmUnit('Grand Admiral Thrawn', 7, 13, 7),
+                    ],
+                    [],
+                ),
 
                 new Farm(
                     'Grand Inquisitor',
@@ -172,7 +185,7 @@ export class EventsCls {
                     'event',
                     'light',
                     [
-                        new FarmUnit('Ahsoka Tano', 7, 12, undefined, 17700),
+                        new FarmUnit('Ahsoka Tano (Snips)', 7, 12, undefined, 17700),
                         new FarmUnit('C-3PO', 7, 12, undefined, 17700),
                         new FarmUnit('General Kenobi', 7, 12, undefined, 17700),
                         new FarmUnit('Padmé Amidala', 7, 12, undefined, 17700),

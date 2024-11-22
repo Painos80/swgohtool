@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FetchmeService } from 'src/app/core/utilities/fetchme.service';
 import { Observable } from 'rxjs';
 import { ClsFrm } from 'src/app/core/classes/cls-frm';
+import { Fetchnewservice } from 'src/app/core/newcore/fetchnewservice';
 
 @Component({
   selector: 'app-tabview',
@@ -9,6 +10,11 @@ import { ClsFrm } from 'src/app/core/classes/cls-frm';
   styleUrls: ['./tabview.component.scss']
 })
 export class TabviewComponent {
+  new$:Observable<any> = this.fetchNew._datavaluesList_obs$;
+  datavalues_obs$:Observable<any> = this.fetchNew.datavalues_obs$;
+
+
+
   //Subscriptions
   ships$:Observable<any> = this.fetch.ships;
   units$:Observable<any> = this.fetch.units;
@@ -28,7 +34,7 @@ export class TabviewComponent {
   naboo$:Observable<any>= this.fetch.naboo; 
   //cpit$:Observable<any>= this.fetch.cpit;
   //cpitlw$:Observable<any>= this.fetch.cpitlw;
-  error$:Observable<any>= this.fetch.error;
+  error$:Observable<any>= this.fetch.error; 
   /*cpitready$:Observable<any>= this.fetch.cpitready;
   cpitready_counter$:Observable<any>= this.fetch.cpitready_counter;
   cpitreadyclose$:Observable<any>= this.fetch.cpitreadyclose;
@@ -65,7 +71,8 @@ export class TabviewComponent {
   tab6_active:boolean=false;
 
   public constructor(
-    private fetch: FetchmeService
+    private fetch: FetchmeService,
+    private fetchNew: Fetchnewservice
     ) {
      
       

@@ -8,6 +8,7 @@ import { FormGroup, FormControl, Validators }  from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { Globals } from './core/globals';
+import { Fetchnewservice } from './core/newcore/fetchnewservice';
 
 @Component({
   selector: 'app-root',
@@ -65,7 +66,9 @@ export class AppComponent {
     private fetch: FetchmeService,
     private formBuilder: FormBuilder, 
     private route: ActivatedRoute, 
-    private router: Router) {
+    private router: Router,
+    private fetchNew:Fetchnewservice
+  ) {
       if(Globals.isFeddy){
         Globals.guild = Globals.feddy;
       }
@@ -74,6 +77,9 @@ export class AppComponent {
       }
       if(Globals.isRooms){
         Globals.guild = Globals.rooms;
+      }
+      if(Globals.isScarberia){
+        Globals.guild = Globals.scarberia;
       }
       this.inputForm.patchValue({
         hideCompleted: this.fetch.hidecompletedValue
@@ -98,12 +104,16 @@ export class AppComponent {
         this.checkoutForm.patchValue({ playerid: params['playerid'] });
         this.ally_code = params['playerid'];
         await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
+        await this.fetchNew.populatePlayer(this.checkoutForm.controls['playerid'].value);
         this.loading = false;
       }
     });
 
     //Populate vars that have nothing to do with player
     this.loading = true;
+    await this.fetchNew.populateJSON();
+
+    //await this.fetchNew.populateGuild();
     await this.fetch.populateGuild();
     await this.fetch.populateShips();
     await this.fetch.populateUnits();
@@ -136,6 +146,7 @@ export class AppComponent {
     } else {
       this.loading = true;
       let player = await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
+      await this.fetchNew.populatePlayer(this.checkoutForm.controls['playerid'].value);
       this.loading = false;
     }
   }

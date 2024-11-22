@@ -1,4 +1,41 @@
 <div>
+   
+   <!-- <div class="text-white"  *ngFor="let lnd of new$ | async ; index as i" style="display: none;" >
+        {{lnd.description}}        
+        <div class="px-2" *ngFor="let item of lnd.values ; index as i" >
+            <ng-container > 
+                <span *ngIf="!item.player_item" class="text-danger">
+                    <img class=" p-1 m-1" style="border:1px solid #00aaff" width="64" height="64" *ngIf="item.item_from_gg.image" [src]="item.item_from_gg.image"
+                    alt="Place image title">
+            {{item.name}}</span>
+                <span *ngIf="item.player_item && item.player_item.data.rarity != 7" class="text-warning">{{item.name}} ({{item.player_item.data.rarity}}/7)</span>
+                <span *ngIf="item.player_item && item.player_item.data.rarity == 7" class="text-success">{{item.name}}</span>
+                <span *ngIf="item.player_item && item.player_item.data.is_galactic_legend " >{{item.player_item.data.has_ultimate}}</span>
+
+                <div class="px-4" *ngFor="let item_1 of item.requirements ; index as i" >
+                    <img style="border:1px solid #00aaff" width="32" height="32" *ngIf="item_1.item_from_gg.image" [src]="item_1.item_from_gg.image" alt="Image from swgoh.gg">
+                    <span *ngIf="!item_1.player_item" class="text-danger">{{item_1.name}}</span>
+                    <span *ngIf="item_1.player_item && item_1.player_item.data.rarity != 7" class="text-warning">{{item_1.name}} ({{item_1.player_item.data.rarity}}/7)</span>
+                    <span *ngIf="item_1.player_item && item_1.player_item.data.rarity == 7" class="text-success">{{item_1.name}}</span>
+                </div>
+                <pre>
+                    <code class="text-white"  style="display: none;">
+                        {{item | json}}
+                    </code>
+                    </pre>
+            </ng-container>
+        </div>
+    </div>-->
+
+    <pre>
+        <code class="text-white" style="display: none;" *ngIf="(datavalues_obs$ | async)">
+            {{(datavalues_obs$ | async).modscores.values | json}}
+
+            {{datavalues_obs$ | async | json}}
+            {{new$ | async | json}}
+
+        </code>
+        </pre>
     <!--<div class="text-white">
     {{tab1_active}}
     {{tab2_active}}
