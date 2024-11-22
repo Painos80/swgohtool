@@ -97,6 +97,19 @@ export class EventsCls {
                     ],
                     [],
                 ),
+                new Farm(
+                    'Baylan Skoll',
+                    'event',
+                    'dark',
+                    [
+                        new FarmUnit('Shin Hati', 7, 13, 7),
+                        new FarmUnit('Marrok', 7, 13, 7),
+                        new FarmUnit('Morgan Elsbeth', 7, 13, 7),
+                        new FarmUnit('Great Mothers', 7, 13, 7),
+                        new FarmUnit('Grand Admiral Thrawn', 7, 13, 7),
+                    ],
+                    [],
+                ),
 
                 new Farm(
                     'Grand Inquisitor',
