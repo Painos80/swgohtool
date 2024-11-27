@@ -23,24 +23,24 @@ export class AppComponent {
   loading = false;
 
   //Subscriptions
-  ships$:Observable<any> = this.fetch.ships;
-  units$:Observable<any> = this.fetch.units;
-  playerdata$:Observable<any>= this.fetch.playerdata;
-  loaded$:Observable<any>= this.fetch.loaded;
-  legends$:Observable<any>= this.fetch.legends;
-  events$:Observable<any>= this.fetch.events;
-  eventslow$:Observable<any>= this.fetch.eventslow;
-  gls$:Observable<any>= this.fetch.gls;
-  evnts$:Observable<any>= this.fetch.evnts;
-  evntslw$:Observable<any>= this.fetch.evntslw;
-  guild$:Observable<any>= this.fetch.guild;
-  goodteams$:Observable<any>= this.fetch.goodteams;
-  goodteamslw$:Observable<any>= this.fetch.goodteamslw;
+  ships$:Observable<any> = this.fetchNew.ships;
+  units$:Observable<any> = this.fetchNew.units;
+  playerdata$:Observable<any>= this.fetchNew.playerdata;
+  loaded$:Observable<any>= this.fetchNew.loaded;
+  //legends$:Observable<any>= this.fetch.legends;
+  //events$:Observable<any>= this.fetch.events;
+  //eventslow$:Observable<any>= this.fetch.eventslow;
+  //gls$:Observable<any>= this.fetch.gls;
+  //evnts$:Observable<any>= this.fetch.evnts;
+  //evntslw$:Observable<any>= this.fetch.evntslw;
+  //guild$:Observable<any>= this.fetch.guild;
+  //goodteams$:Observable<any>= this.fetch.goodteams;
+  //goodteamslw$:Observable<any>= this.fetch.goodteamslw;
   //cpit$:Observable<any>= this.fetch.cpit;
   //cpitlw$:Observable<any>= this.fetch.cpitlw;
-  error$:Observable<any>= this.fetch.error;
+  error$:Observable<any>= this.fetchNew.error;
 
-  guild1$:Observable<any> = this.fetch.guild1;
+  //guild1$:Observable<any> = this.fetch.guild1;
   //cpitready$:Observable<any>= this.fetch.cpitready;
   //cpitready_counter$:Observable<any>= this.fetch.cpitready_counter;
   //cpitreadyclose$:Observable<any>= this.fetch.cpitreadyclose;
@@ -55,7 +55,8 @@ export class AppComponent {
 
   //Form
   inputForm:FormGroup = this.formBuilder.group({
-    hidecompleted: false
+    hideCompleted: false,
+    hidecompletedTable: false
   });
 
 
@@ -82,12 +83,12 @@ export class AppComponent {
         Globals.guild = Globals.scarberia;
       }
       this.inputForm.patchValue({
-        hideCompleted: this.fetch.hidecompletedValue
-        
+        hideCompleted: this.fetchNew.hidecompletedItemsValue,
+        hidecompletedTable: this.fetchNew.hidecompletedValue
       });
  this.inputForm.valueChanges.subscribe(x=>{
-  this.fetch.changeHideCompleted(x.hidecompleted);
-  this.fetch.changeHideCompletedItems(x.hidecompleted);
+  this.fetchNew.changeHideCompleted(x.hidecompletedTable);
+  this.fetchNew.changeHideCompletedItems(x.hideCompleted);
   if(this.checkoutForm.controls['playerid'].value){
  this.fetchData();
   }
@@ -103,7 +104,8 @@ export class AppComponent {
         this.loading = true;
         this.checkoutForm.patchValue({ playerid: params['playerid'] });
         this.ally_code = params['playerid'];
-        await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
+        //await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
+       //this.fetch.changeLoaded(true);
         await this.fetchNew.populatePlayer(this.checkoutForm.controls['playerid'].value);
         this.loading = false;
       }
@@ -114,10 +116,10 @@ export class AppComponent {
     await this.fetchNew.populateJSON();
 
     //await this.fetchNew.populateGuild();
-    await this.fetch.populateGuild();
-    await this.fetch.populateShips();
-    await this.fetch.populateUnits();
-    await this.fetch.populateAbilities();
+    //await this.fetch.populateGuild();
+    //await this.fetch.populateShips();
+    //await this.fetch.populateUnits();
+    //await this.fetch.populateAbilities();
     this.loading = false;
   }
 
@@ -145,7 +147,7 @@ export class AppComponent {
       this.router.navigateByUrl(lnk);
     } else {
       this.loading = true;
-      let player = await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
+      //let player = await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
       await this.fetchNew.populatePlayer(this.checkoutForm.controls['playerid'].value);
       this.loading = false;
     }

@@ -69,6 +69,38 @@ export class Fetchnewservice {
         this._guildobj1 = newData;
         this._guild1.next(newData);
     }
+    private _playerdata = new BehaviorSubject<any>([]);
+    playerdata = this._playerdata.asObservable();
+    _playerobj:any;
+    changePlayerData(newData:any){
+      this._playerobj  = newData;
+      this._playerdata.next(newData);
+    }
+  
+    private _ships = new BehaviorSubject<any>([]);
+  ships = this._ships.asObservable();
+  shipsobj:any;
+  changeShips(newData:any){
+    this.shipsobj = newData;
+    this._ships.next(newData);
+  }
+
+  private _units = new BehaviorSubject<any>([]);
+  units = this._units.asObservable();
+  unitsobj:any;
+  changeUnits(newData:any){
+    this.unitsobj = newData;
+        this._units.next(newData);
+  }
+
+
+  private _abilities = new BehaviorSubject<any>([]);
+  abilities = this._abilities.asObservable();
+  abilitiesobj:any;
+  changeAbilities(newData:any){
+    this.abilitiesobj = newData;
+    this._abilities.next(newData);
+  }
 
     async getDataForGuild(guild: string) {
         //Feddy: https://swgoh.gg/api/guild-profile/7skNKIClReOBSq8jfL_F0g
@@ -112,7 +144,7 @@ export class Fetchnewservice {
     async populateJSON() {
         let data = await this.getFromURL();
         if (data) {
-            this.populateGuild(data.get_default.guild);
+            //this.populateGuild(data.get_default.guild);
             let list: Array<ClsDefault> = [];
             for (let i = 0; i <= data.get_default.values.length - 1; i++) {
                 let label = data.get_default.values[i];
@@ -147,6 +179,15 @@ export class Fetchnewservice {
             if (!pid) {
                 return;
             }
+            if (!this.shipsobj) {
+                await this.populateShips();
+              }
+              if (!this.unitsobj) {
+                await this.populateUnits();
+              }
+              if (!this.abilitiesobj) {
+                await this.populateAbilities();
+              }
 
             if (!this._defaultvaluesobj || !this._datavaluesobj) {
                 await this.populateJSON();
@@ -203,8 +244,8 @@ Mod Quality: Number of +15 Speeds / (squad GP / 100000)
 item_json.modscores.values[0].value = hotutils;
 item_json.modscores.values[1].value = omega;
 item_json.modscores.values[2].value = g_score;
-item_json.modscores.values[3].value = hotutils + g_score;
-item_json.modscores.values[4].value = omega + g_score;
+item_json.modscores.values[3].value = Math.round(((hotutils + g_score) + Number.EPSILON) * 100) / 100;//hotutils + g_score;
+item_json.modscores.values[4].value = Math.round(((omega + g_score) + Number.EPSILON) * 100) / 100;//omega + g_score;
 /*"modscores":{
     "description": "Mod scores",
     "values":[
@@ -232,9 +273,10 @@ item_json.modscores.values[4].value = omega + g_score;
                 }
             }
             this.changeData(item_json);
-
+this.changePlayerData(player.data);
             console.log(this._datavaluesobj);
             console.log(this._defaultvaluesobj);
+            this.changeLoaded(true);
 
         } catch (e) {
             console.error(e);
@@ -299,5 +341,43 @@ item_json.modscores.values[4].value = omega + g_score;
 
         return 0
     }
+
+    //Populate abilities
+  async populateAbilities() {
+    let data = await this.getDataFor('abilities');
+    this.changeAbilities(data);
+    return data;
+  }
+
+
+  //Populate ships
+  async populateShips() {
+    let data = await this.getDataFor('ships');
+    this.changeShips(data);
+    return data;
+  }
+
+  //Populate units
+  async populateUnits() {
+    let data = await this.getDataFor('characters');
+    this.changeUnits(data);
+    return data;
+  }
+
+  private _hidecompleted = new BehaviorSubject<any>(false);
+  hidecompleted = this._hidecompleted.asObservable();
+  hidecompletedValue = false;
+  changeHideCompleted(newData:any){
+    this.hidecompletedValue = newData;
+    this._hidecompleted.next(newData);
+  }
+  
+  private _hidecompletedItems = new BehaviorSubject<any>(false);
+  hidecompletedItems = this._hidecompletedItems.asObservable();
+  hidecompletedItemsValue = false;
+  changeHideCompletedItems(newData:any){
+    this.hidecompletedItemsValue = newData;
+    this._hidecompletedItems.next(newData);
+  }
 
 }

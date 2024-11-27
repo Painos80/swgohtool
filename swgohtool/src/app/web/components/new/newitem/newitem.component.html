@@ -1,0 +1,270 @@
+<ng-container >
+
+
+    <!--
+    <pre>
+        <code class="text-white"  style="display: none;">
+            {{item.player_item | json}}
+        </code>
+    </pre>
+    <pre>
+        <code class="text-white"  style="display: none;">
+            {{item | json}}
+        </code>
+    </pre>
+    -->
+</ng-container>
+
+<div class="card my-2" >
+    <!--
+    {{lnd.ok}}
+    {{lnd.ultimate}}
+    {{lnd.foundText}}-->
+    <div class="card-body w-100 m-0 p-0 bg-dark">
+        <h5 class="card-title d-flex mb-0 pb-0" [ngClass]="calc.calculateLeadItem(item)">
+            <span >
+                <!--style="border:1px solid #00aaff"-->
+                <img class=" p-1 m-1" width="64" height="64" *ngIf="item.item_from_gg && item.item_from_gg.image"
+                    [src]="item.item_from_gg.image" alt="Place image title">
+                    <span class="my-1 " *ngIf="calc.calculateURL(item)" [ngClass]="calc.calculateLeadItem(item)"><a  href="{{calc.calculateURL(item)}}" target="_blank" [ngClass]="calc.calculateLeadItem(item)">{{item.name}} {{getExtraText()}}</a></span>
+                    <span  *ngIf="!calc.calculateURL(item)">{{item.name}} {{getExtraText()}}</span>
+                  </span>
+            <!--<ng-container style="display: none;">
+
+<div *ngIf="item.player_item">
+<span class="px-2">{{item.player_item.data.rarity}} {{hasRarity(item)}}</span>
+<span class="px-2">{{item.player_item.data.relic_tier-2}}  {{hasRelic(item)}}</span>
+<span class="px-2">{{item.player_item.data.gear_level}} {{hasGear(item)}}</span>
+</div>
+<div>
+<span class="px-2">{{item.stars}}</span>
+<span class="px-2">{{item.relic_level}}</span>
+<span class="px-2">{{item.gear_level}}</span>
+</div>
+</ng-container>
+-->
+        </h5>
+        <div class="card-text  " style="overflow-x: auto;" *ngIf="showAll()">
+            <table class="table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Name</th>
+                        <th scope="col" class="my-1 text-center">Stars</th>
+                        <th scope="col" class="my-1 text-center">Gear</th>
+                        <th scope="col" class="my-1 text-center">Relic</th>
+                        <th scope="col" *ngIf="item.hasminimumpower">Power</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--<div class="px-4" *ngFor="let item_1 of item.requirements ; index as i" >
+    <span *ngIf="item_1 && item_1.name" [ngClass] = "calculateItem(item_1)" >
+        <img class=" p-1 m-1"  width="32" height="32" *ngIf="item_1.item_from_gg && item_1.item_from_gg.image" [src]="item_1.item_from_gg.image"
+        alt="Place image title">
+        {{item_1.name}}</span>
+    <ng-container style="display: none;">
+    <div *ngIf="item_1.player_item">
+        <span class="px-2">{{item_1.player_item.data.rarity}} {{hasRarity(item_1)}}</span>
+        <span class="px-2">{{item_1.player_item.data.relic_tier-2}}  {{hasRelic(item_1)}}</span>
+        <span class="px-2">{{item_1.player_item.data.gear_level}} {{hasGear(item_1)}}</span>
+        <span class="px-2">{{item_1.player_item.data.power}} {{hasPowerToon(item_1)}}</span>
+        <span class="px-2">{{item_1.player_item.data.power}} {{hasPowerShip(item_1)}}</span>
+    </div>
+    <div>
+        <span class="px-2">{{item_1.stars}}</span>
+        <span class="px-2">{{item_1.relic_level}}</span>
+        <span class="px-2">{{item_1.gear_level}}</span>
+        <span class="px-2">{{item_1.minimum_power_toon}}</span>
+        <span class="px-2">{{item_1.minimum_power_ship}}</span>
+        <span class="px-2">{{item_1.omicron_abilities_req}}</span>
+    </div>
+</ng-container>
+</div>-->
+                    <ng-container *ngFor="let item_1 of item.requirements ; index as i" >
+
+                    <tr *ngIf="showRow(item_1)">
+                        <td class="p-0" scope="row" [ngClass]="calc.calculateItem(item_1)">
+                          <div class="d-flex ">
+                            <img class="pt-1" width="42" 
+                                *ngIf="item_1.item_from_gg && item_1.item_from_gg.image"
+                                [src]="item_1.item_from_gg.image" alt="Place image title">
+
+                          </div>
+                        </td>
+                        <td [ngClass]="calc.calculateItem(item_1)">
+                            <div *ngIf="!calc.calculateURL(item_1)">{{item_1.name}}</div>
+                            <div class="my-1 " *ngIf="calc.calculateURL(item_1)" [ngClass]="calc.calculateItem(item_1)"><a  href="{{calc.calculateURL(item_1)}}" target="_blank" [ngClass]="calc.calculateItem(item_1)">{{item_1.name}}</a></div>
+
+                        </td>
+                        <td [ngClass]="calc.calculateItem(item_1)">
+                            <div *ngIf="calc.hasRarity(item_1) &&  calc.hasItem(item_1)">
+                                &#x2713;
+                            </div>
+                            <div *ngIf="!calc.hasRarity(item_1)">
+                                <div *ngIf="item_1.player_item">
+                                    <span class="px-2">{{item_1.player_item.data.rarity}}/{{item_1.stars}}</span>
+                                </div>
+                                <div *ngIf="!item_1.player_item">
+                                    <span class="px-2">{{item_1.stars}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td [ngClass]="calc.calculateItem(item_1)">
+                            <div *ngIf="calc.hasGear(item_1) &&  calc.hasItem(item_1)">
+                                &#x2713;
+                            </div>
+                            <div *ngIf="!calc.hasGear(item_1)">
+                                <div *ngIf="item_1.player_item">
+                                    <span
+                                        class="px-2">{{item_1.player_item.data.gear_level}}/{{item_1.gear_level}}</span>
+                                </div>
+                                <div *ngIf="!item_1.player_item">
+                                    <span class="px-2">{{item_1.gear_level}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td [ngClass]="calc.calculateItem(item_1)">
+                            <div *ngIf="calc.hasRelic(item_1) &&  calc.hasItem(item_1)">
+                                &#x2713;
+                            </div>
+                            <div *ngIf="!calc.hasRelic(item_1)">
+                                <div *ngIf="item_1.player_item">
+                                    <span *ngIf="item_1.player_item.data.relic_tier-2 >= 0"
+                                        class="px-2">{{item_1.player_item.data.relic_tier-2}}/{{item_1.relic_level}}</span>
+                                        <span *ngIf="item_1.player_item.data.relic_tier-2 < 0"
+                                            class="px-2">0/{{item_1.relic_level}}</span>
+                                    </div>
+                                <div *ngIf="!item_1.player_item">
+                                    <span class="px-2">{{item_1.relic_level}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td *ngIf="item.hasminimumpower" [ngClass]="calc.calculateItem(item_1)">
+                            <div *ngIf="item_1.player_item && item_1.minimum_power_toon">
+                                <div *ngIf="calc.hasPowerToon(item_1) &&  calc.hasItem(item_1)">
+                                    &#x2713;
+                                </div>
+                                <div *ngIf="!calc.hasPowerToon(item_1)">
+                                    <div *ngIf="item_1.player_item">
+                                        <span
+                                            class="px-2">{{item_1.player_item.data.power}}/{{item_1.minimum_power_toon}}</span>
+                                    </div>
+                                    <div *ngIf="!item_1.player_item">
+                                        <span class="px-2">{{item_1.minimum_power_toon}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngIf="item_1.player_item && item_1.minimum_power_ship">
+                                <div *ngIf="calc.hasPowerShip(item_1) &&  calc.hasItem(item_1)">
+                                    &#x2713;
+                                </div>
+                                <div *ngIf="!calc.hasPowerShip(item_1)">
+                                    <div *ngIf="item_1.player_item">
+                                        <span
+                                            class="px-2">{{item_1.player_item.data.power}}/{{item_1.minimum_power_ship}}</span>
+                                    </div>
+                                    <div *ngIf="!item_1.player_item">
+                                        <span class="px-2">{{item_1.minimum_power_ship}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                  </ng-container>
+
+                    <!--<tr *ngFor="let unt of lnd.units; index as i" >
+              <th class="p-0" [ngClass]="{'bg-success': unt.allOK() && unt.hasTheToon(), 'bg-danger':!unt.hasTheToon()}"
+                scope="row">
+                <img style="border:1px solid #00aaff" width="32" height="32" *ngIf="unt.image" [src]="unt.image" alt="Image from swgoh.gg">
+                </th>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.allOK() && unt.hasTheToon(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.allOK()} ">
+                <div class="my-1 " *ngIf="!unt.url">{{unt.name}}</div>
+                <div class="my-1 " *ngIf="unt.url"><a  href="{{unt.url}}" class="" [ngClass]="{'link-secondary text-white-bd': (unt.allOK() && unt.hasTheToon()) || !unt.hasTheToon(), 'text-dark-bd':  unt.hasTheToon() && !unt.allOK()}" target="_blank">{{unt.name}}</a></div>
+                <div *ngIf="unt.omicron_abilities_obj.length > 0">
+                  <app-omicron [omicron] = "unt.omicron_abilities_obj"></app-omicron>
+                </div>
+              </td>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.rarityOK || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.rarityOK}">
+                <div class="my-1 text-center">{{unt.stars_on}}/{{unt.stars}}</div>
+              </td>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.gearOK || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.gearOK}">
+                <div *ngIf="unt.gear_level" class="my-1 text-center">
+                  {{unt.gear_level_on}}/{{unt.gear_level}}
+                </div>
+                <div *ngIf="!unt.gear_level && unt.gear_level_on" class="my-1 text-center">
+                  {{unt.gear_level_on}}
+                </div>
+              </td>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.relicOK || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.relicOK}">
+                <div *ngIf="unt.relic_level" class="my-1 text-center">
+                  {{unt.relic_level_on}}/{{unt.relic_level}}
+                </div>
+                <div *ngIf="!unt.relic_level && unt.relic_level_on" class="my-1 text-center">
+                  {{unt.relic_level_on}}
+                </div>
+              </td>
+              <td class="py-0" *ngIf="lnd.hasminimumpower "
+                [ngClass]="{'bg-success': unt.minimumpowerok || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.minimumpowerok}">
+                <div *ngIf="!unt.minimumpowerok">
+                  {{unt.power}}/{{unt.minimum_power_toon}}
+                </div>
+                <div *ngIf="unt.minimumpowerok  && unt.hasTheToon()">
+                  &#x2713;
+  
+                </div>
+              </td>
+            </ng-container>
+            </tr>
+            <tr *ngFor="let unt of lnd.ships; index as i">
+              <ng-container *ngIf="checkCompletedItem(unt)">
+                <th class="p-0" [ngClass]="{'bg-success': unt.allOK() && unt.hasTheToon(), 'bg-danger':!unt.hasTheToon()}"
+                scope="row"><img style="border:1px solid #00aaff" width="32" height="32" *ngIf="unt.image"
+                  [src]="unt.image" alt="Image from swgoh.gg"></th>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.allOK() && unt.hasTheToon(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.allOK()} ">
+                <div class="my-1 " *ngIf="!unt.url">{{unt.name}}</div>
+                <div class="my-1 " *ngIf="unt.url"><a  href="{{unt.url}}" class="" [ngClass]="{'link-secondary text-white-bd': (unt.allOK() && unt.hasTheToon()) || !unt.hasTheToon(), 'text-dark-bd':  unt.hasTheToon() && !unt.allOK()}" target="_blank">{{unt.name}}</a></div>
+              </td>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.rarityOK || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.rarityOK}">
+                <div class="my-1 text-center">{{unt.stars_on}}/{{unt.stars}}</div>
+              </td>
+              <td class="py-0"
+                [ngClass]="{'bg-success': unt.gearOK || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.gearOK}">
+                <div *ngIf="unt.gear_level" class="my-1 text-center">
+                  {{unt.gear_level_on}}/{{unt.gear_level}}
+                </div>
+  
+              </td>
+              <td class="py-0"
+                >
+                <div *ngIf="unt.relic_level" class="my-1 text-center">
+                  {{unt.relic_level_on}}/{{unt.relic_level}}
+                </div>
+              </td>
+              <td class="py-0" *ngIf="lnd.hasminimumpower "
+                [ngClass]="{'bg-success': unt.minimumpowerok || unt.allOK(), 'bg-danger':!unt.hasTheToon(), 'bd-yellow-200': unt.hasTheToon() && !unt.minimumpowerok}">
+                <div *ngIf="!unt.minimumpowerok">
+                  {{unt.power}}/{{unt.minimum_power_ship}}
+                </div>
+                <div *ngIf="unt.minimumpowerok && unt.hasTheToon()">
+                  &#x2713;
+  
+  
+                </div>
+              </td>
+            </ng-container>
+          </tr>-->
+
+                </tbody>
+
+            </table>
+
+
+        </div>
+    </div>
+</div>

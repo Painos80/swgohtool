@@ -23,626 +23,750 @@
     ,
     "lists": [
         {
-            "description": "List of galactig legends",
+            "description": "Galactig legends",
             "values": [
                 {
                     "name": "Jabba the Hutt",
                     "percentage": "",
+                    "stars": "7",
+                    "gear_level": "13",
+                    "relic_level": null,
+                    "has_ultimate": true,
                     "requirements": [
                         {
                             "name": "Krrsantan",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Han Solo",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Gamorrean Guard",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "3",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Greedo",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "6",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Skiff Guard (Lando Calrissian)",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Jedi Knight Luke Skywalker",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Jawa",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "3",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "URoRRuR'R'R",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "4",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "C-3PO",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Boushh (Leia Organa)",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Aurra Sing",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "6",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Fennec Shand",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Boba Fett",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Mob Enforcer",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "3",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Outrider",
+                            "stars": "7",
+                            "gear_level": "",
+                            "relic_level": "",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         }
                     ]
                 },
                 {
                     "name": "Lord Vader",
                     "percentage": "",
+                    "stars": "7",
+                    "gear_level": "13",
+                    "relic_level": null,
+                    "has_ultimate": true,
                     "requirements": [
                         {
                             "name": "Hunter",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Tech",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Wrecker",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Tusken Raider",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Padmé Amidala",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Embo",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "CT-21-0408 \"Echo\"",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Echo",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Count Dooku",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Zam Wesell",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Grand Moff Tarkin",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "ARC Trooper",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "General Skywalker",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Nute Gunray",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "BTL-B Y-wing Starfighter",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         }
                     ]
                 },
                 {
                     "name": "Jedi Master Kenobi",
                     "percentage": "",
-                    "requirements": [
+                    "stars": "7",
+                    "gear_level": "13",
+                    "relic_level": null,
+                    "has_ultimate": true,
+                     "requirements": [
                         {
                             "name": "Aayla Secura",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "3",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Bo-Katan Kryze",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Cad Bane",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "CC-2224 \"Cody\"",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Clone Sergeant - Phase I",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "General Grievous",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "General Kenobi",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Grand Master Yoda",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "8",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "IG-100 MagnaGuard",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "5",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Jango Fett",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Mace Windu",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "3",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Qui-Gon Jinn",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "3",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Shaak Ti",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Wat Tambor",
                             "stars": "7",
                             "gear_level": "13",
                             "relic_level": "7",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Negotiator",
                             "stars": "6",
-                            "gear_level": "13",
+                            "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         }
                     ]
                 },
                 {
                     "name": "Sith Eternal Emperor",
                     "percentage": "",
+                    "has_ultimate": true,
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Admiral Piett", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Colonel Starck", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Count Dooku", "stars": "7", "gear_level": "13", "relic_level": "6", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Maul", "stars": "7", "gear_level": "13", "relic_level": "4", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Sidious", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Vader", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Director Krennic", "stars": "7", "gear_level": "13", "relic_level": "4", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Emperor Palpatine", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "General Veers", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Grand Admiral Thrawn", "stars": "7", "gear_level": "13", "relic_level": "6", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Grand Moff Tarkin", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Jedi Knight Anakin", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Royal Guard", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sith Marauder", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Imperial TIE Bomber", "stars": "6", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 },
                 {
                     "name": "Jedi Master Luke Skywalker",
                     "percentage": "",
+                    "has_ultimate": true,
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Biggs Darklighter", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "C-3PO", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Chewbacca", "stars": "7", "gear_level": "13", "relic_level": "6", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Han Solo", "stars": "7", "gear_level": "13", "relic_level": "6", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Hermit Yoda", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Jedi Knight Luke Skywalker", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Lando Calrissian", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Mon Mothma", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Obi-Wan Kenobi (Old Ben)", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Princess Leia", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "R2-D2", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rey (Jedi Training)", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Threepio & Chewie", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Wedge Antilles", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rebel Y-wing", "stars": "6", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 },
                 {
                     "name": "Supreme Leader Kylo Ren",
                     "percentage": "",
+                    "has_ultimate": true,
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Captain Phasma", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Emperor Palpatine", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "First Order Executioner", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "First Order Officer", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "First Order SF TIE Pilot", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "First Order Stormtrooper", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "First Order TIE Pilot", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "General Hux", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Kylo Ren", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Kylo Ren (Unmasked)", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sith Trooper", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Veteran Smuggler Han Solo", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Finalizer", "stars": "5", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 },
                 {
                     "name": "Rey",
                     "percentage": "",
+                    "has_ultimate": true,
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Amilyn Holdo", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "BB-8", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Finn", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Poe Dameron", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Resistance Hero Finn", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Resistance Hero Poe", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Resistance Pilot", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Resistance Trooper", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rey (Jedi Training)", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rey (Scavenger)", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rose Tico", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Veteran Smuggler Chewbacca", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Raddus", "stars": "5", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 },
                 {
                     "name": "Leia Organa",
                     "percentage": "",
+                    "has_ultimate": true,
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Captain Rex", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Princess Kneesaa", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Wicket", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Lando Calrissian", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Admiral Ackbar", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Scout Trooper", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "R2-D2", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Han Solo", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rebel Officer Leia Organa", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Chief Chirpa", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Drogan", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Commander Luke Skywalker", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Boushh (Leia Organa)", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Threepio & Chewie", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Lobot", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 }
             ]
         },
         {
-            "description": "List of galactig legends ships",
+            "description": "Galactig legends ships",
             "values": [
                 {
                     "name": "Profundity",
                     "percentage": "",
+                    "stars": "7",
+                    "gear_level": null,
+                    "relic_level": null,
+                    "has_ultimate": null,
                     "requirements": [
                         {
-                            "name": "",
+                            "name": "Admiral Raddus",
                             "stars": "7",
                             "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
+                            "relic_level": "9",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
                         {
-                            "name": "",
+                            "name": "Cassian Andor",
                             "stars": "7",
                             "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "relic_level": "8",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Dash Rendar",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Mon Mothma",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Bistan",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Jyn Erso",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Hera Syndulla",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Outrider",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Cassian's U-wing",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Bistan's U-wing",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Wedge Antilles's X-wing",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Biggs Darklighter's X-wing",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Rebel Y-wing",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },   
+                        {
+                            "name": "Ghost",
+                            "stars": "7",
+                            "gear_level": null,
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         }
+
+
+
                     ]
                 },
                 {
                     "name": "Executor",
                     "percentage": "",
+                    "stars": "7",
+                    "gear_level": null,
+                    "relic_level": null,
+                    "has_ultimate": null,
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Darth Vader", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Admiral Piett", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Boba Fett", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TIE Fighter Pilot", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bossk", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "IG-88", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Dengar", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Razor Crest", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Slave I", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "IG-2000", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Hound's Tooth", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TIE Advanced x1", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Imperial TIE Bomber", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Imperial TIE Fighter", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+
                     ]
                 },
                 {
                     "name": "Leviathan",
                     "percentage": "",
                     "requirements": [
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        },
-                        {
-                            "name": "",
-                            "stars": "7",
-                            "gear_level": "13",
-                            "relic_level": "",
-                            "minimum_power_toon": "",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
-                        }
+                        { "name": "Darth Revan", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Malak", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sith Empire Trooper", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sith Trooper", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Maul", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "HK-47", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bastila Shan", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sith Assassin", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "50R-T", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Fury-class Interceptor", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Mark VI Interceptor", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TIE Dagger", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "B-28 Extinction-class Bomber", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Scimitar", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sith Fighter", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ebon Hawk", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+
                     ]
                 }
             ]
         },
         {
-            "description": "Journey guide",
+            "description": "Journey guide Tier V",
             "values": [
                 {
                     "name": "General Skywalker",
+                    "hasminimumpower":true,
+                    "stars": "7",
                     "percentage": "",
                     "requirements": [
                         {
@@ -651,8 +775,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "C-3PO",
@@ -660,8 +784,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "General Kenobi",
@@ -669,8 +793,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Padmé Amidala",
@@ -678,8 +802,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Shaak Ti",
@@ -687,8 +811,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Asajj Ventress",
@@ -696,8 +820,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "B1 Battle Droid",
@@ -705,8 +829,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "B2 Super Battle Droid",
@@ -714,8 +838,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Droideka",
@@ -723,8 +847,8 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "IG-100 MagnaGuard",
@@ -732,81 +856,593 @@
                             "gear_level": "12",
                             "relic_level": "",
                             "minimum_power_toon": "17700",
-                            "minimum_power_ship": "",
-                            "omicron_abilities_req": ""
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Endurance",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Anakin's Eta-2 Starfighter",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Ahsoka Tano's Jedi Starfighter",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Umbaran Starfighter",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Clone Sergeant's ARC-170",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Jedi Consular's Starfighter",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Plo Koon's Jedi Starfighter",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         },
                         {
                             "name": "Rex's ARC-170",
                             "stars": "7",
                             "gear_level": "",
                             "relic_level": "",
-                            "minimum_power_toon": "",
+                            "minimum_power_toon": null,
                             "minimum_power_ship": "40000",
-                            "omicron_abilities_req": ""
+                            "omicron_abilities_req": null
                         }
+                    ]
+                },
+                {
+                    "name": "Darth Malak",
+                    "hasminimumpower":true,
+                    "stars": "7",
+                    "percentage": "",
+                    "requirements": [
+                        { "name": "Bastila Shan", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Jolee Bindo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Mission Vao", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "T3-M4", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Zaalbar", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Jedi Knight Revan", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bastila Shan (Fallen)", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Carth Onasi", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Canderous Ordo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "HK-47", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Juhani", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Revan", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "17500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Jedi Knight Luke Skywalker",
+                    "stars": "7",
+                    "percentage": "",
+                    "requirements": [
+                        { "name": "C-3PO", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Han Solo", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Chewbacca", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Commander Luke Skywalker", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Darth Vader", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Hermit Yoda", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Lando Calrissian", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rebel Officer Leia Organa", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Wampa", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Han's Millennium Falcon", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Wedge Antilles's X-wing", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+
+                    ]
+
+                },
+                {
+                    "name": "Baylan Skoll",
+                    "hasminimumpower":null,
+                    "percentage": "",
+                    "requirements": [
+                        {
+                            "name": "Shin Hati",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Marrok",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Morgan Elsbeth",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Great Mothers",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Grand Admiral Thrawn",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        }
+
+                    ]
+                },
+                {
+                    "name": "Bo-Katan (Mand'alor)",
+                    "hasminimumpower":null,
+                    "percentage": "",
+                    "requirements": [
+                        {
+                            "name": "Kelleran Beq",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Paz Vizsla",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "IG-12 & Grogu",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "The Mandalorian (Beskar Armor)",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "7",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        }
+
+                    ]
+                }
+            
+            ]
+        },
+        {
+            "description": "Journey guide Tier IV",
+            "values": [
+                {
+                    "name": "Jar Jar Binks",
+                    "percentage": "",
+                    "requirements": [
+                        {
+                            "name": "Boss Nass",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Captain Tarpals",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Gungan Boomadier",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Gungan Phalanx",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        }
+
+                    ]
+
+                },
+                {
+                    "name": "Doctor Aphra",
+                    "percentage": "",
+                    "requirements": [
+                        {
+                            "name": "Hondo Ohnaka",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "0-0-0",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "BT-1",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Sana Starros",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Grand Inquisitor",
+                    "percentage": "",
+                    "requirements": [
+                        { "name": "Second Sister", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ninth Sister", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Seventh Sister", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Eighth Brother", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Fifth Brother", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+
+                    ]
+                },
+                {
+                    "name": "Starkiller",
+                    "percentage": "",
+                    "requirements": [
+                        {
+                            "name": "Darth Talon",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Dash Rendar",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Kyle Katarn",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Mara Jade, The Emperor's Hand",
+                            "stars": "7",
+                            "gear_level": "13",
+                            "relic_level": "5",
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        }
+
+                    ]
+                },
+                {
+                    "name": "Jedi Knight Revan",
+                    "hasminimumpower":true,
+                    "requirements": [
+                        { "name": "Mission Vao", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "13400", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Zaalbar", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "13400", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bastila Shan", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "13400", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "T3-M4", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "13400", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Jolee Bindo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "13400", "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Darth Revan",
+                    "hasminimumpower":true,
+                    "requirements": [
+                        { "name": "Carth Onasi", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18800", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Canderous Ordo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18800", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bastila Shan (Fallen)", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16200", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "HK-47", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18800", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Juhani", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Chewbacca",
+                    "hasminimumpower":true,
+                    "requirements": [
+                        { "name": "Boba Fett", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bossk", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Cad Bane", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Dengar", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Greedo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Greef Karga", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "IG-88", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Jango Fett", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "The Mandalorian", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "18100", "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "C-3PO",
+                    "hasminimumpower":true,
+                    "requirements": [
+                        { "name": "Chief Chirpa", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ewok Elder", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ewok Scout", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Logray", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Paploo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Teebo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Wicket", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Princess Kneesaa", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Han's Millennium Falcon",
+                    "percentage": "",
+                    "requirements": [
+                        { "name": "Hound's Tooth", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Slave I", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Xanadu Blood", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "IG-2000", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Razor Crest", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Chimaera", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Endurance", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Home One", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                     
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Journey guide Tier III",
+            "values": [
+                {
+                    "name": "Jedi Knight Cal Kestis",
+                    "requirements": [
+                        {
+                            "name": "Cal Kestis",
+                            "stars": "7",
+                            "gear_level": "12",
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Cere Junda",
+                            "stars": "7",
+                            "gear_level": "12",
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Merrin",
+                            "stars": "7",
+                            "gear_level": "12",
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Tarfful",
+                            "stars": "7",
+                            "gear_level": "12",
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        },
+                        {
+                            "name": "Saw Gerrera",
+                            "stars": "7",
+                            "gear_level": "12",
+                            "relic_level": null,
+                            "minimum_power_toon": null,
+                            "minimum_power_ship": null,
+                            "omicron_abilities_req": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Padmé Amidala"
+                },
+                {
+                    "name": "Commander Luke Skywalker"
+                },
+                {
+                    "name": "Rey (Jedi Training)"
+                },
+                {
+                    "name": "The Mandalorian (Beskar Armor)"
+                },
+                {
+                    "name": "Chimaera"
+                }
+            ]
+        },
+        {
+            "description": "Journey guide Tier II",
+            "values": [
+                {
+                    "name": "Grand Admiral Thrawn"
+                },
+                {
+                    "name": "R2-D2"
+                },
+                {
+                    "name": "BB-8"
+                }
+            ]
+        },
+        {
+            "description": "Journey guide Tier I",
+            "values": [
+                {
+                    "name": "Emperor Palpatine"
+                },
+                {
+                    "name": "Grand Master Yoda"
+                }
+            ]
+        },
+        {
+            "description": "Guild raids",
+            "values": [
+                {
+                    "name": "Han Solo"
+                },
+                {
+                    "name": "Darth Traya"
+                },
+                {
+                    "name": "General Kenobi"
+                }
+            ]
+        },
+        {
+            "description": "Territory Battles",
+            "values": [
+                {
+                    "name": "Third Sister",
+                    "requirements": [
+                        { "name": "Grand Inquisitor", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Second Sister", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ninth Sister", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Seventh Sister", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Eighth Brother", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Fifth Brother", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Marrok", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Rebel Officer Leia Organa"
+                },
+                {
+                    "name": "Imperial Probe Droid"
+                },
+                {
+                    "name": "Wat Tambor",
+                    "hasminimumpower":true,
+                    "requirements": [
+                        { "name": "Geonosian Brood Alpha", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Geonosian Soldier", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Geonosian Spy", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Poggle the Lesser", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Sun Fac", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "16500", "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Ki-Adi-Mundi",
+                    "hasminimumpower":true,
+                    "requirements": [
+                        { "name": "ARC Trooper", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "CC-2224 \"Cody\"", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Clone Sergeant - Phase I", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "CT-21-0408 \"Echo\"", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "CT-5555 \"Fives\"", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "CT-7567 \"Rex\"", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Echo", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Hunter", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Omega", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Tech", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Wrecker", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Rex", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Shaak Ti", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": "22000", "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 }
             ]
@@ -815,10 +1451,10 @@
     "guilds":{
         "description": "guilds to load",
         "values":[
-            {"name": "feddy", "id":"7skNKIClReOBSq8jfL_F0g"},
-            {"name": "dianogas", "id":"IbRkVS2bTM-tJ92t92I-Gg"},
-            {"name": "rooms", "id":"nGnTt-BHQf2sGRMiZ0rT_g"},
-            {"name": "scarberia", "id":"sCZSsvvUSAurcCMsnDbD5g"}
+            {"name": "feddy", "id":"7skNKIClReOBSq8jfL_F0g", "enabled":true},
+            {"name": "dianogas", "id":"IbRkVS2bTM-tJ92t92I-Gg", "enabled":false},
+            {"name": "rooms", "id":"nGnTt-BHQf2sGRMiZ0rT_g", "enabled":true},
+            {"name": "scarberia", "id":"sCZSsvvUSAurcCMsnDbD5g", "enabled":true}
         ]
     }
 }

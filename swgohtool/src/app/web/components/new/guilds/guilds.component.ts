@@ -21,12 +21,16 @@ public constructor (
 
 ){
 this.datavalues_obs$.subscribe(x=>{
-  if(x){
+  if(x && x.hasOwnProperty('guilds')){
     //populate the guild
     this.guilds = [];
-    x.guilds.values.forEach(async (g: { id: string; })=>{
+    x.guilds.values.forEach(async (g:any)=>{
+      if(g.enabled){
       let dt = await this.fetchNew.generateGuild(g.id);
-      this.guilds.push(dt);
+      if(this.guilds.filter(x=>x.id != dt.id).length <=0 ){
+        this.guilds.push(dt);
+      }
+    }
     });
   }
 });

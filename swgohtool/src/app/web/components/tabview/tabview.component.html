@@ -1,46 +1,26 @@
 <div>
-   
-   <!-- <div class="text-white"  *ngFor="let lnd of new$ | async ; index as i" style="display: none;" >
-        {{lnd.description}}        
-        <div class="px-2" *ngFor="let item of lnd.values ; index as i" >
-            <ng-container > 
-                <span *ngIf="!item.player_item" class="text-danger">
-                    <img class=" p-1 m-1" style="border:1px solid #00aaff" width="64" height="64" *ngIf="item.item_from_gg.image" [src]="item.item_from_gg.image"
-                    alt="Place image title">
-            {{item.name}}</span>
-                <span *ngIf="item.player_item && item.player_item.data.rarity != 7" class="text-warning">{{item.name}} ({{item.player_item.data.rarity}}/7)</span>
-                <span *ngIf="item.player_item && item.player_item.data.rarity == 7" class="text-success">{{item.name}}</span>
-                <span *ngIf="item.player_item && item.player_item.data.is_galactic_legend " >{{item.player_item.data.has_ultimate}}</span>
-
-                <div class="px-4" *ngFor="let item_1 of item.requirements ; index as i" >
-                    <img style="border:1px solid #00aaff" width="32" height="32" *ngIf="item_1.item_from_gg.image" [src]="item_1.item_from_gg.image" alt="Image from swgoh.gg">
-                    <span *ngIf="!item_1.player_item" class="text-danger">{{item_1.name}}</span>
-                    <span *ngIf="item_1.player_item && item_1.player_item.data.rarity != 7" class="text-warning">{{item_1.name}} ({{item_1.player_item.data.rarity}}/7)</span>
-                    <span *ngIf="item_1.player_item && item_1.player_item.data.rarity == 7" class="text-success">{{item_1.name}}</span>
-                </div>
-                <pre>
-                    <code class="text-white"  style="display: none;">
-                        {{item | json}}
-                    </code>
-                    </pre>
-            </ng-container>
+    <div class="accordion">
+        <div class="text-white"  *ngFor="let lnd of new$ | async ; index as i" style="display: block;" >
+        <app-accordeon [title] = "lnd.description"  >
+         <!--   <app-generalcategory [list]="legends$"></app-generalcategory>-->
+         <div   class="container-fluid  ">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
+                <ng-container  *ngFor="let item of lnd.values ; index as i">
+                    <div class="px-2" *ngIf="showTable(item)">
+                        <app-newitem [item] = "item" ></app-newitem>            
+                    </div>
+                </ng-container>
+                
+            </div>
+         </div>        
+        
+        </app-accordeon>
+        
         </div>
-    </div>-->
+       
+    </div>
 
-    <pre>
-        <code class="text-white" style="display: none;" *ngIf="(datavalues_obs$ | async)">
-            {{(datavalues_obs$ | async).modscores.values | json}}
-
-            {{datavalues_obs$ | async | json}}
-            {{new$ | async | json}}
-
-        </code>
-        </pre>
-    <!--<div class="text-white">
-    {{tab1_active}}
-    {{tab2_active}}
-    {{tab3_active}}</div>-->
-    <!-- Nav pills -->
+   <!--
     <ul class="nav nav-pills">
         <li class="nav-item">
             <a class="nav-link " [ngClass]="{'active':tab1_active}" data-bs-toggle="pill" href="#roster"
@@ -76,7 +56,6 @@
         </li>
     </ul>
 
-    <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane " id="roster" [ngClass]="{'active':tab1_active }">
             <div class="accordion">
@@ -116,10 +95,6 @@
                     <app-accordeon [title] = "'Key squads'" [small]="true">
                         <app-generalcategory [list]="farmKeySquads$"></app-generalcategory>
                     </app-accordeon>
-
-                    <!--<app-accordeon [title] = "'Capital ships'" [small]="true">
-                        <app-generalcategory [list]="farmCapitalShips$"></app-generalcategory>
-                    </app-accordeon>-->
                     <app-accordeon [title] = "'Key fleets'" [small]="true">
                         <app-generalcategory [list]="farmKeyFleets$"></app-generalcategory>
                     </app-accordeon>
@@ -141,26 +116,6 @@
                         <app-generalcategory [list]="lowKeyCharsCapitalShipsShips$"></app-generalcategory>
                     </app-accordeon>
                 </app-accordeon>
-
- 
-                    
-                  
-              
-                <!--<div class="accordion-item bg-dark">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingZ13">
-                        <button class="accordion-button bg-dark text-white " type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseZ13" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseZ13">
-                            <h4 class="text-warning  ">Low priority</h4>
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseZ13" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingZ13">
-                        <div class="accordion-body p-0">
-                            <app-generalcategory [list]="frmLow$"></app-generalcategory>
-                        </div>
-                    </div>
-                </div>-->
             </div>
 
         </div>
@@ -169,16 +124,6 @@
                 <app-accordeon [title] = "'Factions'"  >
                     <app-generalcategory [list]="krayt$"></app-generalcategory>
                 </app-accordeon>
-               <!--   <app-accordeon [title] = "'Cpit'"  >
-                    <app-generalcategory [list]="cpit$"></app-generalcategory>
-                </app-accordeon>
-              <app-accordeon [title] = "'Cpit ready (' + (cpitready_counter$ | async) + ')'"  >
-                    <app-generalcategory *ngIf="(cpitready_counter$ | async) > 0" [list]="cpitready$"></app-generalcategory>
-                </app-accordeon>
-                <app-accordeon [title] = "'Cpit ready Close (' + (cpitready_counterclose$ | async) + ')'"  >
-                    <app-generalcategory *ngIf="(cpitready_counterclose$ | async) > 0" [list]="cpitreadyclose$"></app-generalcategory>
-                </app-accordeon>
-                -->
             </div>
         </div>
         <div class="tab-pane  " id="sbp" [ngClass]="{'active':tab4_active }">
@@ -186,16 +131,6 @@
                 <app-accordeon [title] = "'Factions'"  >
                     <app-generalcategory [list]="sbp$"></app-generalcategory>
                 </app-accordeon>
-               <!--   <app-accordeon [title] = "'Cpit'"  > 
-                    <app-generalcategory [list]="cpit$"></app-generalcategory>
-                </app-accordeon>
-              <app-accordeon [title] = "'Cpit ready (' + (cpitready_counter$ | async) + ')'"  >
-                    <app-generalcategory *ngIf="(cpitready_counter$ | async) > 0" [list]="cpitready$"></app-generalcategory>
-                </app-accordeon>
-                <app-accordeon [title] = "'Cpit ready Close (' + (cpitready_counterclose$ | async) + ')'"  >
-                    <app-generalcategory *ngIf="(cpitready_counterclose$ | async) > 0" [list]="cpitreadyclose$"></app-generalcategory>
-                </app-accordeon>
-                -->
             </div>
         </div>
         <div class="tab-pane  " id="naboo" [ngClass]="{'active':tab6_active }">
@@ -203,16 +138,6 @@
                 <app-accordeon [title] = "'Factions'"  >
                     <app-generalcategory [list]="naboo$"></app-generalcategory>
                 </app-accordeon>
-               <!--   <app-accordeon [title] = "'Cpit'"  >
-                    <app-generalcategory [list]="cpit$"></app-generalcategory>
-                </app-accordeon>
-              <app-accordeon [title] = "'Cpit ready (' + (cpitready_counter$ | async) + ')'"  >
-                    <app-generalcategory *ngIf="(cpitready_counter$ | async) > 0" [list]="cpitready$"></app-generalcategory>
-                </app-accordeon>
-                <app-accordeon [title] = "'Cpit ready Close (' + (cpitready_counterclose$ | async) + ')'"  >
-                    <app-generalcategory *ngIf="(cpitready_counterclose$ | async) > 0" [list]="cpitreadyclose$"></app-generalcategory>
-                </app-accordeon>
-                -->
             </div>
         </div>
         <div class="tab-pane  " id="guild" [ngClass]="{'active':tab5_active }">
@@ -220,5 +145,5 @@
             <app-loading class="bg-dark" *ngIf="isLoading"></app-loading>
             <div class="bg-light" *ngIf="!isLoading && (guild_total$ | async)">{{(guild_total$ | async)}}</div>
         </div>
-    </div>
+    </div>-->
 </div>

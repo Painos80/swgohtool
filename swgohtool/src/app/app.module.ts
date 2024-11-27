@@ -17,6 +17,7 @@ import { AccordeonComponent } from './web/components/accordeon/accordeon.compone
 import { OmicronComponent } from './web/components/omicron/omicron.component';
 import { ModscoreComponent } from './web/components/new/modscore/modscore.component';
 import { GuildsComponent } from './web/components/new/guilds/guilds.component';
+import { NewitemComponent } from './web/components/new/newitem/newitem.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { GuildsComponent } from './web/components/new/guilds/guilds.component';
     OmicronComponent,
     ModscoreComponent,
     GuildsComponent,
+    NewitemComponent,
   ],
   imports: [
     BrowserModule,
