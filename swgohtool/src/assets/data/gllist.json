@@ -24,6 +24,7 @@
     "lists": [
         {
             "description": "Galactig legends",
+            "tab": "status",
             "values": [
                 {
                     "name": "Jabba the Hutt",
@@ -570,6 +571,7 @@
         },
         {
             "description": "Galactig legends ships",
+            "tab": "status",
             "values": [
                 {
                     "name": "Profundity",
@@ -762,6 +764,7 @@
         },
         {
             "description": "Journey guide Tier V",
+            "tab": "status",
             "values": [
                 {
                     "name": "General Skywalker",
@@ -1075,6 +1078,7 @@
         },
         {
             "description": "Journey guide Tier IV",
+            "tab": "status",
             "values": [
                 {
                     "name": "Jar Jar Binks",
@@ -1287,6 +1291,7 @@
         },
         {
             "description": "Journey guide Tier III",
+            "tab": "status",
             "values": [
                 {
                     "name": "Jedi Knight Cal Kestis",
@@ -1418,6 +1423,7 @@
         },
         {
             "description": "Journey guide Tier II",
+            "tab": "status",
             "values": [
                 {
                     "name": "Grand Admiral Thrawn",
@@ -1474,6 +1480,7 @@
         },
         {
             "description": "Journey guide Tier I",
+            "tab": "status",
             "values": [
                 {
                     "name": "Emperor Palpatine",
@@ -1504,6 +1511,7 @@
         },
         {
             "description": "Guild raids",
+            "tab": "status",
             "values": [
                 {
                     "name": "Han Solo"
@@ -1518,6 +1526,7 @@
         },
         {
             "description": "Territory Battles",
+            "tab": "status",
             "values": [
                 {
                     "name": "Third Sister",
@@ -1579,8 +1588,42 @@
                     ]
                 }
             ]
+        },
+        {
+            "description": "Gls",
+            "tab": "id5v5",
+            "values": [
+                {
+                    "name": "Jedi Master Kenobi",
+                    "requirements": [
+                        { "name": "Jedi Master Kenobi", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Commander Ahsoka Tano", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ahsoka Tano (Snips)", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "General Kenobi", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Padmé Amidala", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                },
+                {
+                    "name": "Leia Organa",
+                    "requirements": [
+                        { "name": "Leia Organa", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Drogan", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "R2-D2", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Baze Malbus", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Mon Mothma", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
+                }
+           ]
         }
+
     ],
+    "tabs":{
+        "description": "tabs to show",
+        "values":[
+            {"text": "Roster Status", "id":"status"} 
+            ,{"text": "GAC 5v5", "id":"id5v5"} 
+        ]
+    },
     "guilds":{
         "description": "guilds to load",
         "values":[

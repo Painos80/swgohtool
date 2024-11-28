@@ -125,7 +125,9 @@
                         </td>
                         <td [ngClass]="calc.calculateItem(item_1)">
                             <div *ngIf="calc.hasRelic(item_1) &&  calc.hasItem(item_1)">
-                                &#x2713;
+                                <!--&#x2713;-->
+                                <span *ngIf="item_1.player_item.data.relic_tier-2 >= 0 && item_1.relic_level"
+                                  class="px-2">{{item_1.player_item.data.relic_tier-2}}/{{item_1.relic_level}}</span>
                             </div>
                             <div *ngIf="!calc.hasRelic(item_1)">
                                 <div *ngIf="item_1.player_item">
