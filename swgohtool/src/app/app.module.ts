@@ -18,6 +18,7 @@ import { OmicronComponent } from './web/components/omicron/omicron.component';
 import { ModscoreComponent } from './web/components/new/modscore/modscore.component';
 import { GuildsComponent } from './web/components/new/guilds/guilds.component';
 import { NewitemComponent } from './web/components/new/newitem/newitem.component';
+import { NewItemStatsComponent } from './web/components/new/new-item-stats/new-item-stats.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NewitemComponent } from './web/components/new/newitem/newitem.component
     ModscoreComponent,
     GuildsComponent,
     NewitemComponent,
+    NewItemStatsComponent,
   ],
   imports: [
     BrowserModule,

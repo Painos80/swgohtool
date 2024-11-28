@@ -1709,7 +1709,180 @@
                         ,{ "name": "Bo-Katan (Mand'alor)", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]
                 }
+
            ]
+        },
+        {
+            "description": "Relics 9-5",
+            "tab": "rosterhealth",
+            "values": [
+                {
+                    "name": "Relic 9" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "11"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 8" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "10"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 7" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "9"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 6" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "8"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 5" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "7"                                    
+                    ,"requirements": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Relics 4-0",
+            "tab": "rosterhealth",
+            "values": [
+                {
+                    "name": "Relic 4" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "6"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 3" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "5"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 2" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "4"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Relic 1" 
+                    ,"auto":true,"search": "relic_tier"  , "search_value": "3"                                    
+                    ,"requirements": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Gear levels",
+            "tab": "rosterhealth",
+            "values": [
+                {
+                    "name": "Gear 13" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "13"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 12" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "12"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 11" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "11"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 10" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "10"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 9" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "9"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 8" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "8"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 7" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "7"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 6" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "6"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 5" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "5"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 4" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "4"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 3" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "3"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 2" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "2"                                    
+                    ,"requirements": [
+
+                    ]
+                },
+                {
+                    "name": "Gear 1" 
+                    ,"auto":true,"search": "gear_level"  , "search_value": "1"                                    
+                    ,"requirements": [
+
+                    ]
+                }
+            ]
         }
 
     ],

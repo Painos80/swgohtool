@@ -37,11 +37,13 @@
                             <div class="container-fluid  ">
                                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
                                     <ng-container *ngFor="let item of lnd.values ; index as i">
-                                        <div class="px-2" *ngIf="showTable(item)">
-                                            <app-newitem [item]="item"></app-newitem>
+                                        <div class="px-2" *ngIf="showTable(item) && !item.hasOwnProperty('auto')">
+                                            <app-newitem   [item]="item"></app-newitem>
+                                        </div>
+                                        <div class="px-2" *ngIf="item.hasOwnProperty('auto') && item.auto">
+                                            <app-new-item-stats [item]="item"></app-new-item-stats>                                         
                                         </div>
                                     </ng-container>
-    
                                 </div>
                             </div>
                         </app-accordeon>
@@ -55,11 +57,14 @@
                             <div class="container-fluid  ">
                                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
                                     <ng-container *ngFor="let item of lnd.values ; index as i">
-                                        <div class="px-2" *ngIf="showTable(item)">
-                                            <app-newitem [item]="item"></app-newitem>
+                                        <div class="px-2" *ngIf="showTable(item) && !item.hasOwnProperty('auto')">
+                                            <app-newitem   [item]="item"></app-newitem>
                                         </div>
-                                    </ng-container>
-    
+                                        <div class="px-2" *ngIf="item.hasOwnProperty('auto') && item.auto">
+                                            <app-new-item-stats [item]="item"></app-new-item-stats>                                         
+                                        </div>
+                                  </ng-container>
+                                    
                                 </div>
                             </div>
                         </app-accordeon>

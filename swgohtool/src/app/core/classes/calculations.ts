@@ -87,7 +87,7 @@ export class Calculations {
       return 'https://' + item.item_from_gg.url;
     }
   }catch(e){
-    console.error(e);
+    //console.error(e);
   }
     return null;
   }

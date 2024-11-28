@@ -77,6 +77,14 @@ export class Fetchnewservice {
       this._playerdata.next(newData);
     }
   
+    private _player = new BehaviorSubject<any>([]);
+    player = this._player.asObservable();
+    _playerobj1:any;
+    changePlayer(newData:any){
+      this._playerobj1  = newData;
+      this._player.next(newData);
+    }
+
     private _ships = new BehaviorSubject<any>([]);
   ships = this._ships.asObservable();
   shipsobj:any;
@@ -164,8 +172,9 @@ export class Fetchnewservice {
                         this.generateItemFromGG(dt_reqs.requirements, list);
 
                     }
-
+                    console.log(dt.values);
                 }
+                console.log(dt);
             }
         }
         this.changeData(data);
@@ -274,6 +283,7 @@ item_json.modscores.values[4].value = Math.round(((omega + g_score) + Number.EPS
             }
             this.changeData(item_json);
 this.changePlayerData(player.data);
+this.changePlayer(player);
             console.log(this._datavaluesobj);
             console.log(this._defaultvaluesobj);
             this.changeLoaded(true);
@@ -327,6 +337,7 @@ this.changePlayerData(player.data);
                 }
             }
         }
+        list_in.sort(this.objectComparisonCallbackRelic)
     }
 
 
@@ -336,6 +347,18 @@ this.changePlayerData(player.data);
         }
 
         if (arrayItemA.galactic_power > arrayItemB.galactic_power) {
+            return -1
+        }
+
+        return 0
+    }
+    
+    objectComparisonCallbackRelic = (arrayItemA: any, arrayItemB: any) => {
+        if (arrayItemA.relic_level < arrayItemB.relic_level) {
+            return 1
+        }
+
+        if (arrayItemA.relic_level > arrayItemB.relic_level) {
             return -1
         }
 

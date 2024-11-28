@@ -45,7 +45,8 @@ ngOnDestroy(){
     this._subs2.unsubscribe();
   }
 }
-async ngOnInit() {
+ ngOnInit() {
+  this.guilds = [];
   if(this._subs2){
     this._subs2.unsubscribe();
   }

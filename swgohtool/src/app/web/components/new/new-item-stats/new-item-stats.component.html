@@ -1,0 +1,94 @@
+<div class="bg-danger text-white" style="display: none;">
+    {{item | json}}
+<pre>
+    {{calculate().length}}
+    <!--{{(playerdata$ | async) | json}}-->
+    <!--{{(player$ | async) | json}}-->
+</pre>
+</div>  
+
+<div class="card my-2" >
+    <!--
+    {{lnd.ok}}
+    {{lnd.ultimate}}
+    {{lnd.foundText}}-->
+    <div class="card-body w-100 m-0 p-0 bg-dark">
+        <h5 class="card-title d-flex mb-0 pb-0" [ngClass]="calc.calculateLeadItem(item)">
+            <span >
+                <img class=" p-1 m-1" width="64" height="64" *ngIf="item.item_from_gg && item.item_from_gg.image"
+                    [src]="item.item_from_gg.image" alt="Place image title">
+                    <span class="my-1 " *ngIf="calc.calculateURL(item)" [ngClass]="calc.calculateLeadItem(item)"><a  href="{{calc.calculateURL(item)}}" target="_blank" [ngClass]="calc.calculateLeadItem(item)">{{item.name}} ({{calculate().length}})</a></span>
+                    <div class="p-1 m-1 " *ngIf="!calc.calculateURL(item)">{{item.name}} ({{calculate().length}})</div>
+                  </span>
+ 
+        </h5>
+        <div class="card-text  " style="overflow-x: auto;max-height: 400px !important;"  >
+            <table class="table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Name</th>
+                        <th scope="col" class="my-1 text-center">Stars</th>
+                        <th scope="col" class="my-1 text-center">Gear</th>
+                        <th scope="col" class="my-1 text-center">Relic</th>
+                        <th scope="col" class="my-1 text-center">Power</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <ng-container *ngFor="let item_1 of calculate() ; index as i" >
+
+                    <tr  >
+                        <td class="p-0" scope="row"  >
+                          <div class="d-flex ">
+                            <img class="pt-1" width="42" 
+                                *ngIf="getImage(item_1)"
+                                [src]="getImage(item_1)" alt="Place image title">
+                               <!--
+                              <pre>
+                                    {{item_1 | json}}
+                                    </pre>
+                                -->
+                                
+                          </div>
+                        </td>
+                        <td  >
+                            <span class="my-1 " >
+                                <a class="text-white" href="https://swgoh.gg{{item_1.data.url}}" target="_blank" >
+                                    {{item_1.data.name}}
+                                </a>
+                            </span>
+
+                        </td>
+                        <td>
+                                <div >
+                                    <span class="px-2">{{item_1.data.rarity}}</span>
+                                </div>
+                        </td>
+                        <td >
+                            <div >
+                                <span class="px-2">{{item_1.data.gear_level}}</span>
+                            </div>
+
+                        </td>
+                        <td  >
+                            <div >
+                                <span class="px-2">{{item_1.data.relic_tier-2}}</span>
+                            </div>
+                        </td>
+                        <td  >
+                            <div >
+                                <span class="px-2">{{item_1.data.power}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                  </ng-container>
+
+                </tbody>
+
+            </table>
+
+
+        </div>
+    </div>
+</div>
