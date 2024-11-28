@@ -575,6 +575,30 @@
                         ,{ "name": "Threepio & Chewie", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Lobot", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
+                },
+                {
+                    "name": "TBA Ahsoka Tano",
+                    "percentage": "",
+                    "has_ultimate": true,
+                    "sort":true,
+                    "requirements": [
+                        { "name": "Ahsoka Tano (Snips)", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "General Skywalker", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Asajj Ventress", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Night Trooper", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Commander Ahsoka Tano", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Enoch", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Death Trooper (Peridea)", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ezra Bridger", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ahsoka Tano (Fulcrum)", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "CT-7567 \"Rex\"", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Barriss Offee", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Padawan Sabine Wren", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                    ]
                 }
             ]
         },
