@@ -77,11 +77,15 @@ export class Calculations {
     return this.class_no_ok;
   }
   calculateURL(item:any):any{
+    try{
     if(this.hasItem(item)){
       return 'https://swgoh.gg' + item.player_item.data.url;
     }else{
       return 'https://' + item.item_from_gg.url;
     }
+  }catch(e){
+    console.error(e);
+  }
     return null;
   }
   hasItem(item: any): boolean {

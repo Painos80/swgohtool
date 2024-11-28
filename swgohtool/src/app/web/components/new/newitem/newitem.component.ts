@@ -125,6 +125,11 @@ ngOnDestroy(){
   }
 
   showRow(item_1:any):boolean{
+    let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
+    if(!hasitems){
+      return false;
+    }
+
     if(this.hideCompletedRow){
       if(this.calc.calculateItem(item_1) == this.calc.class_no_ok){
         return false;
@@ -134,8 +139,14 @@ ngOnDestroy(){
   }
 
   showAll():boolean{
+    let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
+    if(!hasitems){
+      return false;
+    }
+
+
     if(this.hideCompletedRow){
-      let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
+//      let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
       
       if(hasitems){
         //show = true;

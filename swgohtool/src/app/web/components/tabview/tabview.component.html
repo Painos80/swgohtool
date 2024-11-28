@@ -1,25 +1,56 @@
 <div>
-    <div class="accordion">
-        <div class="text-white"  *ngFor="let lnd of new$ | async ; index as i" style="display: block;" >
-        <app-accordeon [title] = "lnd.description"  >
-         <!--   <app-generalcategory [list]="legends$"></app-generalcategory>-->
-         <div   class="container-fluid  ">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
-                <ng-container  *ngFor="let item of lnd.values ; index as i">
-                    <div class="px-2" *ngIf="showTable(item)">
-                        <app-newitem [item] = "item" ></app-newitem>            
-                    </div>
-                </ng-container>
-                
-            </div>
-         </div>        
-        
-        </app-accordeon>
-        
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link " [ngClass]="{'active':tab1_active}" data-bs-toggle="pill" href="#roster"
+                (click)="tab1()">
+                <h5>Roster Status</h5>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active':tab3_active}" data-bs-toggle="pill" href="#farm" (click)="tab3()">
+                <h5>Defence</h5>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active':tab2_active}" data-bs-toggle="pill" href="#cpit" (click)="tab2()">
+                <h5>Offence</h5>
+            </a>
+        </li>
+   </ul>
+   <div class="tab-content">
+    <div class="tab-pane " id="roster" [ngClass]="{'active':tab1_active }">
+        <div class="accordion">
+            <div class="text-white"  *ngFor="let lnd of new$ | async ; index as i" style="display: block;" >
+            <app-accordeon [title] = "lnd.description"  >
+             <div   class="container-fluid  ">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
+                    <ng-container  *ngFor="let item of lnd.values ; index as i">
+                        <div class="px-2" *ngIf="showTable(item)">
+                            <app-newitem [item] = "item" ></app-newitem>            
+                        </div>
+                    </ng-container>
+                    
+                </div>
+             </div>                 
+            </app-accordeon>     
+            </div>      
         </div>
-       
-    </div>
+        </div>
 
+    <div class="tab-pane  " id="farm" [ngClass]="{'active':tab3_active }">
+        <div class="accordion">
+            
+        </div>
+
+    </div>
+    <div class="tab-pane  " id="cpit" [ngClass]="{'active':tab2_active }">
+        <div class="accordion">
+            <app-accordeon [title] = "'Factions'"  >
+
+            </app-accordeon>
+        </div>
+    </div>
+   </div>
    <!--
     <ul class="nav nav-pills">
         <li class="nav-item">
