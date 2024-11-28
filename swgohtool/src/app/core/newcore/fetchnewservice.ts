@@ -285,6 +285,14 @@ item_json.modscores.values[4].value = Math.round(((omega + g_score) + Number.EPS
 
                 }
             }
+            try {
+                var d1 = new Date(player.data.last_updated);
+                var d2 = new Date();
+                player.data.last_update_sub = (Math.abs(d2.getTime() - d1.getTime()) / 3600000).toFixed(0);
+              } catch (e) {
+                console.error(e);
+              }
+
             this.changeData(item_json);
 this.changePlayerData(player.data);
 this.changePlayer(player);
