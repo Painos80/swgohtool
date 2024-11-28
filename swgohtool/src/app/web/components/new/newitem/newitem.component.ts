@@ -9,6 +9,8 @@ import { Fetchnewservice } from 'src/app/core/newcore/fetchnewservice';
 })
 export class NewitemComponent {
   @Input() item: any = undefined;
+  @Input() hideitems: boolean = false;
+
   hideCompletedTable: boolean = false;
   hideCompletedRow: boolean = false;
    calc:Calculations = new Calculations();
@@ -67,26 +69,7 @@ ngOnDestroy(){
   
   */
 
-  showTable(): boolean {
-    let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
-    let show = hasitems;// false;
-    if (this.hideCompletedTable && this.calc.isItemCompleted(this.item)) {
-      return false;
-    }else{
-      return true;
-    }
-    /*if(hasitems){
-      //show = true;
-      for(let i=0;i<=this.item.requirements.length -1; i++){
-        if(this.calculateItem(this.item.requirements[i]) != 'text-success'){
-          show = true;
-          break;
-        }
-      }
-    }*/
 
-    return show;
-  }
 
   getExtraText(): string {
     let item = this.item;
@@ -124,6 +107,19 @@ ngOnDestroy(){
     return '';
   }
 
+  showTable(): boolean {
+    let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
+    let show = hasitems;// false;
+    if (this.hideCompletedTable && this.calc.isItemCompleted(this.item)) {
+      if(this.item.hasOwnProperty('nohide') && this.item.nohide){
+        return true;
+      }
+         return false;
+    }else{
+      return true;
+    }
+  }
+
   showRow(item_1:any):boolean{
     let hasitems = this.item && this.item.hasOwnProperty('requirements') && this.item.requirements && this.item.requirements.length > 0;
     if(!hasitems){
@@ -131,6 +127,9 @@ ngOnDestroy(){
     }
 
     if(this.hideCompletedRow){
+      if(item_1.hasOwnProperty('nohide') && item_1.nohide){
+        return true;
+      }
       if(this.calc.calculateItem(item_1) == this.calc.class_no_ok){
         return false;
       }
@@ -156,6 +155,9 @@ ngOnDestroy(){
             return true;
             //break;
           }
+        }
+        if(this.item.hasOwnProperty('nohide') && this.item.nohide){
+          return true;
         }
         return false;
       }else{

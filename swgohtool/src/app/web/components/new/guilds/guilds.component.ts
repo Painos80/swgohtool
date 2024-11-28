@@ -13,6 +13,8 @@ export class GuildsComponent {
   ally_code:any;
 
   guilds:any[]=[];
+  _subs1:any;
+  _subs2:any;
 
 public constructor (
   private router: Router,
@@ -20,11 +22,11 @@ public constructor (
   private fetchNew: Fetchnewservice
 
 ){
-this.datavalues_obs$.subscribe(x=>{
+this._subs1 = this.datavalues_obs$.subscribe(x=>{
   if(x && x.hasOwnProperty('guilds')){
     //populate the guild
     this.guilds = [];
-    x.guilds.values.forEach(async (g:any)=>{
+     x.guilds.values.forEach(async (g:any)=>{
       if(g.enabled){
       let dt = await this.fetchNew.generateGuild(g.id);
       if(this.guilds.filter(x=>x.id != dt.id).length <=0 ){
@@ -35,9 +37,19 @@ this.datavalues_obs$.subscribe(x=>{
   }
 });
 }
-
+ngOnDestroy(){
+  if(this._subs1){
+    this._subs1.unsubscribe();
+  }
+  if(this._subs2){
+    this._subs2.unsubscribe();
+  }
+}
 async ngOnInit() {
-   this.route.queryParams.subscribe(async params => {
+  if(this._subs2){
+    this._subs2.unsubscribe();
+  }
+  this._subs2 =  this.route.queryParams.subscribe(async params => {
     if (params['playerid']) {
       this.ally_code = params['playerid'];
     }

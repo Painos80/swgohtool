@@ -203,6 +203,9 @@ export class TabviewComponent {
     let hasitems = item && item.hasOwnProperty('requirements') && item.requirements && item.requirements.length > 0;
     let show = hasitems;// false;
     if (this.hideCompletedTable && this.calc.isItemCompleted(item)) {
+      if(item.hasOwnProperty('nohide') && item.nohide){
+        return true;
+      }
       return false;
     }else{
       return true;

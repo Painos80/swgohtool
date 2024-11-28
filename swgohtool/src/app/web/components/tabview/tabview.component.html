@@ -2,7 +2,7 @@
     <!--{{(datavalues_obs$ | async) | json}}-->
     <ul class="nav nav-pills">
         <ng-container *ngFor="let lnd of (datavalues_obs$ | async).tabs.values ; index as i" >
-            <li class="nav-item" >
+            <li class="nav-item" *ngIf="lnd.enabled" >
                 <a  *ngIf="i == 0" class="nav-link " [ngClass]="{'active':true}" data-bs-toggle="pill" href="#{{lnd.id}}">
                     <h5>{{lnd.text}}</h5>
                 </a>
@@ -30,7 +30,7 @@
     </ul>
     <div class="tab-content">
         <ng-container *ngFor="let lnd_p of (datavalues_obs$ | async).tabs.values ; index as i2" >
-            <div *ngIf="i2 == 0" class="tab-pane " id="{{lnd_p.id}}" [ngClass]="{'active': true }">
+            <div *ngIf="i2 == 0 && lnd_p.enabled" class="tab-pane " id="{{lnd_p.id}}" [ngClass]="{'active': true }">
                 <div class="accordion">
                     <div class="text-white" *ngFor="let lnd of new$ | async ; index as i" style="display: block;">
                         <app-accordeon [title]="lnd.description" *ngIf="lnd.tab == lnd_p.id">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div *ngIf="i2 > 0" class="tab-pane " id="{{lnd_p.id}}" [ngClass]="{'active': false }">
+            <div *ngIf="i2 > 0 && lnd_p.enabled" class="tab-pane " id="{{lnd_p.id}}" [ngClass]="{'active': false }">
                 <div class="accordion">
                     <div class="text-white" *ngFor="let lnd of new$ | async ; index as i" style="display: block;">
                         <app-accordeon [title]="lnd.description" *ngIf="lnd.tab == lnd_p.id">
