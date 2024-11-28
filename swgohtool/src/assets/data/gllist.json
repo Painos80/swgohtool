@@ -24,6 +24,7 @@
     "lists": [
         {
             "description": "Galactig legends",
+            
             "tab": "status",
             "values": [
                 {
@@ -33,6 +34,7 @@
                     "gear_level": "13",
                     "relic_level": null,
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         {
                             "name": "Krrsantan",
@@ -178,6 +180,7 @@
                     "gear_level": "13",
                     "relic_level": null,
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         {
                             "name": "Hunter",
@@ -323,7 +326,8 @@
                     "gear_level": "13",
                     "relic_level": null,
                     "has_ultimate": true,
-                     "requirements": [
+                    "sort":true,
+                    "requirements": [
                         {
                             "name": "Aayla Secura",
                             "stars": "7",
@@ -465,6 +469,7 @@
                     "name": "Sith Eternal Emperor",
                     "percentage": "",
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         { "name": "Admiral Piett", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Colonel Starck", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -487,6 +492,7 @@
                     "name": "Jedi Master Luke Skywalker",
                     "percentage": "",
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         { "name": "Biggs Darklighter", "stars": "7", "gear_level": "13", "relic_level": "3", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "C-3PO", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -509,6 +515,7 @@
                     "name": "Supreme Leader Kylo Ren",
                     "percentage": "",
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         { "name": "Captain Phasma", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Emperor Palpatine", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -529,6 +536,7 @@
                     "name": "Rey",
                     "percentage": "",
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         { "name": "Amilyn Holdo", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "BB-8", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -549,6 +557,7 @@
                     "name": "Leia Organa",
                     "percentage": "",
                     "has_ultimate": true,
+                    "sort":true,
                     "requirements": [
                         { "name": "Captain Rex", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Princess Kneesaa", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -571,6 +580,7 @@
         },
         {
             "description": "Galactig legends ships",
+            
             "tab": "status",
             "values": [
                 {
@@ -580,6 +590,7 @@
                     "gear_level": null,
                     "relic_level": null,
                     "has_ultimate": null,
+                    "sort":true,
                     "requirements": [
                         {
                             "name": "Admiral Raddus",
@@ -719,6 +730,7 @@
                     "gear_level": null,
                     "relic_level": null,
                     "has_ultimate": null,
+                    "sort":true,
                     "requirements": [
                         { "name": "Darth Vader", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Admiral Piett", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -740,6 +752,7 @@
                 {
                     "name": "Leviathan",
                     "percentage": "",
+                    "sort":true,
                     "requirements": [
                         { "name": "Darth Revan", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Darth Malak", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
@@ -764,6 +777,7 @@
         },
         {
             "description": "Journey guide Tier V",
+            
             "tab": "status",
             "values": [
                 {
@@ -1078,6 +1092,7 @@
         },
         {
             "description": "Journey guide Tier IV",
+            
             "tab": "status",
             "values": [
                 {
@@ -1291,6 +1306,7 @@
         },
         {
             "description": "Journey guide Tier III",
+            
             "tab": "status",
             "values": [
                 {
@@ -1423,6 +1439,7 @@
         },
         {
             "description": "Journey guide Tier II",
+            
             "tab": "status",
             "values": [
                 {
@@ -1480,6 +1497,7 @@
         },
         {
             "description": "Journey guide Tier I",
+            
             "tab": "status",
             "values": [
                 {
@@ -1511,6 +1529,7 @@
         },
         {
             "description": "Guild raids",
+            
             "tab": "status",
             "values": [
                 {
@@ -1526,6 +1545,7 @@
         },
         {
             "description": "Territory Battles",
+            
             "tab": "status",
             "values": [
                 {
@@ -1591,6 +1611,7 @@
         },
         {
             "description": "Gls",
+            
             "tab": "id5v5",
             "values": [
                 {
@@ -1669,12 +1690,46 @@
                         ,{ "name": "Savage Opress", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
                         ,{ "name": "Darth Talon", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
                     ]
+                },
+                {
+                    "name": "Jedi Master Luke Skywalker"
+                    ,"nohide":true
+                    ,"requirements": [
+                        { "name": "Jedi Master Luke Skywalker", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null,"nohide":true }
+                        ,{ "name": "Jedi Knight Cal Kestis", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null,"nohide":true }
+                        ,{ "name": "Jedi Knight Revan", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                        ,{ "name": "Jedi Knight Luke Skywalker", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                        ,{ "name": "Hermit Yoda", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                    ]
+                },
+                {
+                    "name": "Boss Nass"
+                    ,"nohide":true
+                    ,"requirements": [
+                        { "name": "Boss Nass", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null,"nohide":true }
+                        ,{ "name": "Gungan Boomadier", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null,"nohide":true }
+                        ,{ "name": "Gungan Phalanx", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                        ,{ "name": "Jar Jar Binks", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                        ,{ "name": "Captain Tarpals", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                    ]
+                },
+                {
+                    "name": "Third Sister"
+                    ,"nohide":true
+                    ,"requirements": [
+                        { "name": "Third Sister", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null,"nohide":true }
+                        ,{ "name": "Grand Inquisitor", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null,"nohide":true }
+                        ,{ "name": "Seventh Sister", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                        ,{ "name": "Fifth Brother", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                        ,{ "name": "Eighth Brother", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true}
+                    ]
                 }
            ]
         },
         {
             "description": "Health check",
-            "tab": "rosterhealth",
+           
+             "tab": "rosterhealth",
             "values": [
                 {
                     "name": "Galactic legends"
@@ -1714,6 +1769,7 @@
         },
         {
             "description": "Relics 9-5",
+            
             "tab": "rosterhealth",
             "values": [
                 {
@@ -1755,6 +1811,7 @@
         },
         {
             "description": "Relics 4-0",
+            
             "tab": "rosterhealth",
             "values": [
                 {
@@ -1789,6 +1846,7 @@
         },
         {
             "description": "Gear levels",
+            
             "tab": "rosterhealth",
             "values": [
                 {
@@ -1890,8 +1948,8 @@
         "description": "tabs to show",
         "values":[
             {"text": "Roster Status", "id":"status", "enabled":true} 
-            ,{"text": "GAC 5v5", "id":"id5v5", "enabled":false} 
             ,{"text": "Roster health", "id":"rosterhealth", "enabled":true} 
+            ,{"text": "Top 5v5", "id":"id5v5", "enabled":true} 
         ]
     },
     "guilds":{

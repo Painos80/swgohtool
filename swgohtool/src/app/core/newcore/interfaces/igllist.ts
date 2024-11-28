@@ -16,9 +16,11 @@ export interface IgllistValuesExtented {
 
 export interface IgllistValuesExtented_Item {
     name:String,
+    tab:String,
+    sort:Boolean,
     percentage:String,
     item_from_gg:any,
-    item_from_gg_player:any
+    item_from_gg_player:any,
     requirements: Array<IgllistValuesExtented_Item_Req>
 }
 

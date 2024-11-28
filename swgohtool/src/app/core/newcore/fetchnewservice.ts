@@ -169,6 +169,10 @@ export class Fetchnewservice {
                 for (let y = 0; y <= dt.values.length - 1; y++) {
                     let dt_reqs = dt.values[y];
                     if (dt_reqs.hasOwnProperty("requirements") && dt_reqs.requirements) {
+                        if(dt_reqs.sort){
+                           dt_reqs.requirements.sort(this.objectComparisonCallbackRelic)
+                
+                        }
                         this.generateItemFromGG(dt_reqs.requirements, list);
 
                     }
@@ -325,6 +329,7 @@ this.changePlayer(player);
     generateItemFromGG(list_in: any, list: Array<ClsDefault>) {
         for (let i = 0; i <= list_in.length - 1; i++) {
             let char_name = list_in[i].name;
+     
             for (let x = 0; x <= list.length - 1; x++) {
                 try {
                     let values = list[x].valuesobj;
@@ -332,12 +337,13 @@ this.changePlayer(player);
                     if (found) {
                         list_in[i].item_from_gg = found;
                     }
+                 
                 } catch (e) {
                     console.error(e);
                 }
             }
         }
-        list_in.sort(this.objectComparisonCallbackRelic)
+       
     }
 
 
