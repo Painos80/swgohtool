@@ -27,7 +27,7 @@
                 <img class=" p-1 m-1" width="64" height="64" *ngIf="item.item_from_gg && item.item_from_gg.image"
                     [src]="item.item_from_gg.image" alt="Place image title">
                     <span class="my-1 " *ngIf="calc.calculateURL(item)" [ngClass]="calc.calculateLeadItem(item)"><a  href="{{calc.calculateURL(item)}}" target="_blank" [ngClass]="calc.calculateLeadItem(item)">{{item.name}} {{getExtraText()}}</a></span>
-                    <span  *ngIf="!calc.calculateURL(item)">{{item.name}} {{getExtraText()}}</span>
+                    <div class="p-1 m-1 " *ngIf="!calc.calculateURL(item)">{{item.name}} {{getExtraText()}}</div>
                   </span>
             <!--<ng-container style="display: none;">
 

@@ -21,6 +21,9 @@ export class Calculations {
     }
     let hasItem = this.hasItem(item);
     if (!hasItem) {
+      if(!this.calculateURL(item)){
+        return this.class_header_no_ok;
+      }
       return this.class_header_no_item;
     }
     if (item.hasOwnProperty('has_ultimate') && item.has_ultimate) {
