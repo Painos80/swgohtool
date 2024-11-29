@@ -2,16 +2,16 @@ export class Calculations {
     
   class_header_no_ultimate = "text-dark bg-warning";
   class_header_no_rarity = "text-dark bg-warning";
-  class_header_no_item = "text-white bg-danger";
-  class_header_no_ok = "text-dark bg-success";
+  class_header_no_item = "text-danger";
+  class_header_no_ok = "text-success";
   class_header_no_na = "text-white";
 
-  class_no_rarity = "text-dark bg-warning";
-  class_no_gear = "text-dark bg-warning";
+  class_no_rarity = "text-warning";
+  class_no_gear = "text-warning";
   class_no_relic = "text-info bg-dark";
-  class_no_power_toon = "text-dark bg-warning";
-  class_no_power_ship = "text-dark bg-warning";
-  class_no_item = "text-white bg-danger";
+  class_no_power_toon = "text-warning";
+  class_no_power_ship = "text-warning";
+  class_no_item = "text-danger";
   class_no_ok = "text-muted text-white bg-dark";
   class_no_na = "text-white";
 

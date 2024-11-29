@@ -35,7 +35,7 @@
               <span class="px-2">{{item_1.player_item.data.rarity}}/{{item_1.stars}}</span>
             </div>
             <div *ngIf="!item_1.player_item">
-              <span class="px-2">{{item_1.stars}}</span>
+              <span class="px-2">0/{{item_1.stars}}</span>
             </div>
           </div>
         </td>
@@ -48,7 +48,7 @@
               <span class="px-2">{{item_1.player_item.data.gear_level}}/{{item_1.gear_level}}</span>
             </div>
             <div *ngIf="!item_1.player_item">
-              <span class="px-2">{{item_1.gear_level}}</span>
+              <span class="px-2">0/{{item_1.gear_level}}</span>
             </div>
           </div>
         </td>
@@ -65,7 +65,7 @@
               <span *ngIf="item_1.player_item.data.relic_tier-2 < 0" class="px-2">0/{{item_1.relic_level}}</span>
             </div>
             <div *ngIf="!item_1.player_item">
-              <span class="px-2">{{item_1.relic_level}}</span>
+              <span class="px-2">0/{{item_1.relic_level}}</span>
             </div>
           </div>
         </td>
