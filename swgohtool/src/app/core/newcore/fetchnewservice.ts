@@ -192,6 +192,8 @@ export class Fetchnewservice {
             if (!pid) {
                 return;
             }
+            //this.changeLoaded(false);
+
             if (!this.shipsobj) {
                 await this.populateShips();
               }

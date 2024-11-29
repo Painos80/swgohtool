@@ -18,6 +18,8 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v2.2
+    Bug fixes
 v2.1
     Removed old code so that it will only need a change in the JSON file
 v2.0

@@ -73,7 +73,7 @@
                         </td>
                         <td  >
                             <div >
-                                <span class="px-2">{{item_1.data.relic_tier-2}}</span>
+                                <span class="px-2" *ngIf="(item_1.data.relic_tier-2) > 0">{{item_1.data.relic_tier-2}}</span>
                             </div>
                         </td>
                         <td  >

@@ -12,6 +12,8 @@ export class GuildsComponent {
   datavalues_obs$:Observable<any> = this.fetchNew.datavalues_obs$;
   ally_code:any;
 
+  guilds_loaded:boolean = false;
+
   guilds:any[]=[];
   _subs1:any;
   _subs2:any;
@@ -22,18 +24,25 @@ public constructor (
   private fetchNew: Fetchnewservice
 
 ){
-this._subs1 = this.datavalues_obs$.subscribe(x=>{
+this._subs1 = this.datavalues_obs$.subscribe(async x=>{
   if(x && x.hasOwnProperty('guilds')){
     //populate the guild
+    if(this.guilds_loaded && this.guilds.length != x.guilds.values){
+      return;
+    }
     this.guilds = [];
-     x.guilds.values.forEach(async (g:any)=>{
+    this.guilds_loaded = true;
+    for(let i=0;i<= x.guilds.values.length-1;i++){
+      let g = x.guilds.values[i];
+      //x.guilds.values.forEach(async (g:any)=>{
       if(g.enabled){
       let dt = await this.fetchNew.generateGuild(g.id);
       if(this.guilds.filter(x=>x.id != dt.id).length <=0 ){
         this.guilds.push(dt);
       }
     }
-    });
+   // });
+  }
   }
 });
 }
