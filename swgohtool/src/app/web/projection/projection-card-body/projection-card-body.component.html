@@ -1,0 +1,21 @@
+<div class="card my-2" style="border-width: 2px !important; ">
+    <div class="card-body w-100 m-0 p-0 bg-dark" style="border-radius: 5px !important; ">
+        <app-projection-accordion>
+            <ng-content table-header select="[header]"></ng-content>
+
+        <div table-body class="card-text" [ngStyle]="style" *ngIf="showTable">
+            <table class="table table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <ng-content select="[table-header]"></ng-content>
+                    </tr>
+                </thead>
+                <tbody>
+                    <ng-content select="[table-body]"></ng-content>
+                </tbody>
+            </table>
+        </div>
+    </app-projection-accordion>
+
+    </div>
+</div>

@@ -19,6 +19,10 @@ import { ModscoreComponent } from './web/components/new/modscore/modscore.compon
 import { GuildsComponent } from './web/components/new/guilds/guilds.component';
 import { NewitemComponent } from './web/components/new/newitem/newitem.component';
 import { NewItemStatsComponent } from './web/components/new/new-item-stats/new-item-stats.component';
+import { ProjectionExampleComponent } from './web/projection/projection-example/projection-example.component';
+import { ProjectionCardHeaderComponent } from './web/projection/projection-card-header/projection-card-header.component';
+import { ProjectionCardBodyComponent } from './web/projection/projection-card-body/projection-card-body.component';
+import { ProjectionAccordionComponent } from './web/projection/projection-accordion/projection-accordion.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,10 @@ import { NewItemStatsComponent } from './web/components/new/new-item-stats/new-i
     GuildsComponent,
     NewitemComponent,
     NewItemStatsComponent,
+    ProjectionExampleComponent,
+    ProjectionCardHeaderComponent,
+    ProjectionCardBodyComponent,
+    ProjectionAccordionComponent,
   ],
   imports: [
     BrowserModule,

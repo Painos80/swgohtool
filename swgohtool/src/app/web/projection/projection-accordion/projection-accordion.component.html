@@ -1,0 +1,17 @@
+<div class="accordion-item bg-dark">
+    <h2  class="accordion-header" id="panelsStayOpen-headingZ122-{{uuid}}">
+        <button class="accordion-button bg-dark text-white  p-0 m-0 pe-2" type="button" data-bs-toggle="collapse"
+            attr.data-bs-target="#panelsStayOpen-collapseZ122-{{uuid}}" aria-expanded="true"
+            attr.aria-controls="panelsStayOpen-collapseZ122-{{uuid}}">
+            <ng-content select="[table-header]"></ng-content>
+
+        </button>
+    </h2>
+ 
+    <div id="panelsStayOpen-collapseZ122-{{uuid}}" class="accordion-collapse collapse show"
+    attr.aria-labelledby="panelsStayOpen-headingZ122-{{uuid}}">
+        <div class="accordion-body p-0  ">
+           <ng-content select="[table-body]"></ng-content>
+        </div>
+    </div>
+</div>

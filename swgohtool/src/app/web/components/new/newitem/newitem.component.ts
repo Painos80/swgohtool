@@ -173,5 +173,14 @@ ngOnDestroy(){
     return true;
   }
 
- 
+  getText(item:any):string{
+    if(!item){
+      return 'N/A';
+    }
+    if(!this.getExtraText()){
+      return item.name;
+    }
+    return `${item.name} ${this.getExtraText()}`;
+  }
+
 }

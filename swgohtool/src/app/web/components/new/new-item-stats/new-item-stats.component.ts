@@ -65,4 +65,13 @@ export class NewItemStatsComponent {
 
     return 0
 }
+
+
+getText(item:any):string{
+  if(!item){
+    return 'N/A';
+  }
+  
+  return `${item.name} (${this.calculate().length})`;
+}
 }
