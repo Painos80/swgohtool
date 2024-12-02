@@ -1,11 +1,13 @@
-<div class="d-flex" *ngIf="(datavalues_obs$ | async)">
+<div class="container-fluid  ">
+  <div class=" ">
+<div class="row" *ngIf="(datavalues_obs$ | async)">
     <!--<span class="text-white" *ngIf="(datavalues_obs$ | async).guilds">
         <span class="text-white" *ngFor="let item of (datavalues_obs$ | async).guilds.values ; index as i">
 
             <span><span *ngIf="i > 0">, </span>{{item.name}}: {{item.id}}</span>
         </span>
     </span> -->
-    <div *ngFor="let item of guilds">
+    <div *ngFor="let item of guilds" class="col-12">
       <!--  {{item | json}}-->
         
         <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">{{item.data.name}}</button>
@@ -17,4 +19,6 @@
         
     </div>
 
+</div>
+</div>
 </div>
