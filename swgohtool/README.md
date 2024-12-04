@@ -18,6 +18,9 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v2.3
+    Added Ashokas requirements
+    Fixed color to be according to gear
 v2.2
     Bug fixes
 v2.1

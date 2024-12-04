@@ -594,10 +594,10 @@
                         ,{ "name": "CT-7567 \"Rex\"", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Barriss Offee", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Padawan Sabine Wren", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
-                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
-                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
-                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
-                        ,{ "name": "TBA", "stars": "7", "gear_level": "13", "relic_level": "", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "General Syndulla", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Plo Koon", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Huyang", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Ahsoka Tano's Jedi Starfighter", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                     ]
                 }
             ]

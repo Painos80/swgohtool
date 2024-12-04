@@ -8,7 +8,7 @@ export class Calculations {
 
   class_no_rarity = "text-warning";
   class_no_gear = "text-warning";
-  class_no_relic = "text-info bg-dark";
+  class_no_relic = "text-success-2 bg-dark";
   class_no_power_toon = "text-warning";
   class_no_power_ship = "text-warning";
   class_no_item = "text-danger";
@@ -52,6 +52,9 @@ export class Calculations {
       return this.class_no_item;
     }
     if (!hasRarity) {
+      if(item_1 && item_1.player_item.data.gear_level < 12 && item_1.player_item.data.relic_tier < 3){
+        return `text-g${item_1.player_item.data.gear_level} `;
+      }
       let hasPowerToon = this.hasPowerToon(item_1);
       if (!hasPowerToon) {
         return this.class_no_power_toon;
@@ -63,9 +66,18 @@ export class Calculations {
       return this.class_no_rarity ;
     }
     if (!hasGear) {
+      //return "text-danger";
+      //player_item.data.gear_level
+      if(item_1 && item_1.player_item.data.gear_level < 12 && item_1.player_item.data.relic_tier < 3){
+        return `text-g${item_1.player_item.data.gear_level} `;
+      }else{
       return this.class_no_gear;
+      }
     }
     if (!hasRelic) {
+      if(item_1 && item_1.player_item.data.gear_level < 12 && item_1.player_item.data.relic_tier < 3){
+        return `text-g${item_1.player_item.data.gear_level} `;
+      }
       return this.class_no_relic;
     }
 
