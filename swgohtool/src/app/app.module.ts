@@ -23,6 +23,7 @@ import { ProjectionExampleComponent } from './web/projection/projection-example/
 import { ProjectionCardHeaderComponent } from './web/projection/projection-card-header/projection-card-header.component';
 import { ProjectionCardBodyComponent } from './web/projection/projection-card-body/projection-card-body.component';
 import { ProjectionAccordionComponent } from './web/projection/projection-accordion/projection-accordion.component';
+import { NewItemStatisticsComponent } from './web/components/new/new-item-statistics/new-item-statistics.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ProjectionAccordionComponent } from './web/projection/projection-accord
     ProjectionCardHeaderComponent,
     ProjectionCardBodyComponent,
     ProjectionAccordionComponent,
+    NewItemStatisticsComponent,
   ],
   imports: [
     BrowserModule,

@@ -33,6 +33,12 @@ export class NewItemStatsComponent {
   calculate(){
     if(this.fetchNew._playerobj1 && this.item){
       let counter = this.fetchNew._playerobj1.units.filter((x: any)=>x.data[this.item.search.toString()] == this.item.search_value);
+      if(this.item.type == "unit"){
+        counter = counter.filter((x: { data: { combat_type: number; }; })=>x.data.combat_type == 1);
+
+      }else if(this.item.type == "ship"){
+        counter = counter.filter((x: { data: { combat_type: number; }; })=>x.data.combat_type == 2);
+      }
       let ddt = counter.sort(this.objectComparisonCallback);
       return ddt;
    }
@@ -43,6 +49,14 @@ export class NewItemStatsComponent {
   getImage(item_1:any):any{
 
     let found_item = this.fetchNew.unitsobj.filter((x: { base_id: any; })=>x.base_id == item_1.data.base_id);
+    if(found_item ){
+      try{
+      return found_item[0].image;
+      }catch(e){
+        //console.error(e);
+      }
+    }
+    found_item = this.fetchNew.shipsobj.filter((x: { base_id: any; })=>x.base_id == item_1.data.base_id);
     if(found_item ){
       try{
       return found_item[0].image;

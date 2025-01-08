@@ -13,7 +13,7 @@
   />
   
   <div class="d-block my-auto contenteb w-100">
-    Swgoh status tool v2.3
+    Swgoh status tool v2.4
     <app-guilds></app-guilds>
   </div>
 
@@ -95,7 +95,7 @@
 </header>
 
 <div class="d-block bg-dark text-white " *ngIf="ally_code">
-  <app-playerinfo class=""></app-playerinfo>
+  <app-playerinfo class="" *ngIf="!loading"></app-playerinfo>
 
 </div>
 
@@ -114,7 +114,7 @@
   </div>
 </div>
 
-<app-tabview *ngIf="(loaded$ | async) && !(error$ | async)"></app-tabview>
+<app-tabview *ngIf="(loaded$ | async) && !(error$ | async)  && !loading"></app-tabview>
 
  
 

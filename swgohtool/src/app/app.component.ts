@@ -105,7 +105,7 @@ export class AppComponent {
         this.checkoutForm.patchValue({ playerid: params['playerid'] });
         this.ally_code = params['playerid'];
         //await this.fetch.populatePlayer(this.checkoutForm.controls['playerid'].value);
-       //this.fetch.changeLoaded(true);
+       //this.fetchNew.changeLoaded(true);
         await this.fetchNew.populatePlayer(this.checkoutForm.controls['playerid'].value);
         this.loading = false;
       }

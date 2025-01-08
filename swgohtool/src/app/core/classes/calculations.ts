@@ -14,6 +14,7 @@ export class Calculations {
   class_no_item = "text-danger";
   class_no_ok = "text-muted text-white bg-dark";
   class_no_na = "text-white";
+  
 
   calculateLeadItem(item: any): string {
     if (!item) {
@@ -40,6 +41,10 @@ export class Calculations {
     return this.class_header_no_ok;
 
   }
+  calculateItem_stats(item_1:any):string{
+    return this.class_no_na;
+  }
+  
   calculateItem(item_1: any): string {
     if (!item_1) {
       return this.class_no_na;

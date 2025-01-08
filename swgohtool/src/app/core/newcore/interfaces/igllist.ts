@@ -32,6 +32,6 @@ export interface IgllistValuesExtented_Item_Req{
     minimum_power_toon:String,
     minimum_power_ship:String,
     omicron_abilities_req:String,
-
+    type:string
 }
  

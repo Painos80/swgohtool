@@ -18,6 +18,10 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
+v2,4
+    Added Ashoka tano
+    Fixed G1 only for toons
+    Fixed Loading
 v2.3
     Added Ashokas requirements
     Fixed color to be according to gear

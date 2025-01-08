@@ -1,0 +1,117 @@
+<app-projection-card-body [showTable] = "showAll()">
+    <app-projection-card-header header [ngClass]="calc.calculateLeadItem(item)" [item] = "item" [url] = "calc.calculateURL(item)" [text] = "getText(item)" ></app-projection-card-header>
+    <ng-container table-header>
+      <th scope="col"></th>
+      <th scope="col">Name</th>
+      <th scope="col" class="my-1 text-center">Speed</th>
+      <th scope="col" class="my-1 text-center">Health</th>
+      <th scope="col" class="my-1 text-center">Protection</th>
+      <th scope="col" class="my-1 text-center">Damage</th> 
+      <th scope="col" class="my-1 text-center">Armor</th> 
+    </ng-container>
+    <ng-container table-body>
+      <ng-container *ngFor="let item_1 of item.requirements ; index as i">
+  
+        <tr *ngIf="showRow(item_1)">
+          <td class="p-0" scope="row" [ngClass]="calc.calculateItem_stats(item_1)">
+            <div class="d-flex ">
+              <img class="pt-1" width="32" *ngIf="item_1.item_from_gg && item_1.item_from_gg.image"
+                [src]="item_1.item_from_gg.image" alt="Place image title">
+  
+            </div>
+          </td>
+          <td [ngClass]="calc.calculateItem_stats(item_1)">
+            <div *ngIf="!calc.calculateURL(item_1)">{{item_1.name}}</div>
+            <div class=" " *ngIf="calc.calculateURL(item_1)" [ngClass]="calc.calculateItem_stats(item_1)"><a
+                href="{{calc.calculateURL(item_1)}}" target="_blank"
+                [ngClass]="calc.calculateItem_stats(item_1)">{{item_1.name}} </a></div>
+      <!--          <pre>
+                    {{item_1.player_item.data.stats | json}}
+                </pre>
+
+              props:  { "speed": 290, "health": null, "protection": null, "damage": null , "armor": null}
+              1: Health 
+              2: Strength grown
+              3: Agility grown
+              4: Tactics growth
+              5: Speed
+              6: Damage (Physical offence)
+              28: Protection
+              8: Armor
+-->
+          </td>
+          <td [ngClass]="calc.calculateItem_stats(item_1)">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props')  && item_1.props.speed && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+                <span class="px-2">{{item_1.player_item.data.stats["5"]}}/{{item_1.props.speed}}</span>
+    
+            </div>
+<!--
+            <div *ngIf="calc.hasRarity(item_1) &&  calc.hasItem(item_1)">
+              &#x2713;
+            </div>
+            <div *ngIf="!calc.hasRarity(item_1)">
+              <div *ngIf="item_1.player_item">
+                <span class="px-2">{{item_1.player_item.data.rarity}}/{{item_1.stars}}</span>
+              </div>
+              <div *ngIf="!item_1.player_item">
+                <span class="px-2">0/{{item_1.stars}}</span>
+              </div>
+            </div>
+            -->
+          </td>
+          <td [ngClass]="calc.calculateItem_stats(item_1)">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item')  && item_1.props.health && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+                <span class="px-2">{{item_1.player_item.data.stats["1"]}}/{{item_1.props.health}}</span>
+    
+            </div>
+<!--
+            <div *ngIf="calc.hasGear(item_1) &&  calc.hasItem(item_1)">
+              &#x2713;
+            </div>
+            <div *ngIf="!calc.hasGear(item_1)">
+              <div *ngIf="item_1.player_item">
+                <span class="px-2">{{item_1.player_item.data.gear_level}}/{{item_1.gear_level}}</span>
+              </div>
+              <div *ngIf="!item_1.player_item">
+                <span class="px-2">0/{{item_1.gear_level}}</span>
+              </div>
+            </div>-->
+          </td>
+          <td [ngClass]="calc.calculateItem_stats(item_1)">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item')  && item_1.props.protection && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+                <span class="px-2">{{item_1.player_item.data.stats["28"]}}/{{item_1.props.protection}}</span>
+    
+            </div>
+<!--
+            <div *ngIf="calc.hasRelic(item_1) &&  calc.hasItem(item_1)">
+               <span *ngIf="item_1.player_item.data.relic_tier-2 >= 0 && item_1.relic_level"
+                class="px-2">{{item_1.player_item.data.relic_tier-2}}/{{item_1.relic_level}}</span>
+            </div>
+            <div *ngIf="!calc.hasRelic(item_1)">
+              <div *ngIf="item_1.player_item">
+                <span *ngIf="item_1.player_item.data.relic_tier-2 >= 0"
+                  class="px-2">{{item_1.player_item.data.relic_tier-2}}/{{item_1.relic_level}}</span>
+                <span *ngIf="item_1.player_item.data.relic_tier-2 < 0" class="px-2">0/{{item_1.relic_level}}</span>
+              </div>
+              <div *ngIf="!item_1.player_item">
+                <span class="px-2">0/{{item_1.relic_level}}</span>
+              </div>
+            </div>-->
+          </td>
+          <td   [ngClass]="calc.calculateItem_stats(item_1)">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item') && item_1.props.damage && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+                <span class="px-2">{{item_1.player_item.data.stats["6"]}}/{{item_1.props.damage}}</span>
+    
+            </div>
+          </td>
+          <td   [ngClass]="calc.calculateItem_stats(item_1)">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item')  && item_1.props.armor && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+                <span class="px-2">{{item_1.player_item.data.stats["8"] | number : '1.2-2'}}/{{item_1.props.armor}}</span>
+    
+            </div>
+          </td>
+        </tr>
+      </ng-container>
+    </ng-container>
+  </app-projection-card-body>
+   
