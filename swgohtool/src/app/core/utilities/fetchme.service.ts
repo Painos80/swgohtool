@@ -18,6 +18,7 @@ export class FetchmeService {
 
   //proxy_cors = "https://corsproxy.io/?";
   proxy_cors = "https://panosweb.se/px/proxy.php?url=";
+ // proxy_cors = "https://corsproxy.io/?url=";// "https://panosweb.se/px/proxy.php?url=";
   //              https://panosweb.se/proxy/proxy.php?url=https://swgoh.gg/api/ships/
 
   private _ships = new BehaviorSubject<any>([]);

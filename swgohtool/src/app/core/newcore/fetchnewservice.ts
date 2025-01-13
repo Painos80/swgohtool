@@ -9,7 +9,7 @@ import { ClsDefault } from "./classes/cls-default";
     providedIn: 'root'
 })
 export class Fetchnewservice {
-    proxy_cors = "https://panosweb.se/px/proxy.php?url=";
+    proxy_cors =  "https://panosweb.se/px/proxy.php?url=";
     api_url = "https://swgoh.gg/api";
 
     constructor(private http: HttpClient) {
@@ -116,7 +116,8 @@ export class Fetchnewservice {
         const url__in = `${this.proxy_cors}${this.api_url}/guild-profile/${guild}/`;
         const headers = new HttpHeaders()
             .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*');
+            .set('Access-Control-Allow-Origin', '*')
+            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         return this.http.get(url__in, { headers: headers }).toPromise();
 
     }
@@ -125,7 +126,9 @@ export class Fetchnewservice {
         const url__in = `${this.proxy_cors}${this.api_url}/player/${pid}/`;
         const headers = new HttpHeaders()
             .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*');
+            .set('Access-Control-Allow-Origin', '*')
+            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
         return this.http.get(url__in, { headers: headers }).toPromise();
 
     }
@@ -136,7 +139,8 @@ export class Fetchnewservice {
         const url__in = `${this.proxy_cors}${this.api_url}/${option}/`;
         const headers = new HttpHeaders()
             .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*');
+            .set('Access-Control-Allow-Origin', '*')
+            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         return this.http.get(url__in, { headers: headers }).toPromise();
     }
 
@@ -144,7 +148,8 @@ export class Fetchnewservice {
     async getFromURL() {
         const headers = new HttpHeaders()
             .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*');
+            .set('Access-Control-Allow-Origin', '*')
+            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         return this.http.get<Igllist>(this.URL, { headers: headers }).toPromise();
 
     }

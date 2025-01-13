@@ -22,7 +22,7 @@ $valid_requests1 = array(
 
 $url = (isset($_GET['url'])) ? $_GET['url'] : false;
 if(!$url) exit;
-
+ 
 //todo: replace equals with startswith
  
 if(!in_array($_SERVER['HTTP_HOST'], $valid_requests1))
@@ -54,13 +54,34 @@ else if (array_key_exists('HTTP_REFERER', $_SERVER)) {
     }
 }*/
 
- 
-
+//allow_url_fopen = off;
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,$url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+$contents=curl_exec($ch);
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Access-Control-Allow-Headers: *");
+curl_close($ch);
+echo $contents;
+exit;
  //header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 header("Access-Control-Allow-Headers: *");
+
+//header('Access-Control-Allow-Origin: your-host');
+header('Access-Control-Allow-Credentials: true');
+//header('Access-Control-Allow-Methods: your-methods like POST,GET');
+header('Access-Control-Allow-Headers: content-type or other');
+header('Content-Type: application/json');
+//header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 $string = file_get_contents($url);
+//print file_get_contents($url);
+//echo $string;
+ 
+
+echo $url;
 
 $count_page = ("hitcount.txt");
 $hits = file($count_page);

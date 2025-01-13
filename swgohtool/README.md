@@ -14,6 +14,8 @@ ng build swgohtool --configuration production --base-href="/feddytool/" --output
 ng build swgohtool --configuration production --base-href="/dianogas/" --output-path=dist\dianogas
 ng build swgohtool --configuration production --base-href="/rooms/" --output-path=dist\rooms
 
+https://panosweb.se/px/proxy.php?url=https://api.coindesk.com/v1/bpi/currentprice.json
+
 cpit
 https://imgur.com/a/iGZObX5
 

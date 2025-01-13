@@ -60,7 +60,7 @@
             -->
           </td>
           <td [ngClass]="calc.calculateItem_stats(item_1)">
-            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item')  && item_1.props.health && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.props.health && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
                 <span class="px-2">{{item_1.player_item.data.stats["1"]}}/{{item_1.props.health}}</span>
     
             </div>
@@ -78,7 +78,7 @@
             </div>-->
           </td>
           <td [ngClass]="calc.calculateItem_stats(item_1)">
-            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item')  && item_1.props.protection && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.props.protection && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
                 <span class="px-2">{{item_1.player_item.data.stats["28"]}}/{{item_1.props.protection}}</span>
     
             </div>
@@ -99,13 +99,13 @@
             </div>-->
           </td>
           <td   [ngClass]="calc.calculateItem_stats(item_1)">
-            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item') && item_1.props.damage && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.props.damage && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
                 <span class="px-2">{{item_1.player_item.data.stats["6"]}}/{{item_1.props.damage}}</span>
     
             </div>
           </td>
           <td   [ngClass]="calc.calculateItem_stats(item_1)">
-            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item')  && item_1.props.armor && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props') && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.props.armor && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
                 <span class="px-2">{{item_1.player_item.data.stats["8"] | number : '1.2-2'}}/{{item_1.props.armor}}</span>
     
             </div>
