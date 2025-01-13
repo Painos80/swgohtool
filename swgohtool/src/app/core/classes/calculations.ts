@@ -41,7 +41,49 @@ export class Calculations {
     return this.class_header_no_ok;
 
   }
-  calculateItem_stats(item_1:any):string{
+  calculateItem_stats(item_1:any, nbr:any):string{
+    /*
+    
+                    <span class="px-2">{{item_1.player_item.data.stats["5"]}}/{{item_1.props.speed}}</span>
+                <span class="px-2">{{item_1.player_item.data.stats["1"]}}/{{item_1.props.health}}</span>
+                <span class="px-2">{{item_1.player_item.data.stats["28"]}}/{{item_1.props.protection}}</span>
+                <span class="px-2">{{item_1.player_item.data.stats["6"]}}/{{item_1.props.damage}}</span>
+                <span class="px-2">{{item_1.player_item.data.stats["8"] | number : '1.2-2'}}/{{item_1.props.armor}}</span>
+
+    
+    */
+   try{
+   if(nbr){
+    if(nbr == '5'){
+      if(item_1.player_item.data.stats["5"] >= item_1.props.speed){
+        return "text-success";
+      }
+    }
+    if(nbr == '1'){
+      if(item_1.player_item.data.stats["1"] >= item_1.props.health){
+        return "text-success";
+      }
+    }
+    if(nbr == '28'){
+      if(item_1.player_item.data.stats["28"] >= item_1.props.protection){
+        return "text-success";
+      }
+    }
+    if(nbr == '6'){
+      if(item_1.player_item.data.stats["6"] >= item_1.props.damage){
+        return "text-success";
+      }
+    }
+    if(nbr == '8'){
+      if(item_1.player_item.data.stats["8"] >= item_1.props.armor){
+        return "text-success";
+      }
+    }
+
+   }
+  }catch(e){
+    console.error(e);
+  }
     return this.class_no_na;
   }
   

@@ -2331,6 +2331,20 @@
             "tab": "stats",
             "values": [
                 {
+                    "name": "Galactic legends" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Leia Organa", "props": {"speed":550, "health":160000, "protection":102000, "damage":6050,"armor":63}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Rey", "props": {"speed":550, "health":200000, "protection":27832, "damage":11895,"armor":58}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Sith Eternal Emperor", "props": {"speed":500, "health":200000, "protection":56173, "damage":9128,"armor":55}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Jabba the Hutt", "props": {"speed":550, "health":145778, "protection":73899, "damage":7681,"armor":59.39}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Jedi Master Kenobi", "props": {"speed":560, "health":114852, "protection":54985, "damage":11044,"armor":55}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Jedi Master Luke Skywalker", "props": {"speed":550, "health":134000, "protection":150000, "damage":5115,"armor":65}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Lord Vader", "props": {"speed":550, "health":119182, "protection":201411, "damage":11247,"armor":57}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Supreme Leader Kylo Ren", "props": {"speed":550, "health":141052, "protection":55784, "damage":11853,"armor":53}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
@@ -2343,7 +2357,6 @@
                         ,{ "name": "Commander Ahsoka Tano", "props": {"speed":360, "health":null, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "General Skywalker", "props": {"speed":null, "health":null, "protection":120000, "damage":null,"armor":70}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Boushh (Leia Organa)", "props": {"speed":350, "health":null, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Jabba the Hutt", "props": {"speed":550, "health":null, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]
                 },
                 {
@@ -2351,11 +2364,8 @@
                     , "stats":true
                      ,"requirements": [
                         { "name": "Third Sister", "props": {"speed":300, "health":100000, "protection":null, "damage":10000,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Leia Organa", "props": {"speed":550, "health":160000, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Rey", "props": {"speed":550, "health":200000, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Nute Gunray", "props": {"speed":330, "health":null, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Revan", "props": {"speed":340, "health":null, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Sith Eternal Emperor", "props": {"speed":500, "health":200000, "protection":null, "damage":null,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Starkiller", "props": {"speed":300, "health":null, "protection":null, "damage":10000,"armor":null}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]
                 }
