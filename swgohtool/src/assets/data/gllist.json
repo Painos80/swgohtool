@@ -2361,7 +2361,7 @@
                 }
 
             ]
-        }
+        } 
     ],
     "tabs":{
         "description": "tabs to show",
@@ -2372,7 +2372,7 @@
             ,{"text": "RAIDS", "id":"raidsunints", "enabled":true} 
             ,{"text": "Top 5v5", "id":"id5v5", "enabled":true} 
             ,{"text": "Statistics", "id":"stats", "enabled":true} 
-        ]
+         ]
     },
     "guilds":{
         "description": "guilds to load",

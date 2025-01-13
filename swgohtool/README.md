@@ -20,7 +20,9 @@ cpit
 https://imgur.com/a/iGZObX5
 
 //Release notes
-v2,4
+v2.5
+    Added logs
+v2.4
     Added Ashoka tano
     Fixed G1 only for toons
     Fixed Loading

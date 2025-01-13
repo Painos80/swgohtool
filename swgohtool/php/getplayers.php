@@ -1,10 +1,4 @@
 <?php
-/*
-$count_page = ("hitcount.txt");
-$hits = file_get_contents($count_page);
-
-echo $hits;
-*/
 
 $count_page = ("logs.txt");
 $hits = file_get_contents($count_page);
@@ -28,5 +22,6 @@ $subStr = strstr($str, 'https://swgoh.gg/api/player/');
     }
 }
 
-echo count(array_unique($a));
- 
+foreach (array_unique($a) as $value) {
+        echo $value, "<br>";
+}
