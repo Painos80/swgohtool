@@ -3,6 +3,7 @@
     <ng-container table-header>
       <th scope="col"></th>
       <th scope="col">Name</th>
+      <th scope="col" class="my-1 text-center">Relic</th>
       <th scope="col" class="my-1 text-center">Speed</th>
       <th scope="col" class="my-1 text-center">Health</th>
       <th scope="col" class="my-1 text-center">Protection</th>
@@ -40,6 +41,11 @@
               8: Armor
 -->
           </td>
+          <td [ngClass]="calc.calculateItem_stats(item_1,'99')">
+            <div *ngIf="item_1 && item_1.hasOwnProperty('props')  && item_1.props.speed && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
+                <span class="px-2">{{item_1.player_item.data.relic_tier-2}}/{{item_1.props.relic}}</span>
+    
+            </div>
           <td [ngClass]="calc.calculateItem_stats(item_1,'5')">
             <div *ngIf="item_1 && item_1.hasOwnProperty('props')  && item_1.props.speed && item_1.hasOwnProperty('player_item') && item_1.player_item && item_1.player_item.hasOwnProperty('data') && item_1.player_item.data">
                 <span class="px-2">{{item_1.player_item.data.stats["5"]}}/{{item_1.props.speed}}</span>

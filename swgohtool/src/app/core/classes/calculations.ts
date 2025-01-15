@@ -52,39 +52,49 @@ export class Calculations {
 
     
     */
+                if(nbr == '0'){
+                  return this.class_no_na;
+              }
    try{
-   if(nbr){
+   if(nbr && item_1 && item_1.player_item){
     if(nbr == '5'){
       if(item_1.player_item.data.stats["5"] >= item_1.props.speed){
-        return "text-success";
+        return "text-success text-center";
       }
     }
     if(nbr == '1'){
       if(item_1.player_item.data.stats["1"] >= item_1.props.health){
-        return "text-success";
+        return "text-success text-center";
       }
     }
     if(nbr == '28'){
       if(item_1.player_item.data.stats["28"] >= item_1.props.protection){
-        return "text-success";
+        return "text-success text-center";
       }
     }
     if(nbr == '6'){
       if(item_1.player_item.data.stats["6"] >= item_1.props.damage){
-        return "text-success";
+        return "text-success text-center";
       }
     }
     if(nbr == '8'){
       if(item_1.player_item.data.stats["8"] >= item_1.props.armor){
-        return "text-success";
+        return "text-success text-center";
       }
     }
 
+    if(nbr == '99'){
+      if((item_1.player_item.data.relic_tier-2) >= item_1.props.relic){
+        return "text-success text-center";
+      }
+    }
+
+  
    }
   }catch(e){
     console.error(e);
   }
-    return this.class_no_na;
+    return `${this.class_no_na}  text-center`;
   }
   
   calculateItem(item_1: any): string {
