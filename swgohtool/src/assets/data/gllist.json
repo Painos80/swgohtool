@@ -2407,12 +2407,46 @@
                     ]
                 },
                 {
+                    "name": "Boss Nass" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Boss Nass", "props": {"relic": 7, "speed":313, "health":64435, "protection":92267, "damage":5749,"armor":57}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Gungan Boomadier", "props": {"relic": 7, "speed":278, "health":59130, "protection":84348, "damage":9282,"armor":54}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Gungan Phalanx", "props": {"relic": 5 , "speed":257, "health":83013, "protection":119164, "damage":5367,"armor":68}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Jar Jar Binks", "props": {"relic": 5, "speed":315, "health":69030, "protection":92001, "damage":6134,"armor":56}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Captain Tarpals", "props": {"relic": 7, "speed":277, "health":53868, "protection":78328, "damage":9204,"armor":61}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+
+                },
+                {
+                    "name": "Starkiller" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Emperor Palpatine", "props": {"relic": 7, "speed":254, "health":54000, "protection":60000, "damage":5525,"armor":45}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Starkiller", "props": {"relic": 7,"speed":300, "health":81573, "protection":67950, "damage":10000,"armor":55.97}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Mara Jade, The Emperor's Hand", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5, "speed":350, "health":62052, "protection":73677, "damage":5591,"armor":50.69} }
+                        ,{ "name": "Juhani", "props": {"relic": 5, "speed":202, "health":66028, "protection":98334, "damage":5416,"armor":63}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Rey (Jedi Training)", "props": {"relic": 7, "speed":263, "health":86502, "protection":68225, "damage":5567,"armor":58}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+
+                },
+                {
+                    "name": "Third sister" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Third Sister", "props": {"relic": 7,"speed":300, "health":100000, "protection":97735, "damage":10000,"armor":68.59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Grand Inquisitor", "props": {"relic": 7, "speed":321, "health":70000, "protection":83000, "damage":9933,"armor":60}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Seventh Sister",  "props": {"relic": 7, "speed":327, "health":69000, "protection":66000, "damage":5716,"armor":57}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Eighth Brother", "props": {"relic": 7, "speed":292, "health":56000, "protection":73000, "damage":8741,"armor":56}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Fifth Brother", "props": {"relic": 7, "speed":316, "health":80000, "protection":91000, "damage":5478,"armor":59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
                         { "name": "Geonosian Brood Alpha", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5, "speed":290, "health":83385, "protection":98667, "damage":4663,"armor":52.44} }
                         ,{ "name": "Admiral Piett", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 8, "speed":330, "health":64220, "protection":82109, "damage":7444,"armor":52.23} }
-                        ,{ "name": "Mara Jade, The Emperor's Hand", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5, "speed":350, "health":62052, "protection":73677, "damage":5591,"armor":50.69} }
                         ,{ "name": "Moff Gideon", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5,"speed":347, "health":57062, "protection":62104, "damage":7320,"armor":56.54} }
                         ,{ "name": "Captain Phasma", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5,"speed":270, "health":58373, "protection":53943, "damage":4568,"armor":54.24} }
                         ,{ "name": "General Skywalker", "props": {"relic": 8,"speed":274, "health":75832, "protection":120000, "damage":9699,"armor":62.45}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
@@ -2422,10 +2456,8 @@
                     "name": "Stats2" 
                     , "stats":true
                      ,"requirements": [
-                        { "name": "Third Sister", "props": {"relic": 7,"speed":300, "health":100000, "protection":97735, "damage":10000,"armor":68.59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Nute Gunray", "props": {"relic": 5,"speed":330, "health":67838, "protection":51848, "damage":5637,"armor":50.79}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        { "name": "Nute Gunray", "props": {"relic": 5,"speed":330, "health":67838, "protection":51848, "damage":5637,"armor":50.79}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Revan", "props": {"relic": 5,"speed":340, "health":81671, "protection":49603, "damage":7512,"armor":60.85}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Starkiller", "props": {"relic": 7,"speed":300, "health":81573, "protection":67950, "damage":10000,"armor":55.97}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Malak", "props": {"relic": 9,"speed":300, "health":98057, "protection":190601, "damage":6684,"armor":72.34}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Malgus", "props": {"relic": 7,"speed":281, "health":152711, "protection":103614, "damage":5833,"armor":72.37}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]

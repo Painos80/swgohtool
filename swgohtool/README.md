@@ -19,6 +19,10 @@ https://panosweb.se/px/proxy.php?url=https://api.coindesk.com/v1/bpi/currentpric
 cpit
 https://imgur.com/a/iGZObX5
 
+docker images
+docker build -t swgohtool:latest .
+docker run -p 4201:4200 swgohtool
+
 //Release notes
 v2.5
     Added logs
