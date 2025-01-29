@@ -21,7 +21,7 @@ constructor(private fetchNew:Fetchnewservice,
 ){
   this._subs1 = fetchNew.hidecompleted.subscribe(x=>{
   if(x == true){
-    this.hideCompletedTable = true;
+    //this.hideCompletedTable = true;
   //console.log(x);
   }else if(x==false){
     this.hideCompletedTable = false;
@@ -32,7 +32,7 @@ constructor(private fetchNew:Fetchnewservice,
 this._subs2 = fetchNew.hidecompletedItems.subscribe(x=>{
   if(x == true){
     //console.log(x);
-    this.hideCompletedRow = true;
+    //this.hideCompletedRow = true;
     }else if(x==false){
      // console.log(x);
      this.hideCompletedRow = false;

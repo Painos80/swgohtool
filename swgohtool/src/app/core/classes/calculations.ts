@@ -224,6 +224,20 @@ export class Calculations {
     return true;
   }
 
+
+  calculateBestMods(item:any):any{
+    try{
+   // if(this.hasItem(item)){
+     // return 'https://swgoh.gg' + item.player_item.data.url;
+    //}else{
+      return 'https://' + item.item_from_gg.url + 'best-mods';
+    //}
+  }catch(e){
+    //console.error(e);
+  }
+    return null;
+  }
+
 }
 
 

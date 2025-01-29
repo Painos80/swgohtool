@@ -2431,7 +2431,7 @@
 
                 },
                 {
-                    "name": "Third sister" 
+                    "name": "Third Sister" 
                     , "stats":true
                      ,"requirements": [
                         { "name": "Third Sister", "props": {"relic": 7,"speed":300, "health":100000, "protection":97735, "damage":10000,"armor":68.59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
@@ -2442,6 +2442,17 @@
                     ]
                 },
                 {
+                    "name": "General Skywalker" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "General Skywalker", "props": {"relic": 8,"speed":274, "health":75832, "protection":120000, "damage":9699,"armor":62.45}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "CT-5555 \"Fives\"", "props": {"relic": 7, "speed":217, "health":73622, "protection":115000, "damage":5423,"armor":74}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "CT-7567 \"Rex\"",  "props": {"relic": 7, "speed":299, "health":62109, "protection":40568, "damage":5592,"armor":49}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "CT-21-0408 \"Echo\"", "props": {"relic": 7, "speed":234, "health":56031, "protection":50825, "damage":6702,"armor":43}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "ARC Trooper", "props": {"relic": 7, "speed":271, "health":76000, "protection":52460, "damage":10463,"armor":53}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
@@ -2449,7 +2460,6 @@
                         ,{ "name": "Admiral Piett", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 8, "speed":330, "health":64220, "protection":82109, "damage":7444,"armor":52.23} }
                         ,{ "name": "Moff Gideon", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5,"speed":347, "health":57062, "protection":62104, "damage":7320,"armor":56.54} }
                         ,{ "name": "Captain Phasma", "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true, "props": {"relic": 5,"speed":270, "health":58373, "protection":53943, "damage":4568,"armor":54.24} }
-                        ,{ "name": "General Skywalker", "props": {"relic": 8,"speed":274, "health":75832, "protection":120000, "damage":9699,"armor":62.45}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]
                 },
                 {
@@ -2457,7 +2467,7 @@
                     , "stats":true
                      ,"requirements": [
                         { "name": "Nute Gunray", "props": {"relic": 5,"speed":330, "health":67838, "protection":51848, "damage":5637,"armor":50.79}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
-                        ,{ "name": "Darth Revan", "props": {"relic": 5,"speed":340, "health":81671, "protection":49603, "damage":7512,"armor":60.85}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Darth Revan", "props": {"relic": 9,"speed":340, "health":81671, "protection":49603, "damage":7512,"armor":60.85}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Malak", "props": {"relic": 9,"speed":300, "health":98057, "protection":190601, "damage":6684,"armor":72.34}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Malgus", "props": {"relic": 7,"speed":281, "health":152711, "protection":103614, "damage":5833,"armor":72.37}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]
