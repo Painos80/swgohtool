@@ -2453,6 +2453,28 @@
                     ]
                 },
                 {
+                    "name": "Hera Syndulla" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Hera Syndulla", "props": {"relic": 7,"speed":256, "health":56986, "protection":48971, "damage":5455,"armor":53}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Captain Rex", "props": {"relic": 7, "speed":311, "health":74315, "protection":77679, "damage":5821,"armor":52}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Kanan Jarrus",  "props": {"relic": 7, "speed":191, "health":77879, "protection":73925, "damage":4197,"armor":59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Chopper", "props": {"relic": 7, "speed":263, "health":65232, "protection":65871, "damage":3946,"armor":59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Garazeb \"Zeb\" Orrelios", "props": {"relic": 7, "speed":203, "health":56053, "protection":56018, "damage":4591,"armor":51}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
+                    "name": "Mother Talzin" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Mother Talzin", "props": {"relic": 5,"speed":230, "health":66231, "protection":49869, "damage":5189,"armor":43}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Old Daka", "props": {"relic": 5, "speed":235, "health":127496, "protection":46641, "damage":4768,"armor":50}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Asajj Ventress",  "props": {"relic": 5, "speed":213, "health":61616, "protection":43041, "damage":5191,"armor":48}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Nightsister Zombie", "props": {"relic": 5, "speed":223, "health":75308, "protection":66316, "damage":4357,"armor":61}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Merrin", "props": {"relic": 5, "speed":213, "health":68993, "protection":57618, "damage":5212,"armor":52}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
