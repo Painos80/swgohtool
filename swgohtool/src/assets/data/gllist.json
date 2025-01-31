@@ -2475,6 +2475,17 @@
                     ]
                 },
                 {
+                    "name": "Doctor Aphra" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Doctor Aphra", "props": {"relic": 7,"speed":308, "health":58888, "protection":81753, "damage":6304,"armor":58}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "BT-1", "props": {"relic": 7, "speed":274, "health":60317, "protection":76349, "damage":9356,"armor":60}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "0-0-0",  "props": {"relic": 7, "speed":303, "health":48880, "protection":77801, "damage":5244,"armor":54}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Darth Vader", "props": {"relic": 7, "speed":268, "health":60703, "protection":60720, "damage":8029,"armor":59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Imperial Probe Droid", "props": {"relic": 5, "speed":224, "health":43152, "protection":46545, "damage":3519,"armor":45}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
