@@ -2475,6 +2475,28 @@
                     ]
                 },
                 {
+                    "name": "Great Mothers" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Great Mothers", "props": {"relic": 7,"speed":314, "health":74400, "protection":74533, "damage":6070,"armor":56}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Morgan Elsbeth", "props": {"relic": 7, "speed":294, "health":84206, "protection":117724, "damage":5650,"armor":64}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Nightsister Spirit",  "props": {"relic": 3, "speed":272, "health":53537, "protection":41200, "damage":8178,"armor":45}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Nightsister Acolyte", "props": {"relic": 3, "speed":238, "health":41381, "protection":39753, "damage":4816,"armor":32}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Talia", "props": {"relic": 3, "speed":201, "health":53997, "protection":42379, "damage":3619,"armor":38}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
+                    "name": "Cere Junda" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Cere Junda", "props": {"relic": 7,"speed":206, "health":68527, "protection":97924, "damage":5058,"armor":61}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Taron Malicos", "props": {"relic": 7, "speed":256, "health":83294, "protection":75987, "damage":11007,"armor":55}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Cal Kestis",  "props": {"relic": 7, "speed":225, "health":90725, "protection":65863, "damage":5128,"armor":59}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Ahsoka Tano (Fulcrum)", "props": {"relic": 7, "speed":256, "health":69260, "protection":50162, "damage":9695,"armor":52}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Kylo Ren (Unmasked)", "props": {"relic": 7, "speed":234, "health":103593, "protection":74495, "damage":5448,"armor":70}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Doctor Aphra" 
                     , "stats":true
                      ,"requirements": [
