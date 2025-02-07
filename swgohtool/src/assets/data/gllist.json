@@ -2508,6 +2508,17 @@
                     ]
                 },
                 {
+                    "name": "Darth Traya" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Darth Traya", "props": {"relic": 5,"speed":265, "health":78594, "protection":58731, "damage":4957,"armor":46}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Darth Nihilus", "props": {"relic": 5, "speed":244, "health":71541, "protection":62509, "damage":3204,"armor":52}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Darth Sidious",  "props": {"relic": 7, "speed":270, "health":67123, "protection":40231, "damage":7307,"armor":50}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Darth Sion", "props": {"relic": 5, "speed":251, "health":68763, "protection":82553, "damage":4973,"armor":63}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Savage Opress", "props": {"relic": 5, "speed":225, "health":80030, "protection":52603, "damage":6816,"armor":56}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
