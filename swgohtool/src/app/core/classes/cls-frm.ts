@@ -1,6 +1,7 @@
 export class ClsFrm{
   //static hidecompleted:boolean = true;
   //static hidecompletedItems:boolean = true;
+  static tab_active:any=null;
   static tab1_active:boolean=false;
   static tab2_active:boolean=false;
   static tab3_active:boolean=false;

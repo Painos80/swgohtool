@@ -169,6 +169,7 @@ export class TabviewComponent {
   }
 
   updateStatic(){
+    ClsFrm.tab_active = this.active_tab; 
     ClsFrm.tab1_active= this.tab1_active  ;
     ClsFrm.tab2_active=this.tab2_active  ;
     ClsFrm.tab3_active=this.tab3_active  ;
@@ -178,12 +179,35 @@ export class TabviewComponent {
   }
 
   getStatic(){
+    this.active_tab = ClsFrm.tab_active;
     this.tab1_active = ClsFrm.tab1_active;
     this.tab2_active = ClsFrm.tab2_active;
     this.tab3_active = ClsFrm.tab3_active;
     this.tab4_active = ClsFrm.tab4_active;
     this.tab5_active =  ClsFrm.tab5_active;
     this.tab6_active =  ClsFrm.tab6_active;
+  }
+
+  active_tab:any = null;
+  tab(lnd:any){
+    this.active_tab = lnd;
+    this.updateStatic();
+    console.log(lnd);
+  }
+
+  tab_active(lnd:any,i:any){
+    if(this.active_tab){
+      if(this.active_tab == lnd){
+        return true;
+      }else{
+        return false;
+      }
+    }else{
+      if(i==0){
+        return true;
+      }
+    }
+    return false;
   }
 
   isLoading:boolean = false;
