@@ -2556,9 +2556,9 @@
     "guilds":{
         "description": "guilds to load",
         "values":[
-            {"name": "feddy", "id":"7skNKIClReOBSq8jfL_F0g", "enabled":true},
+            {"name": "feddy", "id":"7skNKIClReOBSq8jfL_F0g", "enabled":false},
             {"name": "dianogas", "id":"IbRkVS2bTM-tJ92t92I-Gg", "enabled":false},
-            {"name": "rooms", "id":"nGnTt-BHQf2sGRMiZ0rT_g", "enabled":true},
+            {"name": "rooms", "id":"nGnTt-BHQf2sGRMiZ0rT_g", "enabled":false},
             {"name": "scarberia", "id":"sCZSsvvUSAurcCMsnDbD5g", "enabled":true}
         ]
     }
