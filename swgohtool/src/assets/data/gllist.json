@@ -2519,6 +2519,28 @@
                     ]
                 },
                 {
+                    "name": "Bo-Katan (Mand'alor)" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Bo-Katan (Mand'alor)", "props": {"relic": 7,"speed":278, "health":75154, "protection":37273, "damage":10951,"armor":67}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Paz Vizsla", "props": {"relic": 7, "speed":249, "health":99937, "protection":109407, "damage":6194,"armor":65}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "IG-12 & Grogu",  "props": {"relic": 7, "speed":297, "health":125419, "protection":61364, "damage":4208,"armor":56}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Bo-Katan Kryze", "props": {"relic": 7, "speed":247, "health":60618, "protection":47587, "damage":6961,"armor":48}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "The Mandalorian (Beskar Armor)", "props": {"relic": 7, "speed":261, "health":72002, "protection":69850, "damage":10140,"armor":56}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
+                    "name": "Dark Trooper Moff Gideon" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Dark Trooper Moff Gideon", "props": {"relic": 7,"speed":284, "health":97139, "protection":154712, "damage":5685,"armor":66}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Moff Gideon", "props": {"relic": 5,"speed":347, "health":57062, "protection":62104, "damage":7320,"armor":56.54}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Scout Trooper",  "props": {"relic": 7, "speed":306, "health":55913, "protection":62033, "damage":5227,"armor":58}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Death Trooper", "props": {"relic": 5, "speed":239, "health":51999, "protection":53261, "damage":6609,"armor":46}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "TIE Fighter Pilot", "props": {"relic": 5, "speed":275, "health":52901, "protection":44769, "damage":7022,"armor":48}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
