@@ -144,7 +144,7 @@ export class Fetchnewservice {
         return this.http.get(url__in, { headers: headers }).toPromise();
     }
 
-    private URL = './assets/data/gllist.json';
+    private URL = './assets/data/gllist.json' + `?${Date.now()}`;
     async getFromURL() {
         const headers = new HttpHeaders()
             .set('content-type', 'application/json')
