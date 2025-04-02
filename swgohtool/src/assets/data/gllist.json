@@ -2541,6 +2541,28 @@
                     ]
                 },
                 {
+                    "name": "Queen Amidala" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Queen Amidala", "props": {"relic": 5,"speed":339, "health":91537, "protection":86290, "damage":6911,"armor":63}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Master Qui-Gon", "props": {"relic": 7,"speed":318, "health":92628, "protection":73976, "damage":6235,"armor":53.68}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Padawan Obi-Wan",  "props": {"relic": 7, "speed":285, "health":68204, "protection":71128, "damage":9462,"armor":57.16}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Shaak Ti", "props": {"relic": 7, "speed":310, "health":75539, "protection":60379, "damage":5559,"armor":56.1}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Grand Master Yoda", "props": {"relic": 8, "speed":295, "health":70504, "protection":24054, "damage":6358,"armor":51.07}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
+                    "name": "Omega (Fugitive)" 
+                    , "stats":true
+                     ,"requirements": [
+                        { "name": "Omega (Fugitive)", "props": {"relic": 5,"speed":200, "health":36042, "protection":54660, "damage":2913,"armor":40}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Batcher", "props": {"relic": 5,"speed":236, "health":33379, "protection":54801, "damage":3819,"armor":35.69}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Crosshair (Scarred)",  "props": {"relic": 5, "speed":211, "health":27289, "protection":46938, "damage":4345,"armor":35.82}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Hunter (Mercenary)", "props": {"relic": 5, "speed":257, "health":32564, "protection":49050, "damage":3077,"armor":36.08}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Wrecker (Mercenary)", "props": {"relic": 5, "speed":213, "health":39005, "protection":73032, "damage":3117,"armor":41.82}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                    ]
+                },
+                {
                     "name": "Stats1" 
                     , "stats":true
                      ,"requirements": [
@@ -2558,6 +2580,7 @@
                         ,{ "name": "Darth Revan", "props": {"relic": 9,"speed":340, "health":81671, "protection":49603, "damage":7512,"armor":60.85}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Malak", "props": {"relic": 9,"speed":300, "health":98057, "protection":190601, "damage":6684,"armor":72.34}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                         ,{ "name": "Darth Malgus", "props": {"relic": 7,"speed":281, "health":152711, "protection":103614, "damage":5833,"armor":72.37}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
+                        ,{ "name": "Darth Bane", "props": {"relic": 9,"speed":266, "health":139918, "protection":69416, "damage":10290,"armor":56.57}, "stars":null, "gear_level": null, "relic_level":null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null ,"nohide":true }
                     ]
                 }
 
