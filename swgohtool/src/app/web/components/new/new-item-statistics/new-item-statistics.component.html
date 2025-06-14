@@ -1,3 +1,5 @@
+<!--<pre>{{item | json}}</pre>-->
+
 <app-projection-card-body [showTable] = "showAll()">
     <app-projection-card-header header [ngClass]="calc.calculateLeadItem(item)" [item] = "item" [url] = "calc.calculateURL(item)" [text] = "getText(item)" ></app-projection-card-header>
     <ng-container table-header>
@@ -26,9 +28,15 @@
             <div class="d-flex" *ngIf="calc.calculateURL(item_1)" [ngClass]="calc.calculateItem_stats(item_1,'0')"><a
                 href="{{calc.calculateURL(item_1)}}" target="_blank"
                 [ngClass]="calc.calculateItem_stats(item_1,'0')">{{item_1.name}} </a>
-                <a type="button" class="btn btn-sm btn-outline-secondary ms-auto" target="_blank" title="Best mods" href="{{calc.calculateBestMods(item_1)}}">
+                <span class="ms-auto">
+                <a type="button" class="btn btn-sm btn-outline-secondary  " target="_blank" title="Best mods" href="{{calc.calculateBestMods(item_1)}}">
                   >
-                </a>
+               </a>
+              <!--      <a type="button" class="btn btn-sm btn-outline-secondary  " target="_blank" title="Recalculate"  (click)="getBestMods(item_1)">
+                  &
+                </a>-->
+                </span>
+
               </div>
       <!--          <pre>
                     {{item_1.player_item.data.stats | json}}

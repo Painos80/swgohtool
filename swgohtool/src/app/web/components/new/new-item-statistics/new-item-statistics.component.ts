@@ -42,6 +42,11 @@ this._subs2 = fetchNew.hidecompletedItems.subscribe(x=>{
 
 }
  
+ngOnInit(){
+  for(let i=0;i<=this.item.requirements.length-1;i++){
+    this.getBestMods(this.item.requirements[i]);
+  }
+}
 
 ngOnDestroy(){
   if(this._subs1){
@@ -183,5 +188,78 @@ ngOnDestroy(){
     return `${item.name} ${this.getExtraText()}`;
   }
 
+  async getBestMods(item_1:any){
+//this.item. 
+/*console.log(item_1);
+item_1.props.armor = 70;
+
+item_1.props.damage = 5;
+ 
+item_1.props.health = 5000;
+ 
+item_1.props.protection= 5000;
+ 
+item_1.props.relic= 5000;
+ 
+item_1.props.speed= 5000;*/
+let url = 'https:' + item_1.item_from_gg.url + 'best-mods';;
+      let data = await this.fetchNew.getDataFromURL(url).catch(error => {
+        console.error(error);
+      }); 
+
+/*
+<ul>
+                <li><strong>Relic</strong>: 8.96</li>
+                    <li><strong>Health</strong>: 167,974</li>
+                    <li><strong>Protection</strong>: 102,779</li>
+                    <li><strong>Speed</strong>: 554</li>
+                    <li><strong>Physical Damage</strong>: 6,044</li>
+                    <li><strong>Special Damage</strong>: 8,181</li>
+                    <li><strong>Armor</strong>: 63.6%</li>
+                    <li><strong>Potency</strong>: 69.67%</li>
+                    <li><strong>Tenacity</strong>: 92.74%</li>
+            </ul>
+*/
+var mySubString = data?.toString().substring(
+    data?.toString().indexOf(":") + 1, 
+    data?.toString().lastIndexOf(";")
+);
+try{
+  if(item_1 && !item_1.hasOwnProperty('props')){
+    item_1.props = {
+      relic: "",
+      health: "",
+      armor: "",
+      damage: "",
+      protection:"",
+      speed: ""
+    }
+  }
+ item_1.props.relic = this.getMatch(item_1,data,"Relic");
+ item_1.props.health = this.getMatch(item_1,data,"Health");
+ item_1.props.armor = this.getMatch(item_1,data,"Armor");
+ item_1.props.damage = this.getMatch(item_1,data,"Physical Damage");;
+item_1.props.protection= this.getMatch(item_1,data,"Protection");
+item_1.props.speed= this.getMatch(item_1,data,"Speed");
+}catch(e){
+  console.error(e);
+}
+
+//console.log("");
+
+}
+
+getMatch(item_1:any, data:any, str:string):any{
+try{
+  var tmpStr  = data?.toString().match(`<li><strong>${str}</strong>:(.*)</li>`);
+  let str1 = tmpStr[1].trim();//.split(',').join().split('%').join(); 
+  str1 = str1.replace(",", "");
+  str1 = str1.replace("%", "");
+  str1 = str1.split('.')[0];
+  return str1;
+}catch(e){
+  return item_1.props.relic;
+}
+}
 
 }
