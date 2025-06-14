@@ -121,6 +121,19 @@ export class AppComponent {
     //await this.fetch.populateUnits();
     //await this.fetch.populateAbilities();
     this.loading = false;
+    console.log(this.isOK(undefined));
+    console.log(this.isOK(null));
+    console.log(this.isOK(''));
+    console.log(this.isOK('5'));
+    console.log(this.isOK(1));
+  }
+
+  isOK(val:any):boolean{
+    if(val){
+      return true;
+    }else{
+      return false;
+    }
   }
 
   //Remove subs on destroy

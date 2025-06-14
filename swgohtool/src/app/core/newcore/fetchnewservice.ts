@@ -133,6 +133,18 @@ export class Fetchnewservice {
 
     }
 
+       async getDataFromURL(url: string) {
+        const url__in = `${this.proxy_cors}${url}/`;
+        const headers = new HttpHeaders()
+          .set('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8')
+         //   .set('response_type', 'text')//.set('content-type', 'text')
+         //   .set('responseType', 'text')
+            .set('Access-Control-Allow-Origin', '*')
+            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
+        return this.http.get(url__in, {responseType:'text'}).toPromise();
+
+    }
 
     //Fetch data for ships and units
     async getDataFor(option: string) {

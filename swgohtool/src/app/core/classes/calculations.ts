@@ -56,7 +56,7 @@ export class Calculations {
                   return this.class_no_na;
               }
    try{
-   if(nbr && item_1 && item_1.player_item){
+   if(nbr && item_1 && item_1.player_item && item_1?.props){
     if(nbr == '5'){
       if(item_1.player_item.data.stats["5"] >= item_1.props.speed){
         return "text-success text-center";
