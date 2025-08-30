@@ -278,6 +278,9 @@ item_json.modscores.values[1].value = omega;
 item_json.modscores.values[2].value = g_score;
 item_json.modscores.values[3].value = Math.round(((hotutils + g_score) + Number.EPSILON) * 100) / 100;//hotutils + g_score;
 item_json.modscores.values[4].value = Math.round(((omega + g_score) + Number.EPSILON) * 100) / 100;//omega + g_score;
+item_json.modscores.values[5].value = mods_1519.length;
+item_json.modscores.values[6].value = mods_2024.length;
+item_json.modscores.values[7].value = mods_25.length;
 /*"modscores":{
     "description": "Mod scores",
     "values":[
@@ -285,6 +288,9 @@ item_json.modscores.values[4].value = Math.round(((omega + g_score) + Number.EPS
         {"omega": ""}
     ]
 }*/
+// let mods_1519 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 150000 && y.value <= 190000)));
+  //          let mods_2024 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 200000 && y.value <= 240000)));
+    //        let mods_25 = 
 
             for (let i = 0; i <= item_json.lists.length - 1; i++) {
                 let dt = item_json.lists[i];

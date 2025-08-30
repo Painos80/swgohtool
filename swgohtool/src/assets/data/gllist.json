@@ -15,7 +15,10 @@
             {"name" : "omega", "value": ""},
             {"name" : "gear_score", "value":""},
             {"name" : "total_hotutil", "value":""},
-            {"name" : "total_omega", "value":""}
+            {"name" : "total_omega", "value":""},
+            {"name" : "speed_15_19", "value":""},
+            {"name" : "speed_20_24", "value":""},
+            {"name" : "speed_25+", "value":""}
             
         ]
     }
