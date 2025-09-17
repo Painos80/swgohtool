@@ -32,6 +32,7 @@
     <div class="tab-content">
         <ng-container *ngFor="let lnd_p of (datavalues_obs$ | async).tabs.values ; index as i2" >
             <div *ngIf="i2 == 0 && lnd_p.enabled" class="tab-pane " id="{{lnd_p.id}}" [ngClass]="{'active': tab_active(lnd_p.id,i2) }">
+                <div>ashdkashdkajsdh</div>
                 <div class="accordion">
                     <div class="text-white" *ngFor="let lnd of new$ | async ; index as i" style="display: block;">
                         <app-accordeon [title]="lnd.description" *ngIf="lnd.tab == lnd_p.id">
@@ -54,6 +55,13 @@
                                             <app-new-item-statistics [item]="item"></app-new-item-statistics>                                       
                                         </div>
                                     </ng-container>
+                                    <ng-container *ngIf="lnd.values == 0">
+                                    <ng-container *ngFor="let item of (units$ | async) ; index as i">
+                                        <div class="px-2" >
+                                            <app-new-item-statistics [item]="item"></app-new-item-statistics>                                       
+                                        </div>
+                                    </ng-container>
+                                    </ng-container>
                                 </div>
 
                             </div>
@@ -64,7 +72,8 @@
             <div *ngIf="i2 > 0 && lnd_p.enabled" class="tab-pane " id="{{lnd_p.id}}" [ngClass]="{'active': tab_active(lnd_p.id,i2) }">
                 <div class="accordion">
                     <div class="text-white" *ngFor="let lnd of new$ | async ; index as i" style="display: block;">
-                        <app-accordeon [title]="lnd.description" *ngIf="lnd.tab == lnd_p.id">
+                        <app-accordeon [title]="lnd.description" *ngIf="lnd.tab == lnd_p.id   ">
+                       
                             <div class="container-fluid  ">
                                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
                                     <ng-container *ngFor="let item of lnd.values ; index as i">
@@ -80,19 +89,43 @@
                                 </div>
                             </div>
                             <div class="container-fluid  ">
+                                <div class="row row-cols-1 d-flex" *ngIf="lnd.values == 0 || lnd.tab == 'stats_all'">
+                                    <div class="w-100 ps-1 d-flex">
+                                    <button type="button" class="btn  btn-primary ms-1 m-2" (click)="generateData(lnd)">Fetch</button>
+ <input 
+      type="text" 
+      class="form-control my-2" 
+      id="username" 
+      placeholder="Enter player name"
+      [(ngModel)]="username" 
+autocomplete="off"
+  autocorrect="off"
+  autocapitalize="off"
+  spellcheck="false"      />
+                                    </div>                                
+    
+                                </div>
                                 <div class="row row-cols-1">
-                                    <ng-container *ngFor="let item of lnd.values ; index as i">
-                        
-                                        <div class="px-2" *ngIf="item.hasOwnProperty('stats') && item.stats">
-                                            <app-new-item-statistics [item]="item"></app-new-item-statistics>                                       
-                                        </div>
+                                        <ng-container *ngFor="let item of lnd.values ; index as i">
+                            
+                                            <div class="px-2" *ngIf="item.hasOwnProperty('stats') && item.stats">
+                                                <app-new-item-statistics [item]="item" [username]="username"></app-new-item-statistics>                                       
+                                            </div>
 
-                                  </ng-container>
-                                    
+                                    </ng-container>
+                                    <span *ngIf="lnd.values == 0 || lnd.tab == 'stats_all'">
+                                        <span *ngif="button_clicked"> <ng-container *ngFor="let item of lnd.values ; index as i">
+                                                <div class="px-2">
+                                                    <app-new-item-stats [item]="item" [username]="username"></app-new-item-stats>
+                                                </div>
+                                            </ng-container>
+                                        </span>
+                                    </span>
                                 </div>
                             </div>
 
                         </app-accordeon>
+                                  
                     </div>
                 </div>
             </div>

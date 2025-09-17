@@ -4,6 +4,7 @@ import { BehaviorSubject } from "rxjs";
 import { Injectable } from "@angular/core";
 import { Igllist, IgllistValuesExtented_Item } from "./interfaces/igllist";
 import { ClsDefault } from "./classes/cls-default";
+import { HelperHeaders } from "./tools/helper-headers";
 
 @Injectable({
     providedIn: 'root'
@@ -16,6 +17,7 @@ export class Fetchnewservice {
         this.changeLoaded(false);
     }
 
+    //#region Observables
     private _loaded = new BehaviorSubject<boolean>(false);
     loaded = this._loaded.asObservable();
     changeLoaded(newData: any) {
@@ -109,67 +111,43 @@ export class Fetchnewservice {
     this.abilitiesobj = newData;
     this._abilities.next(newData);
   }
+  
+  //#endregion
 
-    async getDataForGuild(guild: string) {
-        //Feddy: https://swgoh.gg/api/guild-profile/7skNKIClReOBSq8jfL_F0g
-        //Dianogas: IbRkVS2bTM-tJ92t92I-Gg
+  //#region Http 
+    private helper_headers = new HelperHeaders();
+    private URL = './assets/data/gllist.json' + `?${Date.now()}`;
+
+    private async getDataForGuild(guild: string) {
         const url__in = `${this.proxy_cors}${this.api_url}/guild-profile/${guild}/`;
-        const headers = new HttpHeaders()
-            .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*')
-            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-        return this.http.get(url__in, { headers: headers }).toPromise();
-
+        return this.http.get(url__in, { headers: this.helper_headers.headers }).toPromise();
     }
 
-    async getDataForPlayer(pid: string) {
+    private async getDataForPlayer(pid: string) {
         const url__in = `${this.proxy_cors}${this.api_url}/player/${pid}/`;
-        const headers = new HttpHeaders()
-            .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*')
-            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-
-        return this.http.get(url__in, { headers: headers }).toPromise();
-
+        return this.http.get(url__in, { headers: this.helper_headers.headers }).toPromise();
     }
 
-       async getDataFromURL(url: string) {
+    async getDataFromURL(url: string) {
         const url__in = `${this.proxy_cors}${url}/`;
-        const headers = new HttpHeaders()
-          .set('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8')
-         //   .set('response_type', 'text')//.set('content-type', 'text')
-         //   .set('responseType', 'text')
-            .set('Access-Control-Allow-Origin', '*')
-            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-
         return this.http.get(url__in, {responseType:'text'}).toPromise();
-
     }
 
     //Fetch data for ships and units
-    async getDataFor(option: string) {
+    private async getDataFor(option: string) {
         const url__in = `${this.proxy_cors}${this.api_url}/${option}/`;
-        const headers = new HttpHeaders()
-            .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*')
-            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-        return this.http.get(url__in, { headers: headers }).toPromise();
+        return this.http.get(url__in, { headers: this.helper_headers.headers }).toPromise();
     }
 
-    private URL = './assets/data/gllist.json' + `?${Date.now()}`;
-    async getFromURL() {
-        const headers = new HttpHeaders()
-            .set('content-type', 'application/json')
-            .set('Access-Control-Allow-Origin', '*')
-            .set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-        return this.http.get<Igllist>(this.URL, { headers: headers }).toPromise();
-
+    private async getFromURL() {        
+        return this.http.get<Igllist>(this.URL, { headers: this.helper_headers.headers }).toPromise();
     }
+
+    //#endregion
 
     async populateJSON() {
         let data = await this.getFromURL();
         if (data) {
-            //this.populateGuild(data.get_default.guild);
             let list: Array<ClsDefault> = [];
             for (let i = 0; i <= data.get_default.values.length - 1; i++) {
                 let label = data.get_default.values[i];
@@ -329,21 +307,7 @@ this.changePlayer(player);
             console.error(e);
         }
     }
-    async populateGuild(guid: string) {
-        let data = await this.getDataForGuild(guid);
-        let jsonstr = JSON.stringify(data);
-        let guild = JSON.parse(jsonstr);
-        /*
-    members.
-      player_name
-      ally_code
-      galactic_power
-    */
-        let ddt = guild.data.members.sort(this.objectComparisonCallback);
-        this.changeGuild(ddt);
-        this.changeGuild1(guild.data.name);
-    }
-
+     
     async generateGuild(guid: string){
         let data = await this.getDataForGuild(guid);
         let jsonstr = JSON.stringify(data);
@@ -355,6 +319,18 @@ this.changePlayer(player);
       galactic_power
     */
         let ddt = guild.data.members.sort(this.objectComparisonCallback);
+        for(let i=0; i<= ddt.length-1;i++){
+         /*   let data = await this.getDataForPlayer(ddt[i].ally_code );
+ let jsonstr = JSON.stringify(data);
+            let player = JSON.parse(jsonstr);
+            let mods_1519 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 150000 && y.value <= 190000)));
+            let mods_2024 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 200000 && y.value <= 240000)));
+            let mods_25 = player.mods.filter((x: { secondary_stats: any[]; })=> x.secondary_stats.find((y: { name: string; value: number; })=>y.name == 'Speed' && (y.value >= 250000)));
+
+            let modscore = ((mods_1519.length * 0.8) + (mods_2024.length) + (mods_25.length * 1.6))/ (player.data.character_galactic_power / 100000); 
+            let hotutils = Math.round((modscore + Number.EPSILON) * 100) / 100;
+            ddt[i].hotutilities = hotutils;*/
+        }
         guild.members = ddt;
         return guild;
     }

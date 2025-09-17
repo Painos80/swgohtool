@@ -621,6 +621,10 @@
                         ,{ "name": "Vane", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "General Kenobi", "stars": "7", "gear_level": "13", "relic_level": "9", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                         ,{ "name": "Chirrut Îmwe", "stars": "7", "gear_level": "13", "relic_level": "5", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Captain Silvo", "stars": "7", "gear_level": "13", "relic_level": "7", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Count Dooku", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Bossk", "stars": "7", "gear_level": "13", "relic_level": "8", "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
+                        ,{ "name": "Rey's Millennium Falcon", "stars": "7", "gear_level": null, "relic_level": null, "minimum_power_toon": null, "minimum_power_ship": null, "omicron_abilities_req": null }
                      ]
                 }
             ]
@@ -2800,6 +2804,12 @@
                     ]
                 }
             ]
+        },
+         {
+            "description": "Stats All",
+            
+            "tab": "stats_all",
+            "values": []
         }
     ],
     "tabs":{
@@ -2808,10 +2818,11 @@
             {"text": "Roster Status", "id":"status", "enabled":true} 
             ,{"text": "Roster health", "id":"rosterhealth", "enabled":true} 
             ,{"text": "ROTE", "id":"roteunints", "enabled":false} 
-            ,{"text": "RAIDS", "id":"raidsunints", "enabled":true} 
+            ,{"text": "RAIDS", "id":"raidsunints", "enabled":false} 
             ,{"text": "Top 5v5", "id":"id5v5", "enabled":false} 
             ,{"text": "Statistics", "id":"stats", "enabled":true} 
             ,{"text": "Statistics GLS", "id":"stats_gls", "enabled":true} 
+            ,{"text": "Statistics All", "id":"stats_all", "enabled":true} 
          ]
     },
     "guilds":{

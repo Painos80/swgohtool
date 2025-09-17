@@ -1,11 +1,41 @@
-<footer class="d-bloc  justify-content-between align-items-center py-3 mt-4 ">
-    <div class="d-block align-items-center text-center mx-auto">
-      <span class="mb-3 mb-md-0 text-muted"><a href="https://github.com/Painos80/swgohtool" target="_blank">GitHub project: swgohtool</a></span>
+<footer class="d-block justify-content-between align-items-center py-3">
+  <div class="text-center mx-auto">
+    <span class="mb-3 mb-md-0 text-muted">
+      <a href="https://github.com/Painos80/swgohtool" target="_blank" class="text-decoration-none">
+        <i class="bi bi-github me-1"></i>
+        GitHub project: swgohtool
+      </a>
+    </span>
+  </div>
+
+  <div class="d-flex justify-content-center mt-2">
+    <div class="dropdown">
+      <button 
+        class="btn btn-info btn-sm dropdown-toggle" 
+        type="button" 
+        id="footerDropdown" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false"
+      >
+        <i class="bi bi-tools me-1"></i> Tools
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="footerDropdown">
+        <li>
+          <a class="dropdown-item" href="https://panosweb.se/px/getplayers.php" target="_blank">
+            <i class="bi bi-people-fill me-2"></i> Players
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="https://panosweb.se/px/getlogs.php" target="_blank">
+            <i class="bi bi-journal-text me-2"></i> Logs
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="https://panosweb.se/px/getcounts.php" target="_blank">
+            <i class="bi bi-123 me-2"></i> Counts
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="d-block align-items-center text-center mx-auto my-2" *ngIf="isFeddy">
-      <span class="mb-3 mb-md-0 text-muted">Join Feddy on discord<a class="btn btn-primary btn-sm px-2 mx-2" href="https://discord.gg/tErqHJYAxH" target="_blank">Discord</a></span>
-    </div>
-   
-    <!--<iframe src="https://discord.com/widget?id=663969213395763202&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    -->
-    </footer>
+  </div>
+</footer>

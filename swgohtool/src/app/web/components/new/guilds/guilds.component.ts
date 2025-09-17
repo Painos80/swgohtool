@@ -1,75 +1,111 @@
-import { Component } from '@angular/core';
-import { Fetchnewservice } from 'src/app/core/newcore/fetchnewservice';
-import { Observable } from 'rxjs';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, Subscription } from 'rxjs';
+import { Fetchnewservice } from 'src/app/core/newcore/fetchnewservice';
 
 @Component({
   selector: 'app-guilds',
   templateUrl: './guilds.component.html',
   styleUrls: ['./guilds.component.scss']
 })
-export class GuildsComponent {
-  datavalues_obs$:Observable<any> = this.fetchNew.datavalues_obs$;
-  ally_code:any;
+export class GuildsComponent implements OnInit, OnDestroy {
+  // Observable source for data
+  datavalues_obs$: Observable<any> = this.fetchNew.datavalues_obs$;
 
-  guilds_loaded:boolean = false;
+  // Data properties
+  allyCode: string | null = null;
+  guildsLoaded = false;
+  guilds: any[] = [];
 
-  guilds:any[]=[];
-  _subs1:any;
-  _subs2:any;
+  // Subscriptions
+  private dataSubscription?: Subscription;
+  private queryParamSubscription?: Subscription;
 
-public constructor (
-  private router: Router,
-  private route: ActivatedRoute, 
-  private fetchNew: Fetchnewservice
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private fetchNew: Fetchnewservice
+  ) { }
 
-){
-this._subs1 = this.datavalues_obs$.subscribe(async x=>{
-  if(x && x.hasOwnProperty('guilds')){
-    //populate the guild
-    if(this.guilds_loaded && this.guilds.length != x.guilds.values){
-      return;
-    }
+  ngOnInit(): void {
     this.guilds = [];
-    this.guilds_loaded = true;
-    for(let i=0;i<= x.guilds.values.length-1;i++){
-      let g = x.guilds.values[i];
-      //x.guilds.values.forEach(async (g:any)=>{
-      if(g.enabled){
-      let dt = await this.fetchNew.generateGuild(g.id);
-      if(this.guilds.filter(x=>x.id != dt.id).length <=0 ){
-        this.guilds.push(dt);
+
+    this.subscribeToQueryParams();
+    this.subscribeToDataValues();
+  }
+
+  ngOnDestroy(): void {
+    this.dataSubscription?.unsubscribe();
+    this.queryParamSubscription?.unsubscribe();
+  }
+
+  private subscribeToQueryParams(): void {
+    this.queryParamSubscription = this.route.queryParams.subscribe(params => {
+      const playerId = params['playerid'];
+      if (playerId) {
+        this.allyCode = playerId;
       }
-    }
-   // });
+    });
   }
-  }
-});
-}
-ngOnDestroy(){
-  if(this._subs1){
-    this._subs1.unsubscribe();
-  }
-  if(this._subs2){
-    this._subs2.unsubscribe();
-  }
-}
- ngOnInit() {
-  this.guilds = [];
-  if(this._subs2){
-    this._subs2.unsubscribe();
-  }
-  this._subs2 =  this.route.queryParams.subscribe(async params => {
-    if (params['playerid']) {
-      this.ally_code = params['playerid'];
-    }
-  });
-}
-  //Change player from the dropdown
-  async changeplayer(lnd:any){
-    let lnk = `/?playerid=${lnd.ally_code}`;
-    this.router.navigateByUrl(lnk);
 
+  private subscribeToDataValues(): void {
+    this.dataSubscription = this.datavalues_obs$.subscribe(async data => {
+      if (!data?.guilds?.values) return;
+
+      const incomingGuilds = data.guilds.values;
+
+      if (this.guildsLoaded && this.guilds.length === incomingGuilds.length) {
+        return;
+      }
+
+      this.guilds = [];
+      this.guildsLoaded = true;
+
+      for (const guild of incomingGuilds) {
+        if (guild.enabled) {
+          try {
+            const generatedGuild = await this.fetchNew.generateGuild(guild.id);
+            const exists = this.guilds.some(existing => existing.id === generatedGuild.id);
+
+            if (!exists) {
+              this.guilds.push(generatedGuild);
+            }
+          } catch (error) {
+            console.error(`Failed to generate guild with ID ${guild.id}:`, error);
+          }
+        }
+      }
+    });
+  }
+
+  // Navigates to another player by ally code
+  async changePlayer(selected: { ally_code: string }): Promise<void> {
+    const link = `/?playerid=${selected.ally_code}`;
+    await this.router.navigateByUrl(link);
+  }
+
+  // Utility ID generators
+  generateButtonId(index: number): string {
+    return `guilds-container-row-button-${index}`;
+  }
+
+  generateULId(index: number): string {
+    return `guilds-container-row-button-ul-${index}`;
+  }
+
+  generateLIId(index: number): string {
+    return `guilds-container-row-button-ul-li-${index}`;
+  }
+
+  generateLIButtonId(index: number): string {
+    return `guilds-container-row-button-ul--li-button-${index}`;
+  }
+
+  trackByGuild(index: number, guild: any): string {
+    return guild.data?.id ?? index; // or a unique guild identifier
+  }
+
+  trackByMember(index: number, member: any): string {
+    return member.ally_code; // assuming ally_code is unique
   }
 }
-

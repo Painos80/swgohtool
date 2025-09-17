@@ -1,5 +1,9 @@
+
 <app-projection-card-body [showTable] = "true" [maxheight] = "true">
+    
     <app-projection-card-header header [ngClass]="calc.calculateLeadItem(item)" [item] = "item" [url] = "calc.calculateURL(item)" [text] = "getText(item)" ></app-projection-card-header>
+    
+
     <ng-container table-header>
         <th scope="col"></th>
         <th scope="col">Name</th>
@@ -11,7 +15,7 @@
     <ng-container table-body>
         <ng-container *ngFor="let item_1 of calculate() ; index as i" >
 
-            <tr  >
+            <tr   >
                 <td class="p-0" scope="row"  >
                   <div class="d-flex ">
                     <img class="pt-1" width="32" 
@@ -51,4 +55,3 @@
           </ng-container>
     </ng-container>
 </app-projection-card-body>
- 

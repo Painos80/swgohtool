@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
-import { categories } from './core/data/cats';
-import { FetchmeService } from './core/utilities/fetchme.service';
+//import { categories } from './core/data/cats';
+//import { FetchmeService } from './core/utilities/fetchme.service';
 //import legends from './core/data/gls'; 
 import { Observable } from 'rxjs';
 import { FormBuilder } from '@angular/forms';
@@ -46,7 +46,7 @@ export class AppComponent {
   //cpitreadyclose$:Observable<any>= this.fetch.cpitreadyclose;
   //cpitready_counterclose$:Observable<any>= this.fetch.cpitready_counterclose;
 
- isFeddy = Globals.isFeddy;
+ //isFeddy = Globals.isFeddy;
 
   //Form
   checkoutForm:FormGroup = this.formBuilder.group({
@@ -64,24 +64,13 @@ export class AppComponent {
   _sub_router:any;
 
   public constructor(
-    private fetch: FetchmeService,
+    //private fetch: FetchmeService,
     private formBuilder: FormBuilder, 
     private route: ActivatedRoute, 
     private router: Router,
     private fetchNew:Fetchnewservice
   ) {
-      if(Globals.isFeddy){
-        Globals.guild = Globals.feddy;
-      }
-      if(Globals.isDianogas){
-        Globals.guild = Globals.dianogas;
-      }
-      if(Globals.isRooms){
-        Globals.guild = Globals.rooms;
-      }
-      if(Globals.isScarberia){
-        Globals.guild = Globals.scarberia;
-      }
+    
       this.inputForm.patchValue({
         hideCompleted: this.fetchNew.hidecompletedItemsValue,
         hidecompletedTable: this.fetchNew.hidecompletedValue

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ClsFrm } from 'src/app/core/classes/cls-frm';
-import { FetchmeService } from 'src/app/core/utilities/fetchme.service';
+//import { FetchmeService } from 'src/app/core/utilities/fetchme.service';
 
 @Component({
   selector: 'app-sw-card',
@@ -16,7 +16,7 @@ _subs2:any;
 //hidecompleted: boolean = ClsFrm.hidecompleted;
 //hidecompletedItems: boolean = ClsFrm.hidecompletedItems;
 public constructor(
-  private fetch: FetchmeService,
+  //private fetch: FetchmeService,
 
 ){
 /*this._subs1 = fetch.hidecompleted.subscribe(x=>{
@@ -42,21 +42,18 @@ ngOnDestroy(){
 }
 
   checkCompleted(): boolean {
-    if ( this.fetch.hidecompletedValue) {
+   // if ( this.fetch.hidecompletedValue) {
       if (this.lnd) {
         if (this.lnd.ok && this.lnd.ultimate && this.lnd.canhide) {
           return false;
         }
       }
       return true;
-    } else {
-      return true;
-    }
+    
   }
 
   checkCompletedItem(itm:any):boolean{
-    if(this.fetch.hidecompletedItemsValue){
-      if(this.lnd){
+       if(this.lnd){
         if(this.lnd.canhide){
           if(itm.allOK() && itm.hasTheToon()){
             return false;
@@ -67,8 +64,5 @@ ngOnDestroy(){
         }
       }
       return true;
-    }else{
-      return true;
-    }
-    }
+    } 
 }

@@ -15,7 +15,7 @@
     <ng-container table-body>
       <ng-container *ngFor="let item_1 of item.requirements ; index as i">
   
-        <tr *ngIf="showRow(item_1)">
+        <tr *ngIf="showRow(item_1) && generatevisibility(item_1)">
           <td class="p-0" scope="row" [ngClass]="calc.calculateItem_stats(item_1,'0')">
             <div class="d-flex ">
               <img class="pt-1" width="32" *ngIf="item_1.item_from_gg && item_1.item_from_gg.image"

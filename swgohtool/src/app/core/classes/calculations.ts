@@ -238,6 +238,28 @@ export class Calculations {
     return null;
   }
 
+  getStat(item_1:any,nbr:string){
+    if(nbr == '5'){
+      return item_1.player_item.data.stats["5"];
+    }
+    if(nbr == '1'){
+      return item_1.player_item.data.stats["1"];
+    }
+    if(nbr == '28'){
+      return item_1.player_item.data.stats["28"];
+    }
+    if(nbr == '6'){
+      return item_1.player_item.data.stats["6"];
+    }
+    if(nbr == '8'){
+      return item_1.player_item.data.stats["8"];
+    }
+
+    if(nbr == '99'){
+      return (item_1.player_item.data.relic_tier-2);
+    }
+  }
+
 }
 
 

@@ -22,6 +22,9 @@ export class TabviewComponent {
   units$:Observable<any> = this.fetchNew.units;
   playerdata$:Observable<any>= this.fetchNew.playerdata;
   loaded$:Observable<any>= this.fetchNew.loaded;
+  player$:Observable<any>= this.fetchNew.player;
+
+  
   //legends$:Observable<any>= this.fetch.legends;
   //events$:Observable<any>= this.fetch.events;
   //eventslow$:Observable<any>= this.fetch.eventslow;
@@ -246,4 +249,78 @@ export class TabviewComponent {
 
     return show;
   }
+
+  button_clicked = false;
+  username: string = '';
+
+  generateData(lnd:any):any{
+    this.button_clicked = true;
+    //lnd.values = this.units$;
+    let units = [];
+    let unitts1: any[]= [];
+                        let reqs1: any[] = [];
+
+                     let reqs: any[] = [];
+                     this.units$.forEach((x:any)=>{
+                      reqs = x;
+                     });
+this.player$.forEach(element => {
+  unitts1 = element?.units;
+});
+                     reqs.forEach(x=>{
+                      reqs1.push({
+                        "name": x.name,
+                        item_from_gg: x,
+                        player_item: unitts1.find(y=>y.data.name == x.name),
+                        "props": {
+                          "relic": null,
+                          "speed":null, 
+                          "health":null, 
+                          "protection":null, 
+                          "damage":null,
+                          "armor":null}, 
+                          "stars":null, 
+                          "gear_level": null,
+                           "relic_level":null, 
+                           "minimum_power_toon": null, 
+                           "minimum_power_ship": null, 
+                           "omicron_abilities_req": null 
+                           ,"nohide":true 
+                      });
+                     });
+                     reqs1 = reqs1.sort((a, b) => {
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+});
+reqs1 = reqs1.sort((a, b) => {
+  const aTier = a.player_item?.data?.relic_tier;
+  const bTier = b.player_item?.data?.relic_tier;
+
+  if (aTier == null && bTier == null) return 0; // both null → equal
+  if (aTier == null) return 1; // a is null → move to end
+  if (bTier == null) return -1; // b is null → move to end
+
+  return bTier - aTier; // higher tier first
+});
+                    let json = {name: "All units" 
+                    , stats:true
+                     ,requirements: reqs1}
+                     lnd.values = [json];
+    return lnd.values;
+    console.log(lnd);
+  }
+
+   objectComparisonCallbackRelic = (arrayItemA: any, arrayItemB: any) => {
+        if (arrayItemA.player_item?.data?.relic_tier  < arrayItemB.player_item?.data?.relic_tier ) {
+            return 1
+        }
+
+        if (arrayItemA.player_item?.data?.relic_tier  > arrayItemB.player_item?.data?.relic_tier ) {
+            return -1
+        }
+
+        return 0
+    }
+
 }

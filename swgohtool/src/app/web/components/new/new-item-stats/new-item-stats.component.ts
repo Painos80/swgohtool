@@ -22,7 +22,7 @@ export class NewItemStatsComponent {
   playerdata$:Observable<any>= this.fetchNew.playerdata;
   player$:Observable<any>= this.fetchNew.player;
   loaded$:Observable<any>= this.fetchNew.loaded;
- 
+  @Input() username: string = '';
 
   public constructor(
     private fetchNew: Fetchnewservice
@@ -87,5 +87,13 @@ getText(item:any):string{
   }
   
   return `${item.name} (${this.calculate().length})`;
+}
+
+generatevisibility(item_1:any):boolean{
+if(this.username == null || this.username == ""){
+  return true;
+}else{
+  return item_1.name.toLowerCase().includes(this.username.toLowerCase());
+}
 }
 }

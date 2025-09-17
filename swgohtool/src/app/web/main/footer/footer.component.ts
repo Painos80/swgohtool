@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Globals } from 'src/app/core/globals';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +6,5 @@ import { Globals } from 'src/app/core/globals';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  isFeddy = Globals.isFeddy;
 
 }

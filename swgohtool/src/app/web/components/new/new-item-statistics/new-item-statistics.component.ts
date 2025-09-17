@@ -261,5 +261,64 @@ try{
   return item_1.props.relic;
 }
 }
+  @Input() username: string = '';
+
+generatevisibility(item_1:any):boolean{
+if(this.username == null || this.username == ""){
+  return true;
+}
+else if(this.username.toLowerCase().includes('#') || this.username.toLowerCase().includes(':') && item_1.player_item ){
+  try{
+  let spl = this.username.split(':');
+  let comp_value = null;
+  if(spl[0].includes("speed")){
+    comp_value = this.calc.getStat(item_1, "5");
+  }else if(spl[0].includes("health")){
+    comp_value = this.calc.getStat(item_1, "1");
+
+  }else if(spl[0].includes("protection")){
+    comp_value = this.calc.getStat(item_1, "28");
+
+  }else if(spl[0].includes("damage")){
+    comp_value = this.calc.getStat(item_1, "6");
+
+  }else if(spl[0].includes("armor")){
+    comp_value = this.calc.getStat(item_1, "8");
+
+  }else if(spl[0].includes("relic")){
+    comp_value = this.calc.getStat(item_1, "99");
+
+  }
+  if(comp_value){
+    let to_compare_list = spl[1].split('-'); 
+    if(to_compare_list.length == 1){
+      let b1 = Math.floor(Number(to_compare_list[0].toString()));
+       if(comp_value >= b1  ){
+        return true;
+      }
+   }else{
+      let b1 = Math.floor(Number(to_compare_list[0].toString()));
+      let b2 = Math.floor(Number(to_compare_list[1].toString()));
+      let b3 =  Math.floor(Number(comp_value));
+      if(b3 >= b1 && b3 <= b2){
+        return true;
+      }
+    }
+  }
+    return false;
+}catch(e){
+  console.error(e);
+}
+  return false;
+}
+else{
+  
+  return item_1.name.toLowerCase().includes(this.username.toLowerCase()) || item_1?.item_from_gg?.categories.find((x: string)=>x.toLowerCase().includes(this.username.toLowerCase()));
+}
+}
+
+    
+    
+     
 
 }
